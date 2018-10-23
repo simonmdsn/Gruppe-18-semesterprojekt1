@@ -7,13 +7,15 @@ import java.util.Scanner;
 public class Game 
 {
     //Attributes
+    public Room california, oregon, utah, washington, idaho, nevada, arizona;
     private Parser parser;
-    private Room currentRoom;
+    public Room currentRoom;
     private Scanner s = new Scanner(System.in);
     private String name;
     
     //Objects
     private America draw = new America();
+    private Questions questions = new Questions();
     
     
     //Constructor
@@ -29,12 +31,12 @@ public class Game
     }
 
 
-    private void createRooms()
+    public void createRooms()
     {
         //Method that creates the rooms
         //currentRoom decides which room you're in
         
-        Room california, oregon, utah, washington, idaho, nevada, arizona;
+        
       
         california = new Room("in California");
         oregon = new Room("in Oregon");
@@ -68,6 +70,7 @@ public class Game
         arizona.setExit("north", utah);
         
         currentRoom = california;
+        
     }
 
     public void play() 
@@ -77,7 +80,7 @@ public class Game
         
         setPlayerName();
         printWelcome();
-        
+        roomController();
                 
         boolean finished = false;
         while (! finished) {
@@ -148,11 +151,20 @@ public class Game
         Room nextRoom = currentRoom.getExit(direction);
 
         if (nextRoom == null) {
-            System.out.println("There is no door!");
+            System.out.println("That is not an available direction");
         }
         else {
+            
             currentRoom = nextRoom;
             System.out.println(currentRoom.getLongDescription());
+            roomController();
+        }
+    }
+    
+    private void roomController() 
+    {
+        if (currentRoom == california) {
+            questions.caliQuestions();
         }
     }
 
