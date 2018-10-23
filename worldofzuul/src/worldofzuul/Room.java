@@ -1,4 +1,4 @@
-package worldofzuul;
+    package worldofzuul;
 
 import java.util.Set;
 import java.util.HashMap;
@@ -33,7 +33,7 @@ public class Room
 
     private String getExitString()
     {
-        String returnString = "Exits:";
+        String returnString = "Available directons:";
         Set<String> keys = exits.keySet();
         for(String exit : keys) {
             returnString += " " + exit;
