@@ -1,20 +1,36 @@
 package worldofzuul;
 
+
+import java.util.Scanner; 
+
+
 public class Game 
 {
+    //Attributes
     private Parser parser;
     private Room currentRoom;
-        
-
+    private Scanner s = new Scanner(System.in);
+    private String name;
+    
+    
+    //Constructor
     public Game() 
     {
+        //Calls method create rooms
+        //Creates a new parser object
+        
         createRooms();
         parser = new Parser();
+        
+       
     }
 
 
     private void createRooms()
     {
+        //Method that creates the rooms
+        //currentRoom decides which room you're in
+        
         Room outside, theatre, pub, lab, office;
       
         outside = new Room("outside the main entrance of the university");
@@ -40,9 +56,13 @@ public class Game
     }
 
     public void play() 
-    {            
+    {
+        //Revoking methods setPlayerName() and printWelcome();
+        //this is the starting point of the game
+        
+        setPlayerName();
         printWelcome();
-
+        
                 
         boolean finished = false;
         while (! finished) {
@@ -52,12 +72,19 @@ public class Game
         System.out.println("Thank you for playing.  Good bye.");
     }
 
+    private void setPlayerName()
+    {
+        System.out.print("Choose your name: ");
+        name = s.next();
+    }
+    
     private void printWelcome()
     {
         System.out.println();
-        System.out.println("Welcome to the World of Zuul!");
-        System.out.println("World of Zuul is a new, incredibly boring adventure game.");
-        System.out.println("Type '" + CommandWord.HELP + "' if you need help.");
+        System.out.println("Welcome to America, " + name + "!");
+        America();
+        System.out.println("Your goal in this game, is to beat Trump in the presidential election.");
+        System.out.println("Type '" + CommandWord.HELP + "' if you need help at anytime.");
         System.out.println();
         System.out.println(currentRoom.getLongDescription());
     }
