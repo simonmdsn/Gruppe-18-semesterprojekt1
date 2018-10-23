@@ -165,6 +165,7 @@ public class Game
     {
         if (currentRoom == california) {
             questions.caliQuestions();
+            //test
         }
     }
 
