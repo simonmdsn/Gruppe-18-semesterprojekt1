@@ -160,17 +160,13 @@ public class Game
             roomController();
         }
     }
-    
-
-    private void roomController() {
+   
+    private void roomController(){
         if (currentRoom == arizona){
             questions.arizonaQuestions();
-            System.out.println("\nYou now have: " + questions.getPoints() + " points"); 
-
-    private void roomController() 
-    {
-        if (currentRoom == arizona){
-            questions.arizonaQuestions();
+            System.out.println("\nYou now have: " + questions.getPoints() + " points");
+            System.out.println("You are now leaving " + currentRoom.getShortDescription());
+            System.out.println(currentRoom.getExitString());
         }
         if (currentRoom == california) {
             questions.californiaQuestions();
@@ -195,15 +191,8 @@ public class Game
             System.out.println("\nYou now have: " + questions.getPoints() + " points");
             System.out.println("You are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
-        if (currentRoom == idaho){
-            questions.idahoQuestions();
         }
-        if(currentRoom == nevada){
-            questions.nevadaQuestions();
-        }    
-        if(currentRoom == oregon){
-            questions.oregonQuestions();
-        }
+
         if (currentRoom == utah){
             questions.utahQuestions();
             System.out.println("\nYou now have: " + questions.getPoints() + " points");
@@ -217,7 +206,7 @@ public class Game
             System.out.println("You are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         }  
-        }  
+          
     }
 
     private boolean quit(Command command) 

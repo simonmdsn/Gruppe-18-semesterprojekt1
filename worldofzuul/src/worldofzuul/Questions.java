@@ -114,15 +114,7 @@ public class Questions {
         answerIsC(correctThird, incorrectThird);
     }
   
-    public void californiaQuestions(){
-        // Korrekte og inkorrekte svar tekst
-        String correctFirst = ("Correct, California is ranked 1st in population size in the USA");
-        String incorrectFirst = ("Incorrect, California is ranked as first");
-=======
-        // Ubrugelig linje
-        return false;
-    }
-    
+
     public void californiaQuestions(){
         String correctFirst = ("Correct, California is ranked 1st in population size in the USA");
         String incorrectFirst = ("Incorrect, the answer is California is ranked first.");
@@ -299,25 +291,7 @@ public class Questions {
         System.out.println("A: San Francisco    B: placeholder     C: placeholder");
         answerIsA(correctThird,incorrectThird);
                      
-    }
-    
-    public void utahQuestions(){
-        String correctFirst = ("rigtig");
-        String incorrectFirst = ("forkert");
-        String correctSecond =("rigtig");
-        String incorrectSecond = ("forkert");
-        
-        System.out.println("\n First Question:");
-        System.out.println("test1");
-        System.out.println("test2");
-        answerIsB(correctFirst,incorrectFirst);
-        
-        System.out.println("\nSecond Question");
-        System.out.println("test3");
-        System.out.println("test4");
-        answerIsC(correctSecond, incorrectSecond);
-    }
-    
+    }  
     public int getPoints(){
         return gamepoints;
     }
