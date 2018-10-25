@@ -172,6 +172,7 @@ public class Game
             System.out.println("You are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         }
+
         if (currentRoom == idaho){
             questions.idahoQuestions();
             System.out.println("\nYou now have: " + questions.getPoints() + " points");
@@ -190,6 +191,7 @@ public class Game
             System.out.println("You are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         }
+
         if (currentRoom == utah){
             questions.utahQuestions();
             System.out.println("\nYou now have: " + questions.getPoints() + " points");

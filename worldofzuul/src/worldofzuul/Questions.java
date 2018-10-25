@@ -34,7 +34,9 @@ public class Questions {
                 System.out.println("Incorrect input, please try again.");
             }
         }
-      // Ubrugelig linje for at undgå return fejl - spørg Besnik for bedre implementation
+
+      // Ubrugelig linje for at undgå return fejl - spørg Besnik for bedre implementatio
+
         return false;
     }
     
@@ -56,7 +58,9 @@ public class Questions {
                 System.out.println("Incorrect input, please try again.");
             }
         }
+
        // Ubrugelig linje for at undgå return fejl - spørg Besnik for bedre implementation
+
         return false;
     }
     
@@ -114,16 +118,26 @@ public class Questions {
         // Korrekte og inkorrekte svar tekst
         String correctFirst = ("Correct, California is ranked 1st in population size in the USA");
         String incorrectFirst = ("Incorrect, California is ranked as first");
+=======
+        // Ubrugelig linje
+        return false;
+    }
+    
+    public void californiaQuestions(){
+        String correctFirst = ("Correct, California is ranked 1st in population size in the USA");
+        String incorrectFirst = ("Incorrect, the answer is California is ranked first.");
         String correctSecond = ("Correct, Salt Lake City is located in Utah");
         String incorrectSecond = ("Incorrect, the correct answer is Salt Lake City");
         String correctThird = ("");
         String incorrectThird = ("");
         
         // Spørgsmål 1
+
         System.out.println("\nFirst Question:");
         System.out.println("How high is California ranked in population size?");
         System.out.println("A: First    B: Third    C: Eight\n");
         answerIsA(correctFirst,incorrectFirst);
+
         
         // Spørgsmål 2
         System.out.println("\n\nSecond Question:");
@@ -273,6 +287,35 @@ public class Questions {
         System.out.println("spørgsmaal 3");
         System.out.println("svarmulighed 3");
         answerIsC(correctThird, incorrectThird);
+        
+        System.out.println("\n\nSecond Question:");
+        System.out.println("Which of these three cities is not located in Califoirnia");
+        System.out.println("A: San Diego    B: Salt Lake City   C: San Francisco");
+        
+        answerIsB(correctSecond, incorrectSecond);
+        
+        System.out.println("\n\nThird Question:");
+        System.out.println("Where in California is Silicon Valley located?");
+        System.out.println("A: San Francisco    B: placeholder     C: placeholder");
+        answerIsA(correctThird,incorrectThird);
+                     
+    }
+    
+    public void utahQuestions(){
+        String correctFirst = ("rigtig");
+        String incorrectFirst = ("forkert");
+        String correctSecond =("rigtig");
+        String incorrectSecond = ("forkert");
+        
+        System.out.println("\n First Question:");
+        System.out.println("test1");
+        System.out.println("test2");
+        answerIsB(correctFirst,incorrectFirst);
+        
+        System.out.println("\nSecond Question");
+        System.out.println("test3");
+        System.out.println("test4");
+        answerIsC(correctSecond, incorrectSecond);
     }
     
     public int getPoints(){
