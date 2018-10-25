@@ -164,8 +164,10 @@ public class Game
     private void roomController() 
     {
         if (currentRoom == california) {
-            questions.caliQuestions();
-            //test
+            questions.californiaQuestions();
+        }
+        if (currentRoom == utah){
+            questions.utahQuestions();
         }
     }
 
