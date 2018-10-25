@@ -169,6 +169,7 @@ public class Game
         if (currentRoom == california) {
             questions.californiaQuestions();
         }
+
         if (currentRoom == idaho){
             questions.idahoQuestions();
         }
@@ -178,6 +179,7 @@ public class Game
         if(currentRoom == oregon){
             questions.oregonQuestions();
         }
+
         if (currentRoom == utah){
             questions.utahQuestions();
         }
