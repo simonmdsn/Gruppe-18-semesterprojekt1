@@ -7,10 +7,7 @@ public class Start {
         //Creates an instance of 'Game' and calls the method 'play' 
         Game game = new Game();
         game.play();
-        //test
-             
-
-    }
+        }
 }
     
 
