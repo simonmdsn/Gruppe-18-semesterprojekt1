@@ -163,12 +163,27 @@ public class Game
     
     private void roomController() 
     {
+        if (currentRoom == arizona){
+            questions.arizonaQuestions();
+        }
         if (currentRoom == california) {
             questions.californiaQuestions();
+        }
+        if (currentRoom == idaho){
+            questions.idahoQuestions();
+        }
+        if(currentRoom == nevada){
+            questions.nevadaQuestions();
+        }    
+        if(currentRoom == oregon){
+            questions.oregonQuestions();
         }
         if (currentRoom == utah){
             questions.utahQuestions();
         }
+        if (currentRoom == washington){
+            questions.washingtonQuestions();
+        }  
     }
 
     private boolean quit(Command command) 
