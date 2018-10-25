@@ -27,7 +27,7 @@ public class Questions {
                 System.out.println("Incorrect input, please try again.");
             }
         }
-        // Ubrugelig linje
+      // Ubrugelig linje for at undgå return fejl - spørg Besnik for bedre implementation
         return false;
     }
     
@@ -48,7 +48,7 @@ public class Questions {
                 System.out.println("Incorrect input, please try again.");
             }
         }
-        // Ubrugelig linje
+       // Ubrugelig linje for at undgå return fejl - spørg Besnik for bedre implementation
         return false;
     }
     
@@ -69,50 +69,200 @@ public class Questions {
                 System.out.println("Incorrect input, please try again.");
             }
         }
-        // Ubrugelig linje
+        // Ubrugelig linje for at undgå return fejl - spørg Besnik for bedre implementation
         return false;
     }
     
+    public void arizonaQuestions() {
+        // Korrekte og inkorrekt svar tekst 
+        String correctFirst = ("rigtig svar 1");
+        String incorrectFirst = ("forkert svar 1 ");
+        String correctSecond =("rigtig svar 2");
+        String incorrectSecond = ("forkert svar 2");
+        String correctThird = ("rigtig svar 3");
+        String incorrectThird = ("rigtig svar 3");
+        
+        // Spørgsmål 1
+        System.out.println("\nFirst Question:");
+        System.out.println("spørgsmaal 1");
+        System.out.println("svarmulighed 1 ");
+        answerIsB(correctFirst,incorrectFirst);
+        
+        // Spørgsmål 2
+        System.out.println("\n\nSecond Question");
+        System.out.println("spørgsmaal 2");
+        System.out.println("svarmulighed 2");
+        answerIsC(correctSecond, incorrectSecond);
+        
+        // Spørgsmål 3
+        System.out.println("\n\nThird Question");
+        System.out.println("spørgsmaal 3");
+        System.out.println("svarmulighed 3");
+        answerIsC(correctThird, incorrectThird);
+    }
+  
     public void californiaQuestions(){
+        // Korrekte og inkorrekte svar tekst
         String correctFirst = ("Correct, California is ranked 1st in population size in the USA");
-        String incorrectFirst = ("Incorrect, the answer is California is ranked first.");
+        String incorrectFirst = ("Incorrect, California is ranked as first");
         String correctSecond = ("Correct, Salt Lake City is located in Utah");
         String incorrectSecond = ("Incorrect, the correct answer is Salt Lake City");
         String correctThird = ("");
         String incorrectThird = ("");
         
+        // Spørgsmål 1
         System.out.println("\nFirst Question:");
         System.out.println("How high is California ranked in population size?");
         System.out.println("A: First    B: Third    C: Eight\n");
         answerIsA(correctFirst,incorrectFirst);
         
+        // Spørgsmål 2
         System.out.println("\n\nSecond Question:");
         System.out.println("Which of these three cities is not located in Califoirnia");
         System.out.println("A: San Diego    B: Salt Lake City   C: San Francisco");
-        
         answerIsB(correctSecond, incorrectSecond);
         
+        // Spørgsmål 3
         System.out.println("\n\nThird Question:");
         System.out.println("Where in California is Silicon Valley located?");
         System.out.println("A: San Francisco    B: placeholder     C: placeholder");
         answerIsA(correctThird,incorrectThird);
                      
+    }  
+    public void idahoQuestions(){
+        // Korrekte og inkorrekt svar tekst 
+        String correctFirst = ("rigtig svar 1");
+        String incorrectFirst = ("forkert svar 1 ");
+        String correctSecond =("rigtig svar 2");
+        String incorrectSecond = ("forkert svar 2");
+        String correctThird = ("rigtig svar 3");
+        String incorrectThird = ("rigtig svar 3");
+        
+        // Spørgsmål 1
+        System.out.println("\nFirst Question:");
+        System.out.println("spørgsmaal 1");
+        System.out.println("svarmulighed 1 ");
+        answerIsB(correctFirst,incorrectFirst);
+        
+        // Spørgsmål 2
+        System.out.println("\n\nSecond Question");
+        System.out.println("spørgsmaal 2");
+        System.out.println("svarmulighed 2");
+        answerIsC(correctSecond, incorrectSecond);
+        
+        // Spørgsmål 3
+        System.out.println("\n\nThird Question");
+        System.out.println("spørgsmaal 3");
+        System.out.println("svarmulighed 3");
+        answerIsC(correctThird, incorrectThird);
+    }
+    public void nevadaQuestions() {
+        // Korrekte og inkorrekt svar tekst 
+        String correctFirst = ("rigtig svar 1");
+        String incorrectFirst = ("forkert svar 1 ");
+        String correctSecond =("rigtig svar 2");
+        String incorrectSecond = ("forkert svar 2");
+        String correctThird = ("rigtig svar 3");
+        String incorrectThird = ("rigtig svar 3");
+        
+        // Spørgsmål 1
+        System.out.println("\nFirst Question:");
+        System.out.println("spørgsmaal 1");
+        System.out.println("svarmulighed 1 ");
+        answerIsB(correctFirst,incorrectFirst);
+        
+        // Spørgsmål 2
+        System.out.println("\n\nSecond Question");
+        System.out.println("spørgsmaal 2");
+        System.out.println("svarmulighed 2");
+        answerIsC(correctSecond, incorrectSecond);
+        
+        // Spørgsmål 3
+        System.out.println("\n\nThird Question");
+        System.out.println("spørgsmaal 3");
+        System.out.println("svarmulighed 3");
+        answerIsC(correctThird, incorrectThird);
+    }
+    public void oregonQuestions() {
+        // Korrekte og inkorrekt svar tekst 
+        String correctFirst = ("rigtig svar 1");
+        String incorrectFirst = ("forkert svar 1 ");
+        String correctSecond =("rigtig svar 2");
+        String incorrectSecond = ("forkert svar 2");
+        String correctThird = ("rigtig svar 3");
+        String incorrectThird = ("rigtig svar 3");
+        
+        // Spørgsmål 1
+        System.out.println("\nFirst Question:");
+        System.out.println("spørgsmaal 1");
+        System.out.println("svarmulighed 1 ");
+        answerIsB(correctFirst,incorrectFirst);
+        
+        // Spørgsmål 2
+        System.out.println("\n\nSecond Question");
+        System.out.println("spørgsmaal 2");
+        System.out.println("svarmulighed 2");
+        answerIsC(correctSecond, incorrectSecond);
+        
+        // Spørgsmål 3
+        System.out.println("\n\nThird Question");
+        System.out.println("spørgsmaal 3");
+        System.out.println("svarmulighed 3");
+        answerIsC(correctThird, incorrectThird);
     }
     
     public void utahQuestions(){
-        String correctFirst = ("rigtig");
-        String incorrectFirst = ("forkert");
-        String correctSecond =("rigtig");
-        String incorrectSecond = ("forkert");
+        // Korrekte og inkorrekt svar tekst 
+        String correctFirst = ("rigtig svar 1");
+        String incorrectFirst = ("forkert svar 1 ");
+        String correctSecond =("rigtig svar 2");
+        String incorrectSecond = ("forkert svar 2");
+        String correctThird = ("rigtig svar 3");
+        String incorrectThird = ("rigtig svar 3");
         
-        System.out.println("\n First Question:");
-        System.out.println("test1");
-        System.out.println("test2");
+        // Spørgsmål 1
+        System.out.println("\nFirst Question:");
+        System.out.println("spørgsmaal 1");
+        System.out.println("svarmulighed 1 ");
         answerIsB(correctFirst,incorrectFirst);
         
-        System.out.println("\nSecond Question");
-        System.out.println("test3");
-        System.out.println("test4");
+        // Spørgsmål 2
+        System.out.println("\n\nSecond Question");
+        System.out.println("spørgsmaal 2");
+        System.out.println("svarmulighed 2");
         answerIsC(correctSecond, incorrectSecond);
+        
+        // Spørgsmål 3
+        System.out.println("\n\nThird Question");
+        System.out.println("spørgsmaal 3");
+        System.out.println("svarmulighed 3");
+        answerIsC(correctThird, incorrectThird); 
+    }
+    public void washingtonQuestions() {
+        // Korrekte og inkorrekt svar tekst 
+        String correctFirst = ("rigtig svar 1");
+        String incorrectFirst = ("forkert svar 1 ");
+        String correctSecond =("rigtig svar 2");
+        String incorrectSecond = ("forkert svar 2");
+        String correctThird = ("rigtig svar 3");
+        String incorrectThird = ("rigtig svar 3");
+        
+        // Spørgsmål 1
+        System.out.println("\nFirst Question:");
+        System.out.println("spørgsmaal 1");
+        System.out.println("svarmulighed 1 ");
+        answerIsB(correctFirst,incorrectFirst);
+        
+        // Spørgsmål 2
+        System.out.println("\n\nSecond Question");
+        System.out.println("spørgsmaal 2");
+        System.out.println("svarmulighed 2");
+        answerIsC(correctSecond, incorrectSecond);
+        
+        // Spørgsmål 3
+        System.out.println("\n\nThird Question");
+        System.out.println("spørgsmaal 3");
+        System.out.println("svarmulighed 3");
+        answerIsC(correctThird, incorrectThird);
     }
 }
