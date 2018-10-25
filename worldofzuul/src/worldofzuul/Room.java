@@ -31,7 +31,7 @@ public class Room
         return "You are " + description + ".\n" + getExitString();
     }
 
-    private String getExitString()
+    public String getExitString()
     {
         String returnString = "Available directons:";
         Set<String> keys = exits.keySet();

@@ -4,11 +4,17 @@ import java.util.Scanner;
 
 public class Questions {
     
+    
     //Attributes
     private String answer;
+    public int gamepoints;
       
     //Scanner objekt
     private Scanner readAnswer;
+    
+    public Questions(){
+        
+    }
     
     private boolean answerIsA(String correct, String incorrect) {
         readAnswer = new Scanner(System.in);
@@ -18,6 +24,7 @@ public class Questions {
             String input = readAnswer.next();
             if(input.equals("a") || input.equals ("A")){
                 System.out.print(correct);
+                gamepoints++;
                 return false;
             } else if (input.equals("b") || input.equals("B")
                     || input.equals("c") || input.equals("C")) {
@@ -39,6 +46,7 @@ public class Questions {
             String input = readAnswer.next();
             if(input.equals("b") || input.equals ("B")){
                 System.out.print(correct);
+                gamepoints++;
                 return false;
             } else if (input.equals("a") || input.equals("A")
                     || input.equals("c") || input.equals("C")) {
@@ -60,6 +68,7 @@ public class Questions {
             String input = readAnswer.next();
             if(input.equals("c") || input.equals ("C")){
                 System.out.print(correct);
+                gamepoints++;
                 return false;
             } else if (input.equals("b") || input.equals("B")
                     || input.equals("a") || input.equals("A")) {
@@ -264,5 +273,9 @@ public class Questions {
         System.out.println("spørgsmaal 3");
         System.out.println("svarmulighed 3");
         answerIsC(correctThird, incorrectThird);
+    }
+    
+    public int getPoints(){
+        return gamepoints;
     }
 }
