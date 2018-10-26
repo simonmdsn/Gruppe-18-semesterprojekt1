@@ -164,46 +164,46 @@ public class Game
     private void roomController(){
         if (currentRoom == arizona){
             questions.arizonaQuestions();
-            System.out.println("\nYou now have: " + questions.getPoints() + " points");
+            System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("You are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString());
         }
         if (currentRoom == california) {
             questions.californiaQuestions();
-            System.out.println("\nYou now have: " + questions.getPoints() + " points");
-            System.out.println("You are now leaving " + currentRoom.getShortDescription());
+            System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
+            System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         }
         if (currentRoom == idaho){
             questions.idahoQuestions();
-            System.out.println("\nYou now have: " + questions.getPoints() + " points");
-            System.out.println("You are now leaving " + currentRoom.getShortDescription());
+            System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
+            System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         }
         if(currentRoom == nevada){
             questions.nevadaQuestions();
-            System.out.println("\nYou now have: " + questions.getPoints() + " points");
-            System.out.println("You are now leaving " + currentRoom.getShortDescription());
+            System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
+            System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         }    
         if(currentRoom == oregon){
             questions.oregonQuestions();
-            System.out.println("\nYou now have: " + questions.getPoints() + " points");
-            System.out.println("You are now leaving " + currentRoom.getShortDescription());
+            System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
+            System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         }
 
         if (currentRoom == utah){
             questions.utahQuestions();
-            System.out.println("\nYou now have: " + questions.getPoints() + " points");
-            System.out.println("You are now leaving " + currentRoom.getShortDescription());
+            System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
+            System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         }
         if (currentRoom == washington){
             questions.washingtonQuestions();
 
-            System.out.println("\nYou now have: " + questions.getPoints() + " points");
-            System.out.println("You are now leaving " + currentRoom.getShortDescription());
+            System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
+            System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         }  
           

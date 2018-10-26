@@ -143,29 +143,29 @@ public class Questions {
     
     public void idahoQuestions(){
         // Korrekte og inkorrekt svar tekst 
-        String correctFirst = ("rigtig svar 1");
-        String incorrectFirst = ("forkert svar 1 ");
-        String correctSecond =("rigtig svar 2");
-        String incorrectSecond = ("forkert svar 2");
-        String correctThird = ("rigtig svar 3");
-        String incorrectThird = ("rigtig svar 3");
+        String correctFirst = ("Correct, Idaho is the 14th largest state in the US");
+        String incorrectFirst = ("Incorrect, Idaho is the 14th largest state in the US!");
+        String correctSecond =("Correct, Idaho borders 6 states ");
+        String incorrectSecond = ("Incorrect, Idaho borders 6 states!");
+        String correctThird = ("Correct, the largest city in Idaho is Boise.");
+        String incorrectThird = ("Wrooong! The largest city in Idaho is Boise!");
         
         // Spørgsmål 1
         System.out.println("\nFirst Question:");
-        System.out.println("spørgsmaal 1");
-        System.out.println("svarmulighed 1 ");
+        System.out.println("Idaho is the ____ largest state in the country ");
+        System.out.println("A: 46th B: 14th C: 4");
         answerIsB(correctFirst,incorrectFirst);
         
         // Spørgsmål 2
         System.out.println("\n\nSecond Question");
-        System.out.println("spørgsmaal 2");
-        System.out.println("svarmulighed 2");
+        System.out.println("How many states border Idaho?");
+        System.out.println("A: 2    B: 4    C: 6");
         answerIsC(correctSecond, incorrectSecond);
         
         // Spørgsmål 3
         System.out.println("\n\nThird Question");
-        System.out.println("spørgsmaal 3");
-        System.out.println("svarmulighed 3");
+        System.out.println("What is the largest city in Idaho?");
+        System.out.println("A: Salt Lake City B: Caldwell   C: Boise");
         answerIsC(correctThird, incorrectThird);
     }
     public void nevadaQuestions() {
@@ -197,30 +197,30 @@ public class Questions {
     }
     public void oregonQuestions() {
         // Korrekte og inkorrekt svar tekst 
-        String correctFirst = ("rigtig svar 1");
-        String incorrectFirst = ("forkert svar 1 ");
-        String correctSecond =("rigtig svar 2");
-        String incorrectSecond = ("forkert svar 2");
-        String correctThird = ("rigtig svar 3");
-        String incorrectThird = ("rigtig svar 3");
+        String correctFirst = ("Correct, Salem is the capital of Oregon!");
+        String incorrectFirst = ("Unfortunately, the capital of Oregon is Salem..");
+        String correctSecond =("Correct, Oregon can be divided into 6 areas.");
+        String incorrectSecond = ("Incorrcet, Oregon can be divided into 6 areas!");
+        String correctThird = ("Correct, Snake River is a major river found in Oregon.");
+        String incorrectThird = ("Wrong, Snake River is one of the major rivers in Oregon.");
         
         // Spørgsmål 1
         System.out.println("\nFirst Question:");
-        System.out.println("spørgsmaal 1");
-        System.out.println("svarmulighed 1 ");
+        System.out.println("What is the capital of Oregon?");
+        System.out.println("A: Oregon City  B: Salem    C: Las Vegas ");
         answerIsB(correctFirst,incorrectFirst);
         
         // Spørgsmål 2
         System.out.println("\n\nSecond Question");
-        System.out.println("spørgsmaal 2");
-        System.out.println("svarmulighed 2");
-        answerIsC(correctSecond, incorrectSecond);
+        System.out.println("Oregons geography can be divided into how many areas?");
+        System.out.println("A: 6    B: 15   C: 304");
+        answerIsA(correctSecond, incorrectSecond);
         
         // Spørgsmål 3
         System.out.println("\n\nThird Question");
-        System.out.println("spørgsmaal 3");
-        System.out.println("svarmulighed 3");
-        answerIsC(correctThird, incorrectThird);
+        System.out.println("What major river can be found in Oregon?");
+        System.out.println("A: Snake River  B: The Great Fall   C: Upwood River ");
+        answerIsA(correctThird, incorrectThird);
     }
     
     public void utahQuestions(){
