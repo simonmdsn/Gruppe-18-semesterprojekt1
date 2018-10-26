@@ -35,7 +35,7 @@ public class Questions {
             }
         }
 
-      // Ubrugelig linje for at undgå return fejl - spørg Besnik for bedre implementatio
+      // Ubrugelig linje for at undgå return fejl - spørg Besnik for bedre implementation
 
         return false;
     }
@@ -85,46 +85,15 @@ public class Questions {
         // Ubrugelig linje for at undgå return fejl - spørg Besnik for bedre implementation
         return false;
     }
-    
-    public void arizonaQuestions() {
-        // Korrekte og inkorrekt svar tekst 
-        String correctFirst = ("rigtig svar 1");
-        String incorrectFirst = ("forkert svar 1 ");
-        String correctSecond =("rigtig svar 2");
-        String incorrectSecond = ("forkert svar 2");
-        String correctThird = ("rigtig svar 3");
-        String incorrectThird = ("rigtig svar 3");
-        
-        // Spørgsmål 1
-        System.out.println("\nFirst Question:");
-        System.out.println("spørgsmaal 1");
-        System.out.println("svarmulighed 1 ");
-        answerIsB(correctFirst,incorrectFirst);
-        
-        // Spørgsmål 2
-        System.out.println("\n\nSecond Question");
-        System.out.println("spørgsmaal 2");
-        System.out.println("svarmulighed 2");
-        answerIsC(correctSecond, incorrectSecond);
-        
-        // Spørgsmål 3
-        System.out.println("\n\nThird Question");
-        System.out.println("spørgsmaal 3");
-        System.out.println("svarmulighed 3");
-        answerIsC(correctThird, incorrectThird);
-    }
-  
-
-    public void californiaQuestions(){
+        public void californiaQuestions(){
         String correctFirst = ("Correct, California is ranked 1st in population size in the USA");
         String incorrectFirst = ("Incorrect, the answer is California is ranked first.");
         String correctSecond = ("Correct, Salt Lake City is located in Utah");
         String incorrectSecond = ("Incorrect, the correct answer is Salt Lake City");
-        String correctThird = ("");
-        String incorrectThird = ("");
+        String correctThird = ("Correct, Silicon Valley is located in San Francisco");
+        String incorrectThird = ("Incorrect, Silicon Valley is located in San Fransisco");
         
         // Spørgsmål 1
-
         System.out.println("\nFirst Question:");
         System.out.println("How high is California ranked in population size?");
         System.out.println("A: First    B: Third    C: Eight\n");
@@ -140,10 +109,38 @@ public class Questions {
         // Spørgsmål 3
         System.out.println("\n\nThird Question:");
         System.out.println("Where in California is Silicon Valley located?");
-        System.out.println("A: San Francisco    B: placeholder     C: placeholder");
+        System.out.println("A: San Francisco    B: Santa Cruz     C: Pasadena");
         answerIsA(correctThird,incorrectThird);
-                     
-    }  
+        }
+    
+    public void arizonaQuestions() {
+        // Korrekte og inkorrekt svar tekst 
+        String correctFirst = ("Correct answer!");
+        String incorrectFirst = ("Incorrect, Utah is to the north of Arizona.");
+        String correctSecond =("Correct, Colorado River seperates Arizona in this case.");
+        String incorrectSecond = ("Incorrect, the answer is Colorado River.");
+        String correctThird = ("Correct, Phoenix is the capital of Arizona!");
+        String incorrectThird = ("Incorrect, Phoenix is the capital of Arizona.");
+        
+        // Spørgsmål 1
+        System.out.println("\nFirst Question:");
+        System.out.println("Which state is to the north of Arizona?");
+        System.out.println("A: Idaho   B: Utah   C: Florida ");
+        answerIsB(correctFirst,incorrectFirst);
+        
+        // Spørgsmål 2
+        System.out.println("\n\nSecond Question");
+        System.out.println("Which river seperates Arizona from California and Nevada?");
+        System.out.println("A: Salt River   B: Rio Grande   C: Colorado River");
+        answerIsC(correctSecond, incorrectSecond);
+        
+        // Spørgsmål 3
+        System.out.println("\n\nThird Question");
+        System.out.println("Which is the capital of Arizona?");
+        System.out.println("A: Flagstaff    B: Tucson   C: Phoenix");
+        answerIsC(correctThird, incorrectThird);
+    }
+    
     public void idahoQuestions(){
         // Korrekte og inkorrekt svar tekst 
         String correctFirst = ("rigtig svar 1");
@@ -173,29 +170,29 @@ public class Questions {
     }
     public void nevadaQuestions() {
         // Korrekte og inkorrekt svar tekst 
-        String correctFirst = ("rigtig svar 1");
-        String incorrectFirst = ("forkert svar 1 ");
-        String correctSecond =("rigtig svar 2");
-        String incorrectSecond = ("forkert svar 2");
-        String correctThird = ("rigtig svar 3");
-        String incorrectThird = ("rigtig svar 3");
+        String correctFirst = ("Correct!");
+        String incorrectFirst = ("Incorrect, it's called The Battle Born State");
+        String correctSecond =("Correct!");
+        String incorrectSecond = ("Incorrect, the answer is Carson City!");
+        String correctThird = ("You're goddamn right!");
+        String incorrectThird = ("Nope, the correct answer is - All for our country!");
         
         // Spørgsmål 1
         System.out.println("\nFirst Question:");
-        System.out.println("spørgsmaal 1");
-        System.out.println("svarmulighed 1 ");
+        System.out.println("Which of these is a nickname for Nevada?");
+        System.out.println("A: The Centennial State B: The Battle Born State    C: The Gem State");
         answerIsB(correctFirst,incorrectFirst);
         
         // Spørgsmål 2
         System.out.println("\n\nSecond Question");
-        System.out.println("spørgsmaal 2");
-        System.out.println("svarmulighed 2");
+        System.out.println("What is the capital of Nevada?");
+        System.out.println("A: Reno B: Las Vegas    C: Carson City");
         answerIsC(correctSecond, incorrectSecond);
         
         // Spørgsmål 3
         System.out.println("\n\nThird Question");
-        System.out.println("spørgsmaal 3");
-        System.out.println("svarmulighed 3");
+        System.out.println("What is the motto of Nevada?");
+        System.out.println("A: Willing and able B: Liberty and union, now and forever, one and inseparable  C: All for our country");
         answerIsC(correctThird, incorrectThird);
     }
     public void oregonQuestions() {

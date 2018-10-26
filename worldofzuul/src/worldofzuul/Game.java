@@ -38,13 +38,13 @@ public class Game
         
         
       
-        california = new Room("in California");
-        oregon = new Room("in Oregon");
-        nevada = new Room("in Nevada");
-        arizona = new Room("in Arizona");
-        utah = new Room("in Utah");
-        washington = new Room("in Washington");
-        idaho = new Room("in Idaho");
+        california = new Room("California");
+        oregon = new Room("Oregon");
+        nevada = new Room("Nevada");
+        arizona = new Room("Arizona");
+        utah = new Room("Utah");
+        washington = new Room("Washington");
+        idaho = new Room("Idaho");
         
         //Which exists each room has
         
