@@ -94,20 +94,20 @@ public class Questions {
         String incorrectThird = ("Incorrect, Silicon Valley is located in San Fransisco");
         
         // Spørgsmål 1
-        System.out.println("\nFirst Question:");
+        System.out.println("\nFirst Question:\n---------------");
         System.out.println("How high is California ranked in population size?");
         System.out.println("A: First    B: Third    C: Eight\n");
         answerIsA(correctFirst,incorrectFirst);
 
         
         // Spørgsmål 2
-        System.out.println("\n\nSecond Question:");
+        System.out.println("\n\nSecond Question:\n----------------");
         System.out.println("Which of these three cities is not located in Califoirnia");
         System.out.println("A: San Diego    B: Salt Lake City   C: San Francisco");
         answerIsB(correctSecond, incorrectSecond);
         
         // Spørgsmål 3
-        System.out.println("\n\nThird Question:");
+        System.out.println("\n\nThird Question:\n---------------");
         System.out.println("Where in California is Silicon Valley located?");
         System.out.println("A: San Francisco    B: Santa Cruz     C: Pasadena");
         answerIsA(correctThird,incorrectThird);
@@ -123,19 +123,19 @@ public class Questions {
         String incorrectThird = ("Incorrect, Phoenix is the capital of Arizona.");
         
         // Spørgsmål 1
-        System.out.println("\nFirst Question:");
+        System.out.println("\nFirst Question:\n---------------");
         System.out.println("Which state is to the north of Arizona?");
         System.out.println("A: Idaho   B: Utah   C: Florida ");
         answerIsB(correctFirst,incorrectFirst);
         
         // Spørgsmål 2
-        System.out.println("\n\nSecond Question");
+        System.out.println("\n\nSecond Question\n----------------");
         System.out.println("Which river seperates Arizona from California and Nevada?");
         System.out.println("A: Salt River   B: Rio Grande   C: Colorado River");
         answerIsC(correctSecond, incorrectSecond);
         
         // Spørgsmål 3
-        System.out.println("\n\nThird Question");
+        System.out.println("\n\nThird Question\n---------------");
         System.out.println("Which is the capital of Arizona?");
         System.out.println("A: Flagstaff    B: Tucson   C: Phoenix");
         answerIsC(correctThird, incorrectThird);
@@ -151,19 +151,19 @@ public class Questions {
         String incorrectThird = ("Wrooong! The largest city in Idaho is Boise!");
         
         // Spørgsmål 1
-        System.out.println("\nFirst Question:");
+        System.out.println("\nFirst Question:\n---------------");
         System.out.println("Idaho is the ____ largest state in the country ");
         System.out.println("A: 46th B: 14th C: 4");
         answerIsB(correctFirst,incorrectFirst);
         
         // Spørgsmål 2
-        System.out.println("\n\nSecond Question");
+        System.out.println("\n\nSecond Question\n----------------");
         System.out.println("How many states border Idaho?");
         System.out.println("A: 2    B: 4    C: 6");
         answerIsC(correctSecond, incorrectSecond);
         
         // Spørgsmål 3
-        System.out.println("\n\nThird Question");
+        System.out.println("\n\nThird Question\n---------------");
         System.out.println("What is the largest city in Idaho?");
         System.out.println("A: Salt Lake City B: Caldwell   C: Boise");
         answerIsC(correctThird, incorrectThird);
@@ -178,19 +178,19 @@ public class Questions {
         String incorrectThird = ("Nope, the correct answer is - All for our country!");
         
         // Spørgsmål 1
-        System.out.println("\nFirst Question:");
+        System.out.println("\nFirst Question:\n---------------");
         System.out.println("Which of these is a nickname for Nevada?");
         System.out.println("A: The Centennial State B: The Battle Born State    C: The Gem State");
         answerIsB(correctFirst,incorrectFirst);
         
         // Spørgsmål 2
-        System.out.println("\n\nSecond Question");
+        System.out.println("\n\nSecond Question\n----------------");
         System.out.println("What is the capital of Nevada?");
         System.out.println("A: Reno B: Las Vegas    C: Carson City");
         answerIsC(correctSecond, incorrectSecond);
         
         // Spørgsmål 3
-        System.out.println("\n\nThird Question");
+        System.out.println("\n\nThird Question\n---------------");
         System.out.println("What is the motto of Nevada?");
         System.out.println("A: Willing and able B: Liberty and union, now and forever, one and inseparable  C: All for our country");
         answerIsC(correctThird, incorrectThird);
@@ -205,19 +205,19 @@ public class Questions {
         String incorrectThird = ("Wrong, Snake River is one of the major rivers in Oregon.");
         
         // Spørgsmål 1
-        System.out.println("\nFirst Question:");
+        System.out.println("\nFirst Question:\n---------------");
         System.out.println("What is the capital of Oregon?");
         System.out.println("A: Oregon City  B: Salem    C: Las Vegas ");
         answerIsB(correctFirst,incorrectFirst);
         
         // Spørgsmål 2
-        System.out.println("\n\nSecond Question");
+        System.out.println("\n\nSecond Question\n----------------");
         System.out.println("Oregons geography can be divided into how many areas?");
         System.out.println("A: 6    B: 15   C: 304");
         answerIsA(correctSecond, incorrectSecond);
         
         // Spørgsmål 3
-        System.out.println("\n\nThird Question");
+        System.out.println("\n\nThird Question\n---------------");
         System.out.println("What major river can be found in Oregon?");
         System.out.println("A: Snake River  B: The Great Fall   C: Upwood River ");
         answerIsA(correctThird, incorrectThird);
@@ -233,19 +233,19 @@ public class Questions {
         String incorrectThird = ("rigtig svar 3");
         
         // Spørgsmål 1
-        System.out.println("\nFirst Question:");
+        System.out.println("\nFirst Question:\n---------------");
         System.out.println("spørgsmaal 1");
         System.out.println("svarmulighed 1 ");
         answerIsB(correctFirst,incorrectFirst);
         
         // Spørgsmål 2
-        System.out.println("\n\nSecond Question");
+        System.out.println("\n\nSecond Question\n----------------");
         System.out.println("spørgsmaal 2");
         System.out.println("svarmulighed 2");
         answerIsC(correctSecond, incorrectSecond);
         
         // Spørgsmål 3
-        System.out.println("\n\nThird Question");
+        System.out.println("\n\nThird Question\n---------------");
         System.out.println("spørgsmaal 3");
         System.out.println("svarmulighed 3");
         answerIsC(correctThird, incorrectThird); 
@@ -260,30 +260,30 @@ public class Questions {
         String incorrectThird = ("rigtig svar 3");
         
         // Spørgsmål 1
-        System.out.println("\nFirst Question:");
+        System.out.println("\nFirst Question:\n---------------");
         System.out.println("spørgsmaal 1");
         System.out.println("svarmulighed 1 ");
         answerIsB(correctFirst,incorrectFirst);
         
         // Spørgsmål 2
-        System.out.println("\n\nSecond Question");
+        System.out.println("\n\nSecond Question\n----------------");
         System.out.println("spørgsmaal 2");
         System.out.println("svarmulighed 2");
         answerIsC(correctSecond, incorrectSecond);
         
         // Spørgsmål 3
-        System.out.println("\n\nThird Question");
+        System.out.println("\n\nThird Question\n---------------");
         System.out.println("spørgsmaal 3");
         System.out.println("svarmulighed 3");
         answerIsC(correctThird, incorrectThird);
         
-        System.out.println("\n\nSecond Question:");
+        System.out.println("\n\nSecond Question:\n----------------");
         System.out.println("Which of these three cities is not located in Califoirnia");
         System.out.println("A: San Diego    B: Salt Lake City   C: San Francisco");
         
         answerIsB(correctSecond, incorrectSecond);
         
-        System.out.println("\n\nThird Question:");
+        System.out.println("\n\nThird Question:\n---------------");
         System.out.println("Where in California is Silicon Valley located?");
         System.out.println("A: San Francisco    B: placeholder     C: placeholder");
         answerIsA(correctThird,incorrectThird);
