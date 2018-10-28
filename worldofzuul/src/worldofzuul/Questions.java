@@ -225,69 +225,58 @@ public class Questions {
     
     public void utahQuestions(){
         // Korrekte og inkorrekt svar tekst 
-        String correctFirst = ("rigtig svar 1");
-        String incorrectFirst = ("forkert svar 1 ");
-        String correctSecond =("rigtig svar 2");
-        String incorrectSecond = ("forkert svar 2");
-        String correctThird = ("rigtig svar 3");
-        String incorrectThird = ("rigtig svar 3");
+        String correctFirst = ("Correct, Salt Lake City is the capital of Utah!");
+        String incorrectFirst = ("Wrooong, the answer is Salt Lake City!");
+        String correctSecond =("Correct, Utah is the 13th largest state in the US");
+        String incorrectSecond = ("Incorrect, Utah is 13th largest state in the US");
+        String correctThird = ("Correct, Lake Powell is found in Utah");
+        String incorrectThird = ("Incorrect, the correct answer is Lake Powell");
         
         // Spørgsmål 1
         System.out.println("\nFirst Question:\n---------------");
-        System.out.println("spørgsmaal 1");
-        System.out.println("svarmulighed 1 ");
-        answerIsB(correctFirst,incorrectFirst);
+        System.out.println("What is the capital of Utah?");
+        System.out.println("A: Salt Lake City   B: California   C: Utah City");
+        answerIsA(correctFirst,incorrectFirst);
         
         // Spørgsmål 2
         System.out.println("\n\nSecond Question\n----------------");
-        System.out.println("spørgsmaal 2");
-        System.out.println("svarmulighed 2");
+        System.out.println("Utah is the ____ largest state in the US");
+        System.out.println("A: 23th B: 42th C: 13th");
         answerIsC(correctSecond, incorrectSecond);
         
         // Spørgsmål 3
         System.out.println("\n\nThird Question\n---------------");
-        System.out.println("spørgsmaal 3");
-        System.out.println("svarmulighed 3");
-        answerIsC(correctThird, incorrectThird); 
+        System.out.println("What major lake can be found in Utah?");
+        System.out.println("A: Lake Powell  B: Lake Erie    C: Lake Pleasant");
+        answerIsA(correctThird, incorrectThird); 
     }
     public void washingtonQuestions() {
         // Korrekte og inkorrekt svar tekst 
-        String correctFirst = ("rigtig svar 1");
-        String incorrectFirst = ("forkert svar 1 ");
-        String correctSecond =("rigtig svar 2");
-        String incorrectSecond = ("forkert svar 2");
-        String correctThird = ("rigtig svar 3");
-        String incorrectThird = ("rigtig svar 3");
+        String correctFirst = ("Correct, Washington is named after former president George Washington");
+        String incorrectFirst = ("Incorrect, Washington is named after former president George Washington!");
+        String correctSecond =("Correct, and with a population of ~730.000 people");
+        String incorrectSecond = ("Incorrect, the correct answer is Seattle");
+        String correctThird = ("Correct, there is about 7.4 million people in Washington");
+        String incorrectThird = ("Wrong, there is about 7.4 million people in Washington");
         
         // Spørgsmål 1
         System.out.println("\nFirst Question:\n---------------");
-        System.out.println("spørgsmaal 1");
-        System.out.println("svarmulighed 1 ");
-        answerIsB(correctFirst,incorrectFirst);
+        System.out.println("The state of Washington is the only state to be named after _____");
+        System.out.println("A: Another state in the US  B: An animal    C: A United States president ");
+        answerIsC(correctFirst,incorrectFirst);
         
         // Spørgsmål 2
         System.out.println("\n\nSecond Question\n----------------");
-        System.out.println("spørgsmaal 2");
-        System.out.println("svarmulighed 2");
+        System.out.println("What is the largest city of Washington");
+        System.out.println("A: Olympia  B: Tacoma   C: Seattle");
         answerIsC(correctSecond, incorrectSecond);
         
         // Spørgsmål 3
         System.out.println("\n\nThird Question\n---------------");
-        System.out.println("spørgsmaal 3");
-        System.out.println("svarmulighed 3");
-        answerIsC(correctThird, incorrectThird);
-        
-        System.out.println("\n\nSecond Question:\n----------------");
-        System.out.println("Which of these three cities is not located in Califoirnia");
-        System.out.println("A: San Diego    B: Salt Lake City   C: San Francisco");
-        
-        answerIsB(correctSecond, incorrectSecond);
-        
-        System.out.println("\n\nThird Question:\n---------------");
-        System.out.println("Where in California is Silicon Valley located?");
-        System.out.println("A: San Francisco    B: placeholder     C: placeholder");
-        answerIsA(correctThird,incorrectThird);
-                     
+        System.out.println("What is the population of Washington");
+        System.out.println("A: ~7.4 Million B: ~15 Million  C: ~17 Million");
+        answerIsA(correctThird, incorrectThird);
+                            
     }  
     public int getPoints(){
         return gamepoints;
