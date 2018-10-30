@@ -8,9 +8,13 @@ public class Questions {
     //Attributes
     private String answer;
     public int gamepoints;
-      
+    
+    
+    
     //Scanner objekt
     private Scanner readAnswer;
+ 
+    
     
     public Questions(){
         
@@ -36,7 +40,6 @@ public class Questions {
         }
 
       // Ubrugelig linje for at undgå return fejl - spørg Besnik for bedre implementation
-
         return false;
     }
     
@@ -60,7 +63,6 @@ public class Questions {
         }
 
        // Ubrugelig linje for at undgå return fejl - spørg Besnik for bedre implementation
-
         return false;
     }
     
@@ -96,8 +98,9 @@ public class Questions {
         // Spørgsmål 1
         System.out.println("\nFirst Question:\n---------------");
         System.out.println("How high is California ranked in population size?");
-        System.out.println("A: First    B: Third    C: Eight\n");
+        System.out.println("A: 1st    B: 3rd    C: 8th\n");
         answerIsA(correctFirst,incorrectFirst);
+        
 
         
         // Spørgsmål 2
@@ -153,7 +156,7 @@ public class Questions {
         // Spørgsmål 1
         System.out.println("\nFirst Question:\n---------------");
         System.out.println("Idaho is the ____ largest state in the country ");
-        System.out.println("A: 46th B: 14th C: 4");
+        System.out.println("A: 46th B: 14th C: 4th");
         answerIsB(correctFirst,incorrectFirst);
         
         // Spørgsmål 2

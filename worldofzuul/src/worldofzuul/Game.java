@@ -100,7 +100,7 @@ public class Game
     {
         System.out.println();
         System.out.println("Welcome to America, " + name + "!");
-        draw.america();                 
+        draw.america();            
         System.out.println("Your goal in this game, is to beat Trump in the presidential election.");
         System.out.println("Type '" + CommandWord.HELP + "' if you need help at anytime.");
         System.out.println();
