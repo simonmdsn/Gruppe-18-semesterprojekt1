@@ -105,7 +105,7 @@ public class Game
         System.out.println("Your goal in this game, is to beat Trump in the presidential election.");
         System.out.println("Type '" + CommandWord.HELP + "' if you need help at anytime.");
         System.out.println();
-        System.out.println(currentRoom.getLongDescription());
+        System.out.println("You are in " + currentRoom.getShortDescription());
     }
 
     private boolean processCommand(Command command) 
