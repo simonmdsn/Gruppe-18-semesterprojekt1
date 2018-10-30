@@ -18,7 +18,7 @@ public class America {
     }
     
     public void america() {
-        String message = "                                                                                                " +
+        String message = "                                                                                                \n" +
         "     o:`:dys+:-`                                                                                    \n" +
         "     dMMNMMMMMMMNmhyo+/-.`                                                                    .:`   \n" +
         "    `mMMMMMMMMMMMMMMMMMMMMNmdhyso++/:---..```       -                                        oMMm   \n" +
@@ -52,7 +52,7 @@ public class America {
         "                                            `/oo                                   ::               \n" +
         "                                                                                                    \n" +
         "                                                                                                    \n";
-        slowPrint(message,1);
+        slowPrint(message,0);
     }
         
     
