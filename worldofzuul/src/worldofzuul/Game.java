@@ -173,6 +173,8 @@ public class Game
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("You are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString());
+        } else if (currentRoom == arizona && Questions.arizona == 1){
+            System.out.println(currentRoom.getExitString());
         }
         
         
@@ -182,6 +184,8 @@ public class Game
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
+        } else if (currentRoom == california && Questions.california == 1){
+            System.out.println(currentRoom.getExitString());
         }
        
        
@@ -191,6 +195,8 @@ public class Game
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
+        } else if (currentRoom == idaho && Questions.idaho == 1){
+            System.out.println(currentRoom.getExitString());
         }
        
         
@@ -200,7 +206,9 @@ public class Game
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
-        }    
+        } else if (currentRoom == nevada && Questions.nevada == 1){
+            System.out.println(currentRoom.getExitString());
+        }   
         
         
         if(currentRoom == oregon && Questions.oregon == 0){
@@ -209,6 +217,8 @@ public class Game
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
+        } else if (currentRoom == oregon && Questions.oregon == 1){
+            System.out.println(currentRoom.getExitString());
         }
         
 
@@ -218,14 +228,19 @@ public class Game
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
+        } else if (currentRoom == utah && Questions.utah == 1){
+            System.out.println(currentRoom.getExitString());
         }
          
         if (currentRoom == washington && Questions.washington == 0){
             currentRoom.getShortDescription();
             questions.washingtonQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
-            System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());            System.out.println(currentRoom.getExitString()); 
-        } 
+            System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());            
+            System.out.println(currentRoom.getExitString()); 
+        } else if (currentRoom == washington && Questions.washington == 1){
+            System.out.println(currentRoom.getExitString());
+        }
        
 }
 
