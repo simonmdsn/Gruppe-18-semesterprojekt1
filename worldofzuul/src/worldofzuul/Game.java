@@ -83,6 +83,7 @@ public class Game
         roomController();
                 
         boolean finished = false;
+        
         while (! finished) {
             Command command = parser.getCommand();
             finished = processCommand(command);
@@ -158,56 +159,75 @@ public class Game
             currentRoom = nextRoom;
             System.out.println(currentRoom.getLongDescription());
             roomController();
+            currentRoom.getExitString();
         }
     }
    
+    
+    
+   
     private void roomController(){
-        if (currentRoom == arizona){
+        if (currentRoom == arizona && Questions.arizona == 0){
+            currentRoom.getLongDescription();
             questions.arizonaQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("You are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString());
         }
-        if (currentRoom == california) {
+        
+        
+        if (currentRoom == california && Questions.california == 0) {
+            currentRoom.getLongDescription();
             questions.californiaQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         }
-        if (currentRoom == idaho){
+       
+       
+        if (currentRoom == idaho && Questions.idaho == 0){
+            currentRoom.getLongDescription();
             questions.idahoQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         }
-        if(currentRoom == nevada){
+       
+        
+        if(currentRoom == nevada && Questions.nevada == 0){
+            currentRoom.getLongDescription();
             questions.nevadaQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         }    
-        if(currentRoom == oregon){
+        
+        
+        if(currentRoom == oregon && Questions.oregon == 0){
+            currentRoom.getLongDescription();           
             questions.oregonQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         }
+        
 
-        if (currentRoom == utah){
+        if (currentRoom == utah && Questions.utah == 0){
+            currentRoom.getLongDescription();
             questions.utahQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         }
-        if (currentRoom == washington){
+         
+        if (currentRoom == washington && Questions.washington == 0){
+            currentRoom.getLongDescription();
             questions.washingtonQuestions();
-
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
-            System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
-            System.out.println(currentRoom.getExitString()); 
-        }  
-          
-    }
+            System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());            System.out.println(currentRoom.getExitString()); 
+        } 
+       
+}
 
     private boolean quit(Command command) 
     {

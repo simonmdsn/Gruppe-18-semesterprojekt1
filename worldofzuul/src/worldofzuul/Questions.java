@@ -4,16 +4,22 @@ import java.util.Scanner;
 
 public class Questions {
     
-    
     //Attributes
     private String answer;
     public int gamepoints;
     
+    static int california;
+    static int arizona;
+    static int idaho;
+    static int nevada;
+    static int oregon;
+    static int utah;
+    static int washington;
     
     
     //Scanner objekt
     private Scanner readAnswer;
- 
+    
     
     
     public Questions(){
@@ -88,6 +94,7 @@ public class Questions {
         return false;
     }
         public void californiaQuestions(){
+        
         String correctFirst = ("Correct, California is ranked 1st in population size in the USA");
         String incorrectFirst = ("Incorrect, the answer is California is ranked first.");
         String correctSecond = ("Correct, Salt Lake City is located in Utah");
@@ -101,8 +108,6 @@ public class Questions {
         System.out.println("A: 1st    B: 3rd    C: 8th\n");
         answerIsA(correctFirst,incorrectFirst);
         
-
-        
         // Spørgsmål 2
         System.out.println("\n\nSecond Question:\n----------------");
         System.out.println("Which of these three cities is not located in Califoirnia");
@@ -114,6 +119,7 @@ public class Questions {
         System.out.println("Where in California is Silicon Valley located?");
         System.out.println("A: San Francisco    B: Santa Cruz     C: Pasadena");
         answerIsA(correctThird,incorrectThird);
+        california++;
         }
     
     public void arizonaQuestions() {
@@ -142,6 +148,7 @@ public class Questions {
         System.out.println("Which is the capital of Arizona?");
         System.out.println("A: Flagstaff    B: Tucson   C: Phoenix");
         answerIsC(correctThird, incorrectThird);
+        arizona++;
     }
     
     public void idahoQuestions(){
@@ -169,6 +176,7 @@ public class Questions {
         System.out.println("\n\nThird Question\n---------------");
         System.out.println("What is the largest city in Idaho?");
         System.out.println("A: Salt Lake City B: Caldwell   C: Boise");
+        idaho++;
         answerIsC(correctThird, incorrectThird);
     }
     public void nevadaQuestions() {
@@ -197,6 +205,7 @@ public class Questions {
         System.out.println("What is the motto of Nevada?");
         System.out.println("A: Willing and able B: Liberty and union, now and forever, one and inseparable  C: All for our country");
         answerIsC(correctThird, incorrectThird);
+        nevada++;
     }
     public void oregonQuestions() {
         // Korrekte og inkorrekt svar tekst 
@@ -224,6 +233,7 @@ public class Questions {
         System.out.println("What major river can be found in Oregon?");
         System.out.println("A: Snake River  B: The Great Fall   C: Upwood River ");
         answerIsA(correctThird, incorrectThird);
+        oregon++;
     }
     
     public void utahQuestions(){
@@ -252,6 +262,7 @@ public class Questions {
         System.out.println("What major lake can be found in Utah?");
         System.out.println("A: Lake Powell  B: Lake Erie    C: Lake Pleasant");
         answerIsA(correctThird, incorrectThird); 
+        utah++;
     }
     public void washingtonQuestions() {
         // Korrekte og inkorrekt svar tekst 
@@ -279,7 +290,7 @@ public class Questions {
         System.out.println("What is the population of Washington");
         System.out.println("A: ~7.4 Million B: ~15 Million  C: ~17 Million");
         answerIsA(correctThird, incorrectThird);
-                            
+        washington++;                            
     }  
     public int getPoints(){
         return gamepoints;
