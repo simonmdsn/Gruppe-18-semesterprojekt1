@@ -157,7 +157,7 @@ public class Game
         else {
             
             currentRoom = nextRoom;
-            System.out.println(currentRoom.getLongDescription());
+            System.out.println("You are in " + currentRoom.getShortDescription());
             roomController();
             currentRoom.getExitString();
         }
@@ -168,7 +168,7 @@ public class Game
    
     private void roomController(){
         if (currentRoom == arizona && Questions.arizona == 0){
-            currentRoom.getLongDescription();
+            currentRoom.getShortDescription();
             questions.arizonaQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("You are now leaving " + currentRoom.getShortDescription());
@@ -177,7 +177,7 @@ public class Game
         
         
         if (currentRoom == california && Questions.california == 0) {
-            currentRoom.getLongDescription();
+            currentRoom.getShortDescription();
             questions.californiaQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
@@ -186,7 +186,7 @@ public class Game
        
        
         if (currentRoom == idaho && Questions.idaho == 0){
-            currentRoom.getLongDescription();
+            currentRoom.getShortDescription();
             questions.idahoQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
@@ -195,7 +195,7 @@ public class Game
        
         
         if(currentRoom == nevada && Questions.nevada == 0){
-            currentRoom.getLongDescription();
+            currentRoom.getShortDescription();
             questions.nevadaQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
@@ -204,7 +204,7 @@ public class Game
         
         
         if(currentRoom == oregon && Questions.oregon == 0){
-            currentRoom.getLongDescription();           
+            currentRoom.getShortDescription();           
             questions.oregonQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
@@ -213,7 +213,7 @@ public class Game
         
 
         if (currentRoom == utah && Questions.utah == 0){
-            currentRoom.getLongDescription();
+            currentRoom.getShortDescription();
             questions.utahQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
@@ -221,7 +221,7 @@ public class Game
         }
          
         if (currentRoom == washington && Questions.washington == 0){
-            currentRoom.getLongDescription();
+            currentRoom.getShortDescription();
             questions.washingtonQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());            System.out.println(currentRoom.getExitString()); 
