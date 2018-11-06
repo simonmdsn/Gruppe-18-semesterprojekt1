@@ -11,7 +11,7 @@ public class Game
     private Parser parser;
     public Room currentRoom;
     private Scanner s = new Scanner(System.in);
-    private String name;
+    protected static String name;
     
     //Objects
     private America draw = new America();
@@ -85,12 +85,13 @@ public class Game
         boolean finished = false;
         
         while (! finished) {
-            Command command = parser.getCommand();
-            finished = processCommand(command);
+            
+                Command command = parser.getCommand();
+                finished = processCommand(command);
+            
         }
         System.out.println("Thank you for playing.  Good bye.");
     }
-
     private void setPlayerName()
     {
         System.out.print("Choose your name: ");
@@ -99,11 +100,10 @@ public class Game
     
     private void printWelcome()
     {
-        System.out.println();
-        System.out.println("Welcome to America, " + name + "!");
+        System.out.println("\nWelcome to America, "+ Game.name + "!");
         draw.america();            
         System.out.println("Your goal in this game, is to beat Trump in the presidential election.");
-        System.out.println("Type '" + CommandWord.HELP + "' if you need help at anytime.");
+        System.out.println("Type '" + CommandWord.HELP + "' if you need help.");
         System.out.println();
         System.out.println("You are in " + currentRoom.getShortDescription());
     }
@@ -128,14 +128,17 @@ public class Game
         else if (commandWord == CommandWord.QUIT) {
             wantToQuit = quit(command);
         }
+        else if (commandWord == CommandWord.DIRECTIONS) {
+        System.out.println(currentRoom.getExitString());
+        }
+        else if (commandWord == CommandWord.GETPOINTS) {
+        System.out.println("You have obtained " + Questions.gamepoints + ".");
+        }    
         return wantToQuit;
     }
 
     private void printHelp() 
     {
-        System.out.println("You are lost. You are alone. You wander");
-        System.out.println("around at the university.");
-        System.out.println();
         System.out.println("Your command words are:");
         parser.showCommands();
     }
@@ -165,10 +168,10 @@ public class Game
    
     
     
+    
    
     private void roomController(){
         if (currentRoom == arizona && Questions.arizona == 0){
-            currentRoom.getShortDescription();
             questions.arizonaQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("You are now leaving " + currentRoom.getShortDescription());
@@ -179,7 +182,6 @@ public class Game
         
         
         if (currentRoom == california && Questions.california == 0) {
-            currentRoom.getShortDescription();
             questions.californiaQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
@@ -190,7 +192,6 @@ public class Game
        
        
         if (currentRoom == idaho && Questions.idaho == 0){
-            currentRoom.getShortDescription();
             questions.idahoQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
@@ -201,7 +202,6 @@ public class Game
        
         
         if(currentRoom == nevada && Questions.nevada == 0){
-            currentRoom.getShortDescription();
             questions.nevadaQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
@@ -211,8 +211,7 @@ public class Game
         }   
         
         
-        if(currentRoom == oregon && Questions.oregon == 0){
-            currentRoom.getShortDescription();           
+        if(currentRoom == oregon && Questions.oregon == 0){       
             questions.oregonQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
@@ -223,7 +222,6 @@ public class Game
         
 
         if (currentRoom == utah && Questions.utah == 0){
-            currentRoom.getShortDescription();
             questions.utahQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
@@ -233,7 +231,6 @@ public class Game
         }
          
         if (currentRoom == washington && Questions.washington == 0){
-            currentRoom.getShortDescription();
             questions.washingtonQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());            
