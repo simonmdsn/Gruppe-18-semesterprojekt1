@@ -292,7 +292,7 @@ public class Questions {
         answerIsA(correctThird, incorrectThird);
         washington++;                            
     }  
-    public int getPoints(){
+    public static int getPoints(){
         return gamepoints;
     }
 }

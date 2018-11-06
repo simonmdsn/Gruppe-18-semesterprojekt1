@@ -86,11 +86,15 @@ public class Game
         
         while (! finished) {
             
+        if (Questions.getPoints() >= 3){
+                finished = true;
+        } else {
                 Command command = parser.getCommand();
                 finished = processCommand(command);
-            
         }
+            
         System.out.println("Thank you for playing.  Good bye.");
+    }
     }
     private void setPlayerName()
     {
