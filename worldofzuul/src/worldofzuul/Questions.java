@@ -6,15 +6,16 @@ public class Questions {
     
     //Attributes
     private String answer;
-    public static int gamepoints;
+    public int gamepoints;
     
-    static int california;
-    static int arizona;
-    static int idaho;
-    static int nevada;
-    static int oregon;
-    static int utah;
-    static int washington;
+    protected int california;
+    protected int arizona;
+    protected int idaho;
+    protected int nevada;
+    protected int oregon;
+    protected int utah;
+    protected int washington;
+    
     
     
     //Scanner objekt
@@ -22,9 +23,7 @@ public class Questions {
     
     
     
-    public Questions(){
-        
-    }
+    public Questions(){}
     
     private boolean answerIsA(String correct, String incorrect) {
         readAnswer = new Scanner(System.in);
@@ -103,9 +102,13 @@ public class Questions {
         String incorrectThird = ("Incorrect, Silicon Valley is located in San Fransisco");
         
         // Spørgsmål 1
-        System.out.println("\nFirst Question:\n---------------");
-        System.out.println("How high is California ranked in population size?");
-        System.out.println("A: 1st    B: 3rd    C: 8th\n");
+        String msg1 = "\nFirst Question:\n---------------\n"
+                    + "How high is California ranked in population size?\n"
+                    + "A: 1st    B: 3rd    C: 8th\n";
+        America.slowPrint(msg1, 30); 
+        //System.out.println("\nFirst Question:\n---------------");
+        //System.out.println("How high is California ranked in population size?");
+        //System.out.println("A: 1st    B: 3rd    C: 8th\n");
         answerIsA(correctFirst,incorrectFirst);
         
         // Spørgsmål 2
@@ -176,8 +179,8 @@ public class Questions {
         System.out.println("\n\nThird Question\n---------------");
         System.out.println("What is the largest city in Idaho?");
         System.out.println("A: Salt Lake City B: Caldwell   C: Boise");
-        idaho++;
         answerIsC(correctThird, incorrectThird);
+        idaho++;
     }
     public void nevadaQuestions() {
         // Korrekte og inkorrekt svar tekst 
@@ -292,7 +295,12 @@ public class Questions {
         answerIsA(correctThird, incorrectThird);
         washington++;                            
     }  
-    public static int getPoints(){
+    public int getPoints(){
         return gamepoints;
+    }
+    
+    public int getStateStatus() {
+        int statestatus;
+        return statestatus = california + arizona + idaho + nevada + oregon + utah + washington;
     }
 }

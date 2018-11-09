@@ -31,15 +31,18 @@ public class Room
         return "You are in " + description + "\n" + getExitString();
     }
 
+    Questions questions = new Questions();
+    
     public String getExitString()
     {
         String returnString = "Available directons:";
         Set<String> keys = exits.keySet();
-        for(String exit : keys) {
+        for (String exit : keys) {
             returnString += " " + exit;
-        }
+            }
         return returnString;
     }
+    
 
     public Room getExit(String direction) 
     {
