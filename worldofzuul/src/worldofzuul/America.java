@@ -20,40 +20,37 @@ public class America {
     }
     
     public void america() {
-        String message = "                                                                                                \n" +
-        "     o:`:dys+:-`                                                                                    \n" +
-        "     dMMNMMMMMMMNmhyo+/-.`                                                                    .:`   \n" +
-        "    `mMMMMMMMMMMMMMMMMMMMMNmdhyso++/:---..```       -                                        oMMm   \n" +
-        "    +MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNyoo/.`.`                                dMMMy. \n" +
-        "   -NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo: `:`                          `/MMMMMd.\n" +
-        "  .mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMms//sNmy/+ydo/               -/+shmMMMMs-  \n" +
-        " -NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh+-`ss/`           .hMMMMMMMMh.    \n" +
-        " oMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm/ :dMMM:           +MMMMMMMMMo     \n" +
-        " hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM- hMMMmsh`     +yhmMMMMMMMMMMN+.   \n" +
-        "yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN` +MMMMMM:    :dMMMMMMMMMMmyo-     \n" +
-        "oMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM- -MMMMM+  -omMMMMMMMMMMM+         \n" +
-        "sMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNsNMMMMMNmNMMMMMMMMMMMMMM+        \n" +
-        " dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMdy.         \n" +
-        " +MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMhdM/          \n" +
-        " `NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMos.          \n" +
-        "  yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm+           \n" +
-        "   hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM+          \n" +
-        "   /sNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh:          \n" +
-        "     `oNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo-           \n" +
-        "        yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMms.             \n" +
-        "        .osyhNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm.               \n" +
-        "             `/yNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN+`                \n" +
-        "                 :sdNMMMMMNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN.                  \n" +
-        "                     .-:/+` `-hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy                   \n" +
-        "                               :hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmMMNMMMMMMMMMN.                  \n" +
-        "                                -MMMMdmMMMMMMMMMMMMMMMMMMMMMMMMN+.```   :o: -yNMMm-                 \n" +
-        "                                 .+y:  `oMMMMMMMMMMMNs:..-:.+dy+/`            :MMMM/                \n" +
-        "                                         oMMMMMMMNy/`                         .hMMMM/               \n" +
-        "                                          :mMMMm-                              .hMMMN.              \n" +
-        "                                           /MMMd                                 :yMM-              \n" +
-        "                                            `/oo                                   ::               \n" +
-        "                                                                                                    \n" +
-        "                                                                                                    \n";
+        String message = "  .-`::``````                                                                                     \n" +
+"    . .:-      `..-``````                                                                    ....   \n" +
+"    -.`-`       . -      ````````````.`````````````..                                        .  ``  \n" +
+"    -..         . .`                 .          -   ````.```..:```                          `.   `.`\n" +
+"   .` `````````-`  `.                .           .        .```.-  ``.`                    `.-   `...\n" +
+"  ``           `.  .-                .           .      `-..-.`..`.`-:-.             ```.. -.` .`   \n" +
+" .`           ..    `.   ``          -```````````:     `-     `.---`:-`.-.          -`   - . .-     \n" +
+" -            .      `.`.. ``````````.           .`     -       :: -.   -`.     `.`--    `.-`.-     \n" +
+" -```````     .         .           ``           ``     `..      - -   ...:    `:``       -``:--.   \n" +
+"-       -````..````     .           -```         ..```````..    `` -     `. ``-:.``````..`-.::      \n" +
+"-      .`         -`````.           .   ```````.`-`        `-.```- - ````:.--`-        `-`:.`       \n" +
+"-      -          .    `.`````      .             -        `.`   ..`` .   `   -        .. .         \n" +
+"`.`   `.          .        .  ``````.``.`          -```````-      .   `.      :..--:-`----`         \n" +
+" -:`   `.        .        `.           ..``````````-.`    `-      .    .    `-`  .-  :--`.          \n" +
+" ..      .`      .        .            .            ..      ..    -   .-.....   .`    .::`          \n" +
+"  .       `.    `.        .            .             .       -`  .-...`     -.`..    `-:-.          \n" +
+"  `-        .` `-`````````-```````     .             .        `-.:       `.-.`.``````` `-/`         \n" +
+"   .``       ...`        `.      ````:.-....`````````-`````````-.`.``````  `..         `:-`         \n" +
+"   `...`      `.         .           .     .         .       `-`         .--.```.``.  `.`           \n" +
+"    ` -..     .`         .           .     .          .      `-```-````-`  `..      -.`             \n" +
+"      ` .````..          .           .     ..`.`    ` .     `.    .    `.     ..   ..               \n" +
+"             ````       `.          ``         `...```-`    -     .     .`      --.                 \n" +
+"                ````    . `  ````   .                 `-````..    .      -      `-                  \n" +
+"                    ````.`.```.``````                  -    -     .  ````-   ``.-`                  \n" +
+"                               `.                      `.   .``-``-::-`.` `-.  ` -                  \n" +
+"                                 -   ```             ` ..` `` .-/` `     .`  ..   ..                \n" +
+"                                 ```.`  ..          `/`` ``....-.-             .   .`               \n" +
+"                                         `.     `-:.`                          :`   .`              \n" +
+"                                          `.   `/`                              .-   .              \n" +
+"                                           `.  `:                                 `.`-              \n" +
+"                                             ```:                                 `..`              \n";
         slowPrint(message,1);
     }
         
@@ -90,7 +87,7 @@ public class America {
 "                                          `.   `/`                              .-   .              \n" +
 "                                           `.  `:                                 `.`-              \n" +
 "                                             ```:                                 `..`              \n" +
-"Take a good look. Get a sense of the generel direction between the states.\n";
+"Take a good look. Get a sense of the general direction between the states.\n";
         slowPrint(map, 1);
     }
 
@@ -115,3 +112,37 @@ public class America {
  
     }
 }
+
+//        "     o:`:dys+:-`                                                                                    \n" +
+//        "     dMMNMMMMMMMNmhyo+/-.`                                                                    .:`   \n" +
+//        "    `mMMMMMMMMMMMMMMMMMMMMNmdhyso++/:---..```       -                                        oMMm   \n" +
+//        "    +MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNyoo/.`.`                                dMMMy. \n" +
+//        "   -NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo: `:`                          `/MMMMMd.\n" +
+//        "  .mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMms//sNmy/+ydo/               -/+shmMMMMs-  \n" +
+//        " -NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh+-`ss/`           .hMMMMMMMMh.    \n" +
+//        " oMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm/ :dMMM:           +MMMMMMMMMo     \n" +
+//        " hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM- hMMMmsh`     +yhmMMMMMMMMMMN+.   \n" +
+//        "yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN` +MMMMMM:    :dMMMMMMMMMMmyo-     \n" +
+//        "oMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM- -MMMMM+  -omMMMMMMMMMMM+         \n" +
+//        "sMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNsNMMMMMNmNMMMMMMMMMMMMMM+        \n" +
+//        " dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMdy.         \n" +
+//        " +MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMhdM/          \n" +
+//        " `NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMos.          \n" +
+//        "  yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm+           \n" +
+//        "   hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM+          \n" +
+//        "   /sNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh:          \n" +
+//        "     `oNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo-           \n" +
+//        "        yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMms.             \n" +
+//        "        .osyhNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm.               \n" +
+//        "             `/yNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN+`                \n" +
+//        "                 :sdNMMMMMNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN.                  \n" +
+//        "                     .-:/+` `-hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy                   \n" +
+//        "                               :hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmMMNMMMMMMMMMN.                  \n" +
+//        "                                -MMMMdmMMMMMMMMMMMMMMMMMMMMMMMMN+.```   :o: -yNMMm-                 \n" +
+//        "                                 .+y:  `oMMMMMMMMMMMNs:..-:.+dy+/`            :MMMM/                \n" +
+//        "                                         oMMMMMMMNy/`                         .hMMMM/               \n" +
+//        "                                          :mMMMm-                              .hMMMN.              \n" +
+//        "                                           /MMMd                                 :yMM-              \n" +
+//        "                                            `/oo                                   ::               \n" +
+//        "                                                                                                    \n" +
+//        "                                                                                                    \n";

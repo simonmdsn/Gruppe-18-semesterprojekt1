@@ -89,15 +89,28 @@ public class Game
                 System.out.println("You won " + name + "! Thank you for playing. Good bye");
                 System.exit(0);
         }    
-            
+           
         if (questions.getStateStatus() >= 7) {
-                System.out.println("You tried... But failed.");
+                System.out.println("You tried" + name + "... But failed.");
                 System.exit(0);
         }
+        
+        if (questions.washington == 1 && questions.gamepoints >= 6 && questions.idaho == 0 && currentRoom == washington)
+        {
+            System.out.println("\nYou're way ahead of Trump! Keep up the great work " + name +".");
+        }
+        
+         if (questions.idaho == 1 && questions.gamepoints >= 6 && questions.washington == 0 && currentRoom == idaho)
+        {
+            System.out.println("\nYou're way ahead of Trump! Keep up the great work " + name + ".");
+        }
+                 
+         
+        
             Command command = parser.getCommand();
             finished = processCommand(command);
         }
-        System.out.println("Thank you for playing.  Good bye.");
+        System.out.println("Thank you for playing " + name +". Good bye.");
     }
     
 
@@ -112,9 +125,13 @@ public class Game
         System.out.println("\nWelcome to America, " + Game.name + "!\n");
         draw.america(); 
         String message = "Your goal in this game, is to beat Trump in the presidential election.\n"
-                + "Type '" + CommandWord.HELP + "' if you need help.\n\n"
+                + "You'll do this by having superior knowledge about the geography of the states on the west coast.\n\n"
+                + "Whenever you reach a new travel destination, you can type '" + CommandWord.PLAY 
+                + "' to complete the questions about the state.\n"
+                + "Typing '" + CommandWord.HELP + "' will list all the available commands.\n\n"
                 + "You are in " + currentRoom.getShortDescription() + "\n";
-        draw.slowPrint(message,15);
+        draw.slowPrint(message,30);
+        printHelp();
     }
     
 //    private void printWelcome()
@@ -157,7 +174,7 @@ public class Game
         System.out.println(currentRoom.getExitString());
         }
         else if (commandWord == CommandWord.GETPOINTS) {
-        System.out.println("You have obtained " + questions.gamepoints + ".");
+        System.out.println("You have obtained " + questions.gamepoints + " points.");
         }    
         return wantToQuit;
     }
@@ -195,7 +212,7 @@ public class Game
         if (currentRoom == arizona && questions.arizona == 0){
             questions.arizonaQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
-            System.out.println("You are now leaving " + currentRoom.getShortDescription());
+            System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString());
         } else if (currentRoom == arizona && questions.arizona == 1){
             System.out.println(currentRoom.getExitString());

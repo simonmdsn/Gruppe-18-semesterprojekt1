@@ -102,13 +102,9 @@ public class Questions {
         String incorrectThird = ("Incorrect, Silicon Valley is located in San Fransisco");
         
         // Spørgsmål 1
-        String msg1 = "\nFirst Question:\n---------------\n"
-                    + "How high is California ranked in population size?\n"
-                    + "A: 1st    B: 3rd    C: 8th\n";
-        America.slowPrint(msg1, 30); 
-        //System.out.println("\nFirst Question:\n---------------");
-        //System.out.println("How high is California ranked in population size?");
-        //System.out.println("A: 1st    B: 3rd    C: 8th\n");
+        System.out.println("\nFirst Question:\n---------------");
+        System.out.println("How high is California ranked in population size?");
+        System.out.println("A: 1st    B: 3rd    C: 8th\n");
         answerIsA(correctFirst,incorrectFirst);
         
         // Spørgsmål 2
