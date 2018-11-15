@@ -1,4 +1,4 @@
-package worldofzuul;
+package geosimExtensions;
 
 import java.util.Scanner;
 
@@ -8,13 +8,13 @@ public class Questions {
     private String answer;
     public int gamepoints;
     
-    protected int california;
-    protected int arizona;
-    protected int idaho;
-    protected int nevada;
-    protected int oregon;
-    protected int utah;
-    protected int washington;
+    public int california;
+    public int arizona;
+    public int idaho;
+    public int nevada;
+    public int oregon;
+    public int utah;
+    public int washington;
     
     
     
@@ -30,6 +30,7 @@ public class Questions {
         
         boolean incorrectParameter = true;
         while(incorrectParameter) {
+            System.out.print(" ");
             String input = readAnswer.next();
             if(input.equals("a") || input.equals ("A")){
                 System.out.print(correct);
@@ -53,6 +54,7 @@ public class Questions {
         
         boolean incorrectParameter = true;
         while(incorrectParameter) {
+            System.out.print(" ");
             String input = readAnswer.next();
             if(input.equals("b") || input.equals ("B")){
                 System.out.print(correct);
@@ -76,6 +78,7 @@ public class Questions {
         
         boolean incorrectParameter = true;
         while(incorrectParameter) {
+            System.out.print(" ");
             String input = readAnswer.next();
             if(input.equals("c") || input.equals ("C")){
                 System.out.print(correct);
@@ -104,12 +107,12 @@ public class Questions {
         // Spørgsmål 1
         System.out.println("\nFirst Question:\n---------------");
         System.out.println("How high is California ranked in population size?");
-        System.out.println("A: 1st    B: 3rd    C: 8th\n");
+        System.out.println("A: 1st    B: 3rd    C: 8th");
         answerIsA(correctFirst,incorrectFirst);
         
         // Spørgsmål 2
         System.out.println("\n\nSecond Question:\n----------------");
-        System.out.println("Which of these three cities is not located in Califoirnia");
+        System.out.println("Which of these three cities are not located in California");
         System.out.println("A: San Diego    B: Salt Lake City   C: San Francisco");
         answerIsB(correctSecond, incorrectSecond);
         
@@ -124,7 +127,7 @@ public class Questions {
     public void arizonaQuestions() {
         // Korrekte og inkorrekt svar tekst 
         String correctFirst = ("Correct answer!");
-        String incorrectFirst = ("Incorrect, Utah is to the north of Arizona.");
+        String incorrectFirst = ("Incorrect, Utah is north of Arizona.");
         String correctSecond =("Correct, Colorado River seperates Arizona in this case.");
         String incorrectSecond = ("Incorrect, the answer is Colorado River.");
         String correctThird = ("Correct, Phoenix is the capital of Arizona!");
@@ -132,7 +135,7 @@ public class Questions {
         
         // Spørgsmål 1
         System.out.println("\nFirst Question:\n---------------");
-        System.out.println("Which state is to the north of Arizona?");
+        System.out.println("Which state is north of Arizona?");
         System.out.println("A: Idaho   B: Utah   C: Florida ");
         answerIsB(correctFirst,incorrectFirst);
         
@@ -144,7 +147,7 @@ public class Questions {
         
         // Spørgsmål 3
         System.out.println("\n\nThird Question\n---------------");
-        System.out.println("Which is the capital of Arizona?");
+        System.out.println("What is the capital of Arizona?");
         System.out.println("A: Flagstaff    B: Tucson   C: Phoenix");
         answerIsC(correctThird, incorrectThird);
         arizona++;
@@ -167,7 +170,7 @@ public class Questions {
         
         // Spørgsmål 2
         System.out.println("\n\nSecond Question\n----------------");
-        System.out.println("How many states border Idaho?");
+        System.out.println("How many state borders does Idaho have?");
         System.out.println("A: 2    B: 4    C: 6");
         answerIsC(correctSecond, incorrectSecond);
         

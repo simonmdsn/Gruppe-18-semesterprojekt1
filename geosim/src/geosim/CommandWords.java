@@ -1,5 +1,6 @@
-package worldofzuul;
+package geosim;
 import java.util.HashMap;
+import geosim.CommandWord;
 
 
 public class CommandWords
