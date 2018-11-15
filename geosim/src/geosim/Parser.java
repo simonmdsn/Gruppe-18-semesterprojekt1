@@ -1,4 +1,4 @@
-package worldofzuul;
+package geosim;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;

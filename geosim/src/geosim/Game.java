@@ -1,6 +1,8 @@
-package worldofzuul;
+package geosim;
 
 
+import geosimExtensions.America;
+import geosimExtensions.Questions;
 import java.util.Scanner; 
 
 
@@ -83,17 +85,9 @@ public class Game
                 
         boolean finished = false;
  
-        while (!finished) {
-        
-        if (questions.gamepoints >= 12) {
-                System.out.println("You won " + name + "! Thank you for playing. Good bye");
-                System.exit(0);
-        }    
+        while (!finished) { 
            
-        if (questions.getStateStatus() >= 7) {
-                System.out.println("You tried" + name + "... But failed.");
-                System.exit(0);
-        }
+        
         
         if (questions.washington == 1 && questions.gamepoints >= 6 && questions.idaho == 0 && currentRoom == washington)
         {
@@ -133,16 +127,7 @@ public class Game
         draw.slowPrint(message,30);
         printHelp();
     }
-    
-//    private void printWelcome()
-//    {
-//        System.out.println("\nWelcome to America, "+ name + "!");
-//        draw.america();            
-//        System.out.println("Your goal in this game, is to beat Trump in the presidential election.");
-//        System.out.println("Type '" + CommandWord.HELP + "' if you need help.");
-//        System.out.println();
-//        System.out.println("You are in " + currentRoom.getShortDescription());
-//    }
+   
 
     private boolean processCommand(Command command) 
     {
@@ -207,11 +192,24 @@ public class Game
         }
     }
    
+    private void checkFinish(){
+        if (questions.gamepoints >= 12) {
+                System.out.println("You won " + name + "! Thank you for playing. Good bye");
+                System.exit(0);
+        }
+        
+        if (questions.getStateStatus() == 7) {
+                System.out.println("You tried " + name + "... But failed.");
+                System.exit(0);
+        }
+          
+    }
     
     private void roomController(){
         if (currentRoom == arizona && questions.arizona == 0){
             questions.arizonaQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
+            checkFinish();
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString());
         } else if (currentRoom == arizona && questions.arizona == 1){
@@ -222,6 +220,7 @@ public class Game
         if (currentRoom == california && questions.california == 0) {
             questions.californiaQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
+            checkFinish();
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         } else if (currentRoom == california && questions.california == 1){
@@ -232,6 +231,7 @@ public class Game
         if (currentRoom == idaho && questions.idaho == 0){
             questions.idahoQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
+            checkFinish();
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         } else if (currentRoom == idaho && questions.idaho == 1){
@@ -242,6 +242,7 @@ public class Game
         if(currentRoom == nevada && questions.nevada == 0){
             questions.nevadaQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
+            checkFinish();
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         } else if (currentRoom == nevada && questions.nevada == 1){
@@ -252,6 +253,7 @@ public class Game
         if(currentRoom == oregon && questions.oregon == 0){       
             questions.oregonQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
+            checkFinish();
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         } else if (currentRoom == oregon && questions.oregon == 1){
@@ -262,6 +264,7 @@ public class Game
         if (currentRoom == utah && questions.utah == 0){
             questions.utahQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
+            checkFinish();
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());
             System.out.println(currentRoom.getExitString()); 
         } else if (currentRoom == utah && questions.utah == 1){
@@ -271,6 +274,7 @@ public class Game
         if (currentRoom == washington && questions.washington == 0){
             questions.washingtonQuestions();
             System.out.println("\n\nYou now have: " + questions.getPoints() + " points");
+            checkFinish();
             System.out.println("\nYou are now leaving " + currentRoom.getShortDescription());            
             System.out.println(currentRoom.getExitString()); 
         } else if (currentRoom == washington && questions.washington == 1){

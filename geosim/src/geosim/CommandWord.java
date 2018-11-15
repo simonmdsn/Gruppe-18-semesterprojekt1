@@ -1,4 +1,4 @@
-package worldofzuul;
+package geosim;
 
 public enum CommandWord
 {

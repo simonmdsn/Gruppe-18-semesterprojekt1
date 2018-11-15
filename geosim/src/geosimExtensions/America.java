@@ -1,6 +1,6 @@
-package worldofzuul;
+package geosimExtensions;
 
-import static worldofzuul.Game.name;
+
 
 
 
