@@ -24,18 +24,14 @@ import javafx.stage.Stage;
  *
  * @author simon
  */
-public class FXMLDocumentController implements Initializable {
+public class FXMLStartMenuController implements Initializable {
     
     private Label label;
     @FXML
     private Button startButton;
+    @FXML
+    private Button quitButton;
     
-    
-    
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -45,15 +41,19 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void handleStartButtonAction(ActionEvent event) throws IOException {
         
-        Parent tableViewParent = FXMLLoader.load(getClass().getResource("FXMLGame.fxml"));
-        Scene tableViewScene = new Scene(tableViewParent);
+        Parent game = FXMLLoader.load(getClass().getResource("FXMLGame.fxml"));
+        Scene gameScene = new Scene(game);
         
         //This line gets the Stage information
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         
-        window.setScene(tableViewScene);
+        window.setScene(gameScene);
         window.show();
         
+    }
+
+    @FXML
+    private void handleQuitButtonAction(ActionEvent event) {
     }
     
 }

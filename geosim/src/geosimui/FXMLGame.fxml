@@ -1,11 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1">
-    
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.FXMLGameController">
+   <children>
+      <Label layoutX="253.0" prefHeight="46.0" prefWidth="103.0" text="California">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="anchorPaneCaliforniaFirstQuestions" layoutX="84.0" layoutY="39.0" prefHeight="370.0" prefWidth="450.0">
+         <children>
+            <Label fx:id="caliFirstQuestionLabel" layoutX="179.0" layoutY="14.0" text="Question 1 " AnchorPane.leftAnchor="179.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="65.0" prefHeight="27.0" prefWidth="303.0" text="How high is California ranked in population size?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="caliFirstQuestionThirdButton" layoutX="187.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionThirdAnswerButton" prefWidth="75.0" text="First " />
+            <Button fx:id="caliFirstQuestionFirstButton" layoutX="187.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionFirstAnswerButton" prefWidth="75.0" text="Second" />
+            <Button fx:id="caliFirstQuestionSecondButton" layoutX="187.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionSecondAnswerButton" prefWidth="75.0" text="Fifth" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPaneCaliforniaSecondQuestions" disable="true" layoutX="84.0" layoutY="39.0" prefHeight="370.0" prefWidth="450.0" visible="false">
+         <children>
+            <Label fx:id="caliFirstQuestionLabel1" layoutX="179.0" layoutY="14.0" text="Question 2" AnchorPane.leftAnchor="179.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="65.0" prefHeight="27.0" prefWidth="303.0" text="How high is California ranked in population size?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="caliFirstQuestionThirdButton1" layoutX="187.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionThirdAnswerButton" prefWidth="75.0" text="First " />
+            <Button fx:id="caliFirstQuestionFirstButton1" layoutX="187.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionFirstAnswerButton" prefWidth="75.0" text="Second" />
+            <Button fx:id="caliFirstQuestionSecondButton1" layoutX="187.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionSecondAnswerButton" prefWidth="75.0" text="Fifth" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPaneCaliforniaThirdQuestions" disable="true" layoutX="84.0" layoutY="39.0" prefHeight="370.0" prefWidth="450.0" visible="false">
+         <children>
+            <Label fx:id="caliFirstQuestionLabel2" layoutX="179.0" layoutY="14.0" text="Question 1 " AnchorPane.leftAnchor="179.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="65.0" prefHeight="27.0" prefWidth="303.0" text="How high is California ranked in population size?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="caliFirstQuestionThirdButton2" layoutX="187.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionThirdAnswerButton" prefWidth="75.0" text="First " />
+            <Button fx:id="caliFirstQuestionFirstButton2" layoutX="187.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionFirstAnswerButton" prefWidth="75.0" text="Second" />
+            <Button fx:id="caliFirstQuestionSecondButton2" layoutX="187.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionSecondAnswerButton" prefWidth="75.0" text="Fifth" />
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
