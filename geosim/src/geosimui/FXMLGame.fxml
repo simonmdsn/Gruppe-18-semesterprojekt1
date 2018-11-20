@@ -24,9 +24,9 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Button fx:id="caliFirstQuestionThirdButton" layoutX="187.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionThirdAnswerButton" prefWidth="75.0" text="First " />
-            <Button fx:id="caliFirstQuestionFirstButton" layoutX="187.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionFirstAnswerButton" prefWidth="75.0" text="Second" />
-            <Button fx:id="caliFirstQuestionSecondButton" layoutX="187.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionSecondAnswerButton" prefWidth="75.0" text="Fifth" />
+            <Button fx:id="caliFirstA" layoutX="187.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliFirstA" prefWidth="75.0" text="First " />
+            <Button fx:id="caliFirstC" layoutX="187.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliFirstC" prefWidth="75.0" text="Second" />
+            <Button fx:id="caliFirstB" layoutX="187.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliFirstB" prefWidth="75.0" text="Fifth" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="anchorPaneCaliforniaSecondQuestions" disable="true" layoutX="84.0" layoutY="39.0" prefHeight="370.0" prefWidth="450.0" visible="false">
@@ -36,31 +36,31 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="73.0" layoutY="65.0" prefHeight="27.0" prefWidth="303.0" text="How high is California ranked in population size?">
+            <Label layoutX="73.0" layoutY="65.0" prefHeight="27.0" prefWidth="303.0" text="Which of these three cities are not located in California?">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Button fx:id="caliFirstQuestionThirdButton1" layoutX="187.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionThirdAnswerButton" prefWidth="75.0" text="First " />
-            <Button fx:id="caliFirstQuestionFirstButton1" layoutX="187.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionFirstAnswerButton" prefWidth="75.0" text="Second" />
-            <Button fx:id="caliFirstQuestionSecondButton1" layoutX="187.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionSecondAnswerButton" prefWidth="75.0" text="Fifth" />
+            <Button fx:id="caliSecondA" layoutX="187.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliSecondA" prefWidth="75.0" text="San Diego" />
+            <Button fx:id="caliSecondC" layoutX="187.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliSecondC" prefWidth="75.0" text="Salt Lake City" />
+            <Button fx:id="caliSecondB" layoutX="187.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliSecondB" prefWidth="75.0" text="San Francisco" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="anchorPaneCaliforniaThirdQuestions" disable="true" layoutX="84.0" layoutY="39.0" prefHeight="370.0" prefWidth="450.0" visible="false">
          <children>
-            <Label fx:id="caliFirstQuestionLabel2" layoutX="179.0" layoutY="14.0" text="Question 1 " AnchorPane.leftAnchor="179.0" AnchorPane.topAnchor="14.0">
+            <Label fx:id="caliFirstQuestionLabel2" layoutX="179.0" layoutY="14.0" text="Question 3" AnchorPane.leftAnchor="179.0" AnchorPane.topAnchor="14.0">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="73.0" layoutY="65.0" prefHeight="27.0" prefWidth="303.0" text="How high is California ranked in population size?">
+            <Label layoutX="73.0" layoutY="65.0" prefHeight="27.0" prefWidth="303.0" text="Where in California is Silicon Valley located?">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Button fx:id="caliFirstQuestionThirdButton2" layoutX="187.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionThirdAnswerButton" prefWidth="75.0" text="First " />
-            <Button fx:id="caliFirstQuestionFirstButton2" layoutX="187.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionFirstAnswerButton" prefWidth="75.0" text="Second" />
-            <Button fx:id="caliFirstQuestionSecondButton2" layoutX="187.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliFirstQuestionSecondAnswerButton" prefWidth="75.0" text="Fifth" />
+            <Button fx:id="caliThirdA" layoutX="187.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliThirdA" prefWidth="75.0" text="San Francisco" />
+            <Button fx:id="caliThirdC" layoutX="187.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliThirdC" prefWidth="75.0" text="Santa Cruz" />
+            <Button fx:id="caliThirdB" layoutX="187.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliThirdB" prefWidth="75.0" text="Pasadena" />
          </children>
       </AnchorPane>
    </children>

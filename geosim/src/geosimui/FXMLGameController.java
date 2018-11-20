@@ -22,28 +22,10 @@ import javafx.scene.layout.AnchorPane;
 public class FXMLGameController implements Initializable {
 
     @FXML
-    private Button caliFirstQuestionThirdButton;
-    @FXML
-    private Button caliFirstQuestionFirstButton;
-    @FXML
-    private Button caliFirstQuestionSecondButton;
-    @FXML
     private Label caliFirstQuestionLabel;
     private Button caliSecondQuestionFirstButton;
     @FXML
-    private Button caliFirstQuestionThirdButton1;
-    @FXML
-    private Button caliFirstQuestionFirstButton1;
-    @FXML
-    private Button caliFirstQuestionSecondButton1;
-    @FXML
     private Label caliFirstQuestionLabel2;
-    @FXML
-    private Button caliFirstQuestionThirdButton2;
-    @FXML
-    private Button caliFirstQuestionFirstButton2;
-    @FXML
-    private Button caliFirstQuestionSecondButton2;
     @FXML
     private AnchorPane anchorPaneCaliforniaFirstQuestions;
     @FXML
@@ -52,6 +34,24 @@ public class FXMLGameController implements Initializable {
     private AnchorPane anchorPaneCaliforniaThirdQuestions;
     @FXML
     private Label caliFirstQuestionLabel1;
+    @FXML
+    private Button caliFirstA;
+    @FXML
+    private Button caliFirstC;
+    @FXML
+    private Button caliFirstB;
+    @FXML
+    private Button caliSecondA;
+    @FXML
+    private Button caliSecondC;
+    @FXML
+    private Button caliSecondB;
+    @FXML
+    private Button caliThirdA;
+    @FXML
+    private Button caliThirdC;
+    @FXML
+    private Button caliThirdB;
 
     /**
      * Initializes the controller class.
@@ -61,18 +61,9 @@ public class FXMLGameController implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void handleCaliFirstQuestionFirstAnswerButton(ActionEvent event) {
-        anchorPaneCaliforniaFirstQuestions.setDisable(true);
-        anchorPaneCaliforniaFirstQuestions.setVisible(false);
-        
-        anchorPaneCaliforniaSecondQuestions.setDisable(false);
-        anchorPaneCaliforniaSecondQuestions.setVisible(true);
-        
-    }
 
     @FXML
-    private void handleCaliFirstQuestionThirdAnswerButton(ActionEvent event) {
+    private void handleCaliFirstA(ActionEvent event) {
         anchorPaneCaliforniaFirstQuestions.setDisable(true);
         anchorPaneCaliforniaFirstQuestions.setVisible(false);
         
@@ -81,12 +72,60 @@ public class FXMLGameController implements Initializable {
     }
 
     @FXML
-    private void handleCaliFirstQuestionSecondAnswerButton(ActionEvent event) {
+    private void handleCaliFirstC(ActionEvent event) {
         anchorPaneCaliforniaFirstQuestions.setDisable(true);
         anchorPaneCaliforniaFirstQuestions.setVisible(false);
         
         anchorPaneCaliforniaSecondQuestions.setDisable(false);
         anchorPaneCaliforniaSecondQuestions.setVisible(true);
+    }
+
+    @FXML
+    private void handleCaliFirstB(ActionEvent event) {
+        anchorPaneCaliforniaFirstQuestions.setDisable(true);
+        anchorPaneCaliforniaFirstQuestions.setVisible(false);
+        
+        anchorPaneCaliforniaSecondQuestions.setDisable(false);
+        anchorPaneCaliforniaSecondQuestions.setVisible(true);
+    }
+
+    @FXML
+    private void handleCaliSecondA(ActionEvent event) {
+        anchorPaneCaliforniaSecondQuestions.setDisable(true);
+        anchorPaneCaliforniaSecondQuestions.setVisible(false);
+        
+        anchorPaneCaliforniaThirdQuestions.setDisable(false);
+        anchorPaneCaliforniaThirdQuestions.setVisible(true);
+    }
+
+    @FXML
+    private void handleCaliSecondC(ActionEvent event) {
+        anchorPaneCaliforniaSecondQuestions.setDisable(true);
+        anchorPaneCaliforniaSecondQuestions.setVisible(false);
+        
+        anchorPaneCaliforniaThirdQuestions.setDisable(false);
+        anchorPaneCaliforniaThirdQuestions.setVisible(true);
+    }
+
+    @FXML
+    private void handleCaliSecondB(ActionEvent event) {
+        anchorPaneCaliforniaSecondQuestions.setDisable(true);
+        anchorPaneCaliforniaSecondQuestions.setVisible(false);
+        
+        anchorPaneCaliforniaThirdQuestions.setDisable(false);
+        anchorPaneCaliforniaThirdQuestions.setVisible(true);
+    }
+
+    @FXML
+    private void handleCaliThirdA(ActionEvent event) {
+    }
+
+    @FXML
+    private void handleCaliThirdC(ActionEvent event) {
+    }
+
+    @FXML
+    private void handleCaliThirdB(ActionEvent event) {
     }
 
     
