@@ -1,0 +1,1 @@
+to run the program go to geosim\dist and run the execute.bat file
