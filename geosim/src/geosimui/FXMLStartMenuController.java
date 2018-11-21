@@ -41,12 +41,13 @@ public class FXMLStartMenuController implements Initializable {
     @FXML
     private void handleStartButtonAction(ActionEvent event) throws IOException {
         
-        Parent game = FXMLLoader.load(getClass().getResource("FXMLGame.fxml"));
+        Parent game = FXMLLoader.load(getClass().getResource("FXMLCalifornia.fxml"));
         Scene gameScene = new Scene(game);
         
         //This line gets the Stage information
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         
+        window.setTitle("California"); 
         window.setScene(gameScene);
         window.show();
         

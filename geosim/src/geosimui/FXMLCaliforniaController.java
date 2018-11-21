@@ -19,7 +19,7 @@ import javafx.scene.layout.AnchorPane;
  *
  * @author simon
  */
-public class FXMLGameController implements Initializable {
+public class FXMLCaliforniaController implements Initializable {
 
     @FXML
     private Label caliFirstQuestionLabel;
@@ -69,6 +69,10 @@ public class FXMLGameController implements Initializable {
         
         anchorPaneCaliforniaSecondQuestions.setDisable(false);
         anchorPaneCaliforniaSecondQuestions.setVisible(true);
+        
+        
+        
+       
     }
 
     @FXML
