@@ -7,14 +7,14 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.FXMLCaliforniaController">
    <children>
-      <Label layoutX="253.0" prefHeight="46.0" prefWidth="103.0" text="California">
+      <Label layoutX="248.0" prefHeight="46.0" prefWidth="103.0" text="California">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
       <AnchorPane fx:id="anchorPaneCaliforniaFirstQuestions" layoutX="84.0" layoutY="39.0" prefHeight="370.0" prefWidth="450.0">
          <children>
-            <Label fx:id="caliFirstQuestionLabel" layoutX="179.0" layoutY="14.0" text="Question 1 " AnchorPane.leftAnchor="179.0" AnchorPane.topAnchor="14.0">
+            <Label fx:id="caliFirstQuestionLabel" layoutX="169.0" layoutY="14.0" text="Question 1 ">
                <font>
                   <Font size="18.0" />
                </font>
@@ -31,7 +31,7 @@
       </AnchorPane>
       <AnchorPane fx:id="anchorPaneCaliforniaSecondQuestions" disable="true" layoutX="84.0" layoutY="39.0" prefHeight="370.0" prefWidth="450.0" visible="false">
          <children>
-            <Label fx:id="caliFirstQuestionLabel1" layoutX="179.0" layoutY="14.0" text="Question 2" AnchorPane.leftAnchor="179.0" AnchorPane.topAnchor="14.0">
+            <Label fx:id="caliFirstQuestionLabel1" layoutX="169.0" layoutY="14.0" text="Question 2">
                <font>
                   <Font size="18.0" />
                </font>
@@ -41,14 +41,14 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Button fx:id="caliSecondA" layoutX="187.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliSecondA" prefWidth="88.0" text="San Diego" />
-            <Button fx:id="caliSecondC" layoutX="187.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliSecondC" prefWidth="88.0" text="Salt Lake City" />
-            <Button fx:id="caliSecondB" layoutX="187.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliSecondB" text="San Francisco" />
+            <Button fx:id="caliSecondA" layoutX="171.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliSecondA" prefWidth="88.0" text="San Diego" />
+            <Button fx:id="caliSecondC" layoutX="171.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliSecondC" prefWidth="88.0" text="Salt Lake City" />
+            <Button fx:id="caliSecondB" layoutX="171.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliSecondB" text="San Francisco" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="anchorPaneCaliforniaThirdQuestions" disable="true" layoutX="84.0" layoutY="39.0" prefHeight="370.0" prefWidth="450.0" visible="false">
          <children>
-            <Label fx:id="caliFirstQuestionLabel2" layoutX="179.0" layoutY="14.0" text="Question 3" AnchorPane.leftAnchor="179.0" AnchorPane.topAnchor="14.0">
+            <Label fx:id="caliFirstQuestionLabel2" layoutX="169.0" layoutY="14.0" text="Question 3">
                <font>
                   <Font size="18.0" />
                </font>
@@ -58,9 +58,9 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Button fx:id="caliThirdA" layoutX="187.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliThirdA" text="San Francisco" />
-            <Button fx:id="caliThirdC" layoutX="187.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliThirdC" prefWidth="88.0" text="Santa Cruz" />
-            <Button fx:id="caliThirdB" layoutX="187.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliThirdB" prefWidth="88.0" text="Pasadena" />
+            <Button fx:id="caliThirdA" layoutX="171.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliThirdA" text="San Francisco" />
+            <Button fx:id="caliThirdC" layoutX="171.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliThirdC" prefWidth="88.0" text="Santa Cruz" />
+            <Button fx:id="caliThirdB" layoutX="171.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliThirdB" prefWidth="88.0" text="Pasadena" />
          </children>
       </AnchorPane>
    </children>
