@@ -18,6 +18,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 /**
@@ -58,6 +59,12 @@ public class FXMLCaliforniaController implements Initializable {
     private Button caliThirdC;
     @FXML
     private Button caliThirdB;
+    @FXML
+    private Text californiaFinishText;
+    @FXML
+    private Label californiaLabel;
+    @FXML
+    private Button mapButton;
 
     /**
      * Initializes the controller class.
@@ -123,47 +130,49 @@ public class FXMLCaliforniaController implements Initializable {
     }
 
     @FXML
-    private void handleCaliThirdA(ActionEvent event) throws IOException {
+    private void handleCaliThirdA(ActionEvent event) {
 
-        Parent game = FXMLLoader.load(getClass().getResource("FXMLCaliforniaMap.fxml"));
-        Scene gameScene = new Scene(game);
+        caliThirdC.setVisible(false); 
+        anchorPaneCaliforniaThirdQuestions.setVisible(false); 
+          californiaLabel.setVisible(false); 
+        californiaFinishText.setVisible(true);
+mapButton.setVisible(true); 
+    }
 
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("California");
-        window.setScene(gameScene);
-        window.show();
+    @FXML
+    private void handleCaliThirdC(ActionEvent event)  {
+        caliThirdB.setVisible(false); 
+        anchorPaneCaliforniaThirdQuestions.setVisible(false); 
+          californiaLabel.setVisible(false); 
+        californiaFinishText.setVisible(true);
+        mapButton.setVisible(true);
 
     }
 
     @FXML
-    private void handleCaliThirdC(ActionEvent event) throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("FXMLCaliforniaMap.fxml"));
-        Scene gameScene = new Scene(game);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("California");
-        window.setScene(gameScene);
-        window.show();
+    private void handleCaliThirdB(ActionEvent event) {
+        caliThirdA.setVisible(false); 
+        anchorPaneCaliforniaThirdQuestions.setVisible(false); 
+        californiaLabel.setVisible(false); 
+        californiaFinishText.setVisible(true);
+        mapButton.setVisible(true); 
+   
 
     }
 
     @FXML
-    private void handleCaliThirdB(ActionEvent event) throws IOException {
-
-        Parent game = FXMLLoader.load(getClass().getResource("FXMLCaliforniaMap.fxml"));
+    private void handleMapButton(ActionEvent event) throws IOException {
+        
+        Parent game = FXMLLoader.load(getClass().getResource("FXMLMap.fxml"));
         Scene gameScene = new Scene(game);
 
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("California");
+        window.setTitle("Map");
         window.setScene(gameScene);
         window.show();
-
+        
     }
 
 }

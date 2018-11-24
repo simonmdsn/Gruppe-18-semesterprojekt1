@@ -4,10 +4,17 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.FXMLCaliforniaController">
    <children>
-      <Label layoutX="248.0" prefHeight="46.0" prefWidth="103.0" text="California">
+      <Button fx:id="mapButton" layoutX="546.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleMapButton" text="Map" visible="false" />
+      <Text fx:id="californiaFinishText" layoutX="114.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Well done, you have answered all California questions. Now go to the map and continue your journey!" visible="false" wrappingWidth="371.33334517478943">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="californiaLabel" layoutX="248.0" prefHeight="46.0" prefWidth="103.0" text="California">
          <font>
             <Font size="24.0" />
          </font>
