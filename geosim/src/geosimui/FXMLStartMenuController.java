@@ -25,36 +25,38 @@ import javafx.stage.Stage;
  * @author simon
  */
 public class FXMLStartMenuController implements Initializable {
-    
+
     private Label label;
     @FXML
     private Button startButton;
     @FXML
     private Button quitButton;
-    
-    
+    @FXML
+    private AnchorPane StartMenuAnchorPane;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
 
     @FXML
     private void handleStartButtonAction(ActionEvent event) throws IOException {
-        
+
         Parent game = FXMLLoader.load(getClass().getResource("FXMLCalifornia.fxml"));
         Scene gameScene = new Scene(game);
-        
+
         //This line gets the Stage information
-        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        
-        window.setTitle("California"); 
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("California");
         window.setScene(gameScene);
         window.show();
-        
+
     }
 
     @FXML
     private void handleQuitButtonAction(ActionEvent event) {
+        System.exit(0);
     }
-    
+
 }

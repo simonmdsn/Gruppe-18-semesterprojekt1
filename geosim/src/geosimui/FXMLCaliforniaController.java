@@ -5,14 +5,20 @@
  */
 package geosimui;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -59,27 +65,23 @@ public class FXMLCaliforniaController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-
+    }
 
     @FXML
     private void handleCaliFirstA(ActionEvent event) {
         anchorPaneCaliforniaFirstQuestions.setDisable(true);
         anchorPaneCaliforniaFirstQuestions.setVisible(false);
-        
+
         anchorPaneCaliforniaSecondQuestions.setDisable(false);
         anchorPaneCaliforniaSecondQuestions.setVisible(true);
-        
-        
-        
-       
+
     }
 
     @FXML
     private void handleCaliFirstC(ActionEvent event) {
         anchorPaneCaliforniaFirstQuestions.setDisable(true);
         anchorPaneCaliforniaFirstQuestions.setVisible(false);
-        
+
         anchorPaneCaliforniaSecondQuestions.setDisable(false);
         anchorPaneCaliforniaSecondQuestions.setVisible(true);
     }
@@ -88,7 +90,7 @@ public class FXMLCaliforniaController implements Initializable {
     private void handleCaliFirstB(ActionEvent event) {
         anchorPaneCaliforniaFirstQuestions.setDisable(true);
         anchorPaneCaliforniaFirstQuestions.setVisible(false);
-        
+
         anchorPaneCaliforniaSecondQuestions.setDisable(false);
         anchorPaneCaliforniaSecondQuestions.setVisible(true);
     }
@@ -97,7 +99,7 @@ public class FXMLCaliforniaController implements Initializable {
     private void handleCaliSecondA(ActionEvent event) {
         anchorPaneCaliforniaSecondQuestions.setDisable(true);
         anchorPaneCaliforniaSecondQuestions.setVisible(false);
-        
+
         anchorPaneCaliforniaThirdQuestions.setDisable(false);
         anchorPaneCaliforniaThirdQuestions.setVisible(true);
     }
@@ -106,7 +108,7 @@ public class FXMLCaliforniaController implements Initializable {
     private void handleCaliSecondC(ActionEvent event) {
         anchorPaneCaliforniaSecondQuestions.setDisable(true);
         anchorPaneCaliforniaSecondQuestions.setVisible(false);
-        
+
         anchorPaneCaliforniaThirdQuestions.setDisable(false);
         anchorPaneCaliforniaThirdQuestions.setVisible(true);
     }
@@ -115,22 +117,53 @@ public class FXMLCaliforniaController implements Initializable {
     private void handleCaliSecondB(ActionEvent event) {
         anchorPaneCaliforniaSecondQuestions.setDisable(true);
         anchorPaneCaliforniaSecondQuestions.setVisible(false);
-        
+
         anchorPaneCaliforniaThirdQuestions.setDisable(false);
         anchorPaneCaliforniaThirdQuestions.setVisible(true);
     }
 
     @FXML
-    private void handleCaliThirdA(ActionEvent event) {
+    private void handleCaliThirdA(ActionEvent event) throws IOException {
+
+        Parent game = FXMLLoader.load(getClass().getResource("FXMLCaliforniaMap.fxml"));
+        Scene gameScene = new Scene(game);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("California");
+        window.setScene(gameScene);
+        window.show();
+
     }
 
     @FXML
-    private void handleCaliThirdC(ActionEvent event) {
+    private void handleCaliThirdC(ActionEvent event) throws IOException {
+        Parent game = FXMLLoader.load(getClass().getResource("FXMLCaliforniaMap.fxml"));
+        Scene gameScene = new Scene(game);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("California");
+        window.setScene(gameScene);
+        window.show();
+
     }
 
     @FXML
-    private void handleCaliThirdB(ActionEvent event) {
+    private void handleCaliThirdB(ActionEvent event) throws IOException {
+
+        Parent game = FXMLLoader.load(getClass().getResource("FXMLCaliforniaMap.fxml"));
+        Scene gameScene = new Scene(game);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("California");
+        window.setScene(gameScene);
+        window.show();
+
     }
 
-    
 }
