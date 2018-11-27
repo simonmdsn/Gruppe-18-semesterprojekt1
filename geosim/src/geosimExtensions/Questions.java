@@ -6,8 +6,7 @@ public class Questions {
     
     //Attributes
     private String answer;
-    public int gamepoints;
-    
+    public static int gamepoints;
     public int california;
     public int arizona;
     public int idaho;

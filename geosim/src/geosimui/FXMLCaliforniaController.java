@@ -21,6 +21,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+
 /**
  * FXML Controller class
  *
@@ -65,6 +66,8 @@ public class FXMLCaliforniaController implements Initializable {
     private Label californiaLabel;
     @FXML
     private Button mapButton;
+    @FXML
+    private Label gamepointsLabel;
 
     /**
      * Initializes the controller class.
@@ -81,7 +84,10 @@ public class FXMLCaliforniaController implements Initializable {
 
         anchorPaneCaliforniaSecondQuestions.setDisable(false);
         anchorPaneCaliforniaSecondQuestions.setVisible(true);
-
+        
+        geosimExtensions.Questions.gamepoints++;
+        update();
+        
     }
 
     @FXML
@@ -132,18 +138,18 @@ public class FXMLCaliforniaController implements Initializable {
     @FXML
     private void handleCaliThirdA(ActionEvent event) {
 
-        caliThirdC.setVisible(false); 
-        anchorPaneCaliforniaThirdQuestions.setVisible(false); 
-          californiaLabel.setVisible(false); 
+        caliThirdC.setVisible(false);
+        anchorPaneCaliforniaThirdQuestions.setVisible(false);
+        californiaLabel.setVisible(false);
         californiaFinishText.setVisible(true);
-mapButton.setVisible(true); 
+        mapButton.setVisible(true);
     }
 
     @FXML
     private void handleCaliThirdC(ActionEvent event)  {
-        caliThirdB.setVisible(false); 
-        anchorPaneCaliforniaThirdQuestions.setVisible(false); 
-          californiaLabel.setVisible(false); 
+        caliThirdB.setVisible(false);
+        anchorPaneCaliforniaThirdQuestions.setVisible(false);
+        californiaLabel.setVisible(false);
         californiaFinishText.setVisible(true);
         mapButton.setVisible(true);
 
@@ -156,10 +162,13 @@ mapButton.setVisible(true);
         californiaLabel.setVisible(false); 
         californiaFinishText.setVisible(true);
         mapButton.setVisible(true); 
-   
-
     }
-
+    
+    private void update() {
+        gamepointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
+    }
+    
+   
     @FXML
     private void handleMapButton(ActionEvent event) throws IOException {
         

@@ -11,11 +11,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import geosimExtensions.Questions;
+
 /**
  *
  * @author simon
  */
 public class GeosimUI extends Application {
+    
     
     @Override
     public void start(Stage stage) throws Exception {
@@ -27,6 +30,8 @@ public class GeosimUI extends Application {
         stage.setScene(scene);
         stage.show();
     }
+    
+    
 
     /**
      * @param args the command line arguments

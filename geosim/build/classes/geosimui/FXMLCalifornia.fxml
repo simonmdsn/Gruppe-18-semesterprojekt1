@@ -70,5 +70,6 @@
             <Button fx:id="caliThirdB" layoutX="171.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliThirdB" prefWidth="88.0" text="Pasadena" />
          </children>
       </AnchorPane>
+      <Label fx:id="gamepointsLabel" layoutX="70.0" layoutY="34.0" prefHeight="18.0" prefWidth="48.0" />
    </children>
 </AnchorPane>
