@@ -13,10 +13,7 @@ import javafx.stage.Stage;
 
 import geosimExtensions.Questions;
 
-/**
- *
- * @author simon
- */
+
 public class GeosimUI extends Application {
     
     

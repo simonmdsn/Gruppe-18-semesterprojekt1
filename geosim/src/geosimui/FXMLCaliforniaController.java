@@ -17,161 +17,133 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-
-/**
- * FXML Controller class
- *
- * @author simon
- */
 public class FXMLCaliforniaController implements Initializable {
 
     @FXML
-    private Label caliFirstQuestionLabel;
-    private Button caliSecondQuestionFirstButton;
+    private GridPane gridPaneOne, gridPaneTwo, gridPaneThree;
     @FXML
-    private Label caliFirstQuestionLabel2;
+    private Label caliFirstQuestionLabel, caliSecondQuestionLabel, caliThirdQuestionLabel;
     @FXML
-    private AnchorPane anchorPaneCaliforniaFirstQuestions;
+    private Button caliFirstA, caliFirstB, caliFirstC;
     @FXML
-    private AnchorPane anchorPaneCaliforniaSecondQuestions;
+    private Button caliSecondA, caliSecondB, caliSecondC;
     @FXML
-    private AnchorPane anchorPaneCaliforniaThirdQuestions;
+    private Button caliThirdA, caliThirdB, caliThirdC;
     @FXML
-    private Label caliFirstQuestionLabel1;
-    @FXML
-    private Button caliFirstA;
-    @FXML
-    private Button caliFirstC;
-    @FXML
-    private Button caliFirstB;
-    @FXML
-    private Button caliSecondA;
-    @FXML
-    private Button caliSecondC;
-    @FXML
-    private Button caliSecondB;
-    @FXML
-    private Button caliThirdA;
-    @FXML
-    private Button caliThirdC;
-    @FXML
-    private Button caliThirdB;
-    @FXML
+    private Label caliFirstQuestion, caliSecondQuestion, caliThirdQuestion;
     private Text californiaFinishText;
     @FXML
-    private Label californiaLabel;
-    @FXML
-    private Button mapButton;
-    @FXML
-    private Label gamepointsLabel;
+    private Label gamePointsLabel;
+   
 
-    /**
-     * Initializes the controller class.
-     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }
 
+    //First question handles
     @FXML
     private void handleCaliFirstA(ActionEvent event) {
-        anchorPaneCaliforniaFirstQuestions.setDisable(true);
-        anchorPaneCaliforniaFirstQuestions.setVisible(false);
+        gridPaneOne.setDisable(true);
+        gridPaneOne.setVisible(false);
 
-        anchorPaneCaliforniaSecondQuestions.setDisable(false);
-        anchorPaneCaliforniaSecondQuestions.setVisible(true);
-        
+        gridPaneTwo.setDisable(false);
+        gridPaneTwo.setVisible(true);
+
         geosimExtensions.Questions.gamepoints++;
         update();
-        
-    }
 
-    @FXML
-    private void handleCaliFirstC(ActionEvent event) {
-        anchorPaneCaliforniaFirstQuestions.setDisable(true);
-        anchorPaneCaliforniaFirstQuestions.setVisible(false);
-
-        anchorPaneCaliforniaSecondQuestions.setDisable(false);
-        anchorPaneCaliforniaSecondQuestions.setVisible(true);
     }
 
     @FXML
     private void handleCaliFirstB(ActionEvent event) {
-        anchorPaneCaliforniaFirstQuestions.setDisable(true);
-        anchorPaneCaliforniaFirstQuestions.setVisible(false);
+        gridPaneOne.setDisable(true);
+        gridPaneOne.setVisible(false);
 
-        anchorPaneCaliforniaSecondQuestions.setDisable(false);
-        anchorPaneCaliforniaSecondQuestions.setVisible(true);
+        gridPaneTwo.setDisable(false);
+        gridPaneTwo.setVisible(true);
+
     }
 
+    @FXML
+    private void handleCaliFirstC(ActionEvent event) {
+        gridPaneOne.setDisable(true);
+        gridPaneOne.setVisible(false);
+
+        gridPaneTwo.setDisable(false);
+        gridPaneTwo.setVisible(true);
+
+    }
+
+    //Second question handles
     @FXML
     private void handleCaliSecondA(ActionEvent event) {
-        anchorPaneCaliforniaSecondQuestions.setDisable(true);
-        anchorPaneCaliforniaSecondQuestions.setVisible(false);
+        gridPaneTwo.setDisable(true);
+        gridPaneTwo.setVisible(false);
 
-        anchorPaneCaliforniaThirdQuestions.setDisable(false);
-        anchorPaneCaliforniaThirdQuestions.setVisible(true);
-    }
-
-    @FXML
-    private void handleCaliSecondC(ActionEvent event) {
-        anchorPaneCaliforniaSecondQuestions.setDisable(true);
-        anchorPaneCaliforniaSecondQuestions.setVisible(false);
-
-        anchorPaneCaliforniaThirdQuestions.setDisable(false);
-        anchorPaneCaliforniaThirdQuestions.setVisible(true);
+        gridPaneThree.setDisable(false);
+        gridPaneThree.setVisible(true);
     }
 
     @FXML
     private void handleCaliSecondB(ActionEvent event) {
-        anchorPaneCaliforniaSecondQuestions.setDisable(true);
-        anchorPaneCaliforniaSecondQuestions.setVisible(false);
+        gridPaneTwo.setDisable(true);
+        gridPaneTwo.setVisible(false);
 
-        anchorPaneCaliforniaThirdQuestions.setDisable(false);
-        anchorPaneCaliforniaThirdQuestions.setVisible(true);
+        gridPaneThree.setDisable(false);
+        gridPaneThree.setVisible(true);
+        geosimExtensions.Questions.gamepoints++;
+        update();
     }
 
+    @FXML
+    private void handleCaliSecondC(ActionEvent event) {
+        gridPaneTwo.setDisable(true);
+        gridPaneTwo.setVisible(false);
+
+        gridPaneThree.setDisable(false);
+        gridPaneThree.setVisible(true);
+
+    }
+
+    //Third question handles
     @FXML
     private void handleCaliThirdA(ActionEvent event) {
-
-        caliThirdC.setVisible(false);
-        anchorPaneCaliforniaThirdQuestions.setVisible(false);
-        californiaLabel.setVisible(false);
+        geosimExtensions.Questions.gamepoints++;
+        update();
+        gridPaneThree.setVisible(false);
         californiaFinishText.setVisible(true);
-        mapButton.setVisible(true);
-    }
-
-    @FXML
-    private void handleCaliThirdC(ActionEvent event)  {
-        caliThirdB.setVisible(false);
-        anchorPaneCaliforniaThirdQuestions.setVisible(false);
-        californiaLabel.setVisible(false);
-        californiaFinishText.setVisible(true);
-        mapButton.setVisible(true);
+        geosimExtensions.Questions.gamepoints++;
+        update();
 
     }
 
     @FXML
     private void handleCaliThirdB(ActionEvent event) {
-        caliThirdA.setVisible(false); 
-        anchorPaneCaliforniaThirdQuestions.setVisible(false); 
-        californiaLabel.setVisible(false); 
+        gridPaneThree.setVisible(false);
         californiaFinishText.setVisible(true);
-        mapButton.setVisible(true); 
+
     }
-    
-    private void update() {
-        gamepointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
-    }
-    
-   
+
     @FXML
+    private void handleCaliThirdC(ActionEvent event) {
+        gridPaneThree.setVisible(false);
+        californiaFinishText.setVisible(true);
+
+    }
+
+    //Gamepoints updater
+    private void update() {
+        gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
+    }
+
+    //Map handler button
     private void handleMapButton(ActionEvent event) throws IOException {
-        
+
         Parent game = FXMLLoader.load(getClass().getResource("FXMLMap.fxml"));
         Scene gameScene = new Scene(game);
 
@@ -181,7 +153,7 @@ public class FXMLCaliforniaController implements Initializable {
         window.setTitle("Map");
         window.setScene(gameScene);
         window.show();
-        
+
     }
 
 }

@@ -5,7 +5,6 @@
  */
 package geosimui;
 
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -17,47 +16,40 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 /**
+ * FXML Controller class
  *
- * @author simon
+ * @author Bruger
  */
-public class FXMLStartMenuController implements Initializable {
+public class FXMLStateButtonsController implements Initializable {
 
-    private Label label;
     @FXML
-    private Button startButton;
-    @FXML
-    private Button quitButton;
-    @FXML
-    private AnchorPane StartMenuAnchorPane;
+    private Button californiaButton;
 
+    /**
+     * Initializes the controller class.
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }
 
     @FXML
-    private void handleStartButtonAction(ActionEvent event) throws IOException {
+    private void handleCaliforniaButton(ActionEvent event) throws IOException {
 
-        Parent game = FXMLLoader.load(getClass().getResource("FXMLStateButtons.fxml"));
+        Parent game = FXMLLoader.load(getClass().getResource("FXMLCalifornia.fxml"));
         Scene gameScene = new Scene(game);
 
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        gameScene.getStylesheets().add("mapStylesheet.css");
 
         window.setTitle("California");
         window.setScene(gameScene);
         window.show();
 
-    }
-
-    @FXML
-    private void handleQuitButtonAction(ActionEvent event) {
-        System.exit(0);
     }
 
 }
