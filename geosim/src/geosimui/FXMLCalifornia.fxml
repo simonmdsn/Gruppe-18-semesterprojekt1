@@ -1,75 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.FXMLCaliforniaController">
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button fx:id="mapButton" layoutX="546.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleMapButton" text="Map" visible="false" />
-      <Text fx:id="californiaFinishText" layoutX="114.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Well done, you have answered all California questions. Now go to the map and continue your journey!" visible="false" wrappingWidth="371.33334517478943">
+      <Label text="California" StackPane.alignment="TOP_CENTER">
          <font>
-            <Font size="15.0" />
+            <Font size="30.0" />
          </font>
-      </Text>
-      <Label fx:id="californiaLabel" layoutX="248.0" prefHeight="46.0" prefWidth="103.0" text="California">
-         <font>
-            <Font size="24.0" />
-         </font>
+         <StackPane.margin>
+            <Insets bottom="30.0" top="20.0" />
+         </StackPane.margin>
       </Label>
-      <AnchorPane fx:id="anchorPaneCaliforniaFirstQuestions" layoutX="84.0" layoutY="39.0" prefHeight="370.0" prefWidth="450.0">
+      <GridPane fx:id="gridPaneOne" prefHeight="0.0" prefWidth="300.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="75.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="415.1999877929687" minWidth="10.0" prefWidth="400.8000244140625" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="75.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="167.5999755859375" minHeight="10.0" prefHeight="99.79999389648438" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="173.3999816894531" minHeight="0.0" prefHeight="86.6" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="238.60000000000002" minHeight="10.0" prefHeight="152.00000000000003" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="118.99997558593748" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        </rowConstraints>
          <children>
-            <Label fx:id="caliFirstQuestionLabel" layoutX="169.0" layoutY="14.0" text="Question 1 ">
-               <font>
-                  <Font size="18.0" />
-               </font>
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="15.0" />
+               </GridPane.margin>
             </Label>
-            <Label layoutX="63.0" layoutY="61.0" prefHeight="27.0" prefWidth="303.0" text="How high is California ranked in population size?">
-               <font>
-                  <Font size="14.0" />
-               </font>
+            <Label text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
             </Label>
-            <Button fx:id="caliFirstA" layoutX="187.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliFirstA" prefWidth="55.3333336" text="First " />
-            <Button fx:id="caliFirstC" layoutX="187.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliFirstC" text="Second" />
-            <Button fx:id="caliFirstB" layoutX="187.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliFirstB" prefWidth="55.3333336" text="Fifth" />
          </children>
-      </AnchorPane>
-      <AnchorPane fx:id="anchorPaneCaliforniaSecondQuestions" disable="true" layoutX="84.0" layoutY="39.0" prefHeight="370.0" prefWidth="450.0" visible="false">
-         <children>
-            <Label fx:id="caliFirstQuestionLabel1" layoutX="169.0" layoutY="14.0" text="Question 2">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="42.0" layoutY="61.0" prefHeight="27.0" text="Which of these three cities are not located in California?">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-            <Button fx:id="caliSecondA" layoutX="171.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliSecondA" prefWidth="88.0" text="San Diego" />
-            <Button fx:id="caliSecondC" layoutX="171.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliSecondC" prefWidth="88.0" text="Salt Lake City" />
-            <Button fx:id="caliSecondB" layoutX="171.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliSecondB" text="San Francisco" />
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="anchorPaneCaliforniaThirdQuestions" disable="true" layoutX="84.0" layoutY="39.0" prefHeight="370.0" prefWidth="450.0" visible="false">
-         <children>
-            <Label fx:id="caliFirstQuestionLabel2" layoutX="169.0" layoutY="14.0" text="Question 3">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="77.0" layoutY="61.0" prefHeight="27.0" text="Where in California is Silicon Valley located?">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-            <Button fx:id="caliThirdA" layoutX="171.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleCaliThirdA" text="San Francisco" />
-            <Button fx:id="caliThirdC" layoutX="171.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCaliThirdC" prefWidth="88.0" text="Santa Cruz" />
-            <Button fx:id="caliThirdB" layoutX="171.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleCaliThirdB" prefWidth="88.0" text="Pasadena" />
-         </children>
-      </AnchorPane>
-      <Label fx:id="gamepointsLabel" layoutX="70.0" layoutY="34.0" prefHeight="18.0" prefWidth="48.0" />
+      </GridPane>
    </children>
-</AnchorPane>
+</StackPane>
