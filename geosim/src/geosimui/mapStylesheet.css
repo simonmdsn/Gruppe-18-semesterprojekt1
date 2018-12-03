@@ -1,5 +1,4 @@
 #titleImage{
-    -fx-background-image: url("images/California.png");
     -fx-background-repeat: stretch; 
     -fx-background-position: center center;
 }

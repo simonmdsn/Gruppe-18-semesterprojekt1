@@ -3,15 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Lukas/Documents/GitHub/Gruppe-18-semesterprojekt1/geosim/src/geosim/Room.java</file>
-            <file>file:/C:/Users/Lukas/Documents/GitHub/Gruppe-18-semesterprojekt1/geosim/src/geosim/Game.java</file>
-            <file>file:/C:/Users/Lukas/Documents/GitHub/Gruppe-18-semesterprojekt1/geosim/src/geosim/Parser.java</file>
-            <file>file:/C:/Users/Lukas/Documents/GitHub/Gruppe-18-semesterprojekt1/geosim/src/geosim/Command.java</file>
-            <file>file:/C:/Users/Lukas/Documents/GitHub/Gruppe-18-semesterprojekt1/geosim/src/geosimExtensions/America.java</file>
-            <file>file:/C:/Users/Lukas/Documents/GitHub/Gruppe-18-semesterprojekt1/geosim/src/geosim/CommandWord.java</file>
-            <file>file:/C:/Users/Lukas/Documents/GitHub/Gruppe-18-semesterprojekt1/geosim/src/geosim/Start.java</file>
-            <file>file:/C:/Users/Lukas/Documents/GitHub/Gruppe-18-semesterprojekt1/geosim/src/geosimExtensions/Questions.java</file>
-            <file>file:/C:/Users/Lukas/Documents/GitHub/Gruppe-18-semesterprojekt1/geosim/src/geosim/CommandWords.java</file>
+            <file>file:/C:/Users/benja/Dropbox/Semesterprojekt/Gruppe-18---1.-semesterprojekt/geosim/src/geosimui/mapStylesheet.css</file>
+            <file>file:/C:/Users/benja/Dropbox/Semesterprojekt/Gruppe-18---1.-semesterprojekt/geosim/src/geosimui/FXMLStateButtonsController.java</file>
+            <file>file:/C:/Users/benja/Dropbox/Semesterprojekt/Gruppe-18---1.-semesterprojekt/geosim/src/geosimui/FXMLStartMenuController.java</file>
+            <file>file:/C:/Users/benja/Dropbox/Semesterprojekt/Gruppe-18---1.-semesterprojekt/geosim/src/geosimui/FXMLMapController.java</file>
+            <file>file:/C:/Users/benja/Dropbox/Semesterprojekt/Gruppe-18---1.-semesterprojekt/geosim/src/geosimui/FXMLCaliforniaController.java</file>
+            <file>file:/C:/Users/benja/Dropbox/Semesterprojekt/Gruppe-18---1.-semesterprojekt/geosim/src/geosimui/FXMLCaliforniaMap.fxml</file>
+            <file>file:/C:/Users/benja/Dropbox/Semesterprojekt/Gruppe-18---1.-semesterprojekt/geosim/src/geosimui/FXMLCaliforniaMapController.java</file>
         </group>
     </open-files>
 </project-private>

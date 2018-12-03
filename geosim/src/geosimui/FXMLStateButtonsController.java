@@ -28,9 +28,6 @@ public class FXMLStateButtonsController implements Initializable {
     @FXML
     private Button californiaButton;
 
-    /**
-     * Initializes the controller class.
-     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -39,12 +36,12 @@ public class FXMLStateButtonsController implements Initializable {
     @FXML
     private void handleCaliforniaButton(ActionEvent event) throws IOException {
 
-        Parent game = FXMLLoader.load(getClass().getResource("FXMLCalifornia.fxml"));
+        Parent game = FXMLLoader.load(getClass().getResource("FXMLCaliforniaMap.fxml"));
         Scene gameScene = new Scene(game);
-
+        gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
+        System.out.println(gameScene.getStylesheets());
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        gameScene.getStylesheets().add("mapStylesheet.css");
 
         window.setTitle("California");
         window.setScene(gameScene);
