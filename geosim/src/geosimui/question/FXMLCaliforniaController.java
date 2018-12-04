@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package geosimui;
+package geosimui.question;
 
 import java.io.IOException;
 import java.net.URL;
@@ -21,7 +21,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class FXMLCaliforniaController implements Initializable {
+public class FXMLCaliforniaController implements Initializable, MethodInterface {
 
     @FXML
     private GridPane gridPaneOne, gridPaneTwo, gridPaneThree;
@@ -112,14 +112,22 @@ public class FXMLCaliforniaController implements Initializable {
 
     //Third question handles
     @FXML
-    private void handleCaliThirdA(ActionEvent event) {
+    private void handleCaliThirdA(ActionEvent event) throws IOException {
         geosimExtensions.Questions.gamepoints++;
         update();
         gridPaneThree.setVisible(false);
-        californiaFinishText.setVisible(true);
-        geosimExtensions.Questions.gamepoints++;
+        //californiaFinishText.setVisible(true);
         update();
+        
+        Parent game = FXMLLoader.load(getClass().getResource("FXMLOregon.fxml"));
+        Scene gameScene = new Scene(game);
 
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("California");
+        window.setScene(gameScene);
+        window.show();
     }
 
     @FXML
@@ -136,10 +144,9 @@ public class FXMLCaliforniaController implements Initializable {
 
     }
 
-    //Gamepoints updater
-    private void update() {
-        gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
-    }
+    
+    
+    
 
     //Map handler button
     private void handleMapButton(ActionEvent event) throws IOException {
@@ -154,6 +161,12 @@ public class FXMLCaliforniaController implements Initializable {
         window.setScene(gameScene);
         window.show();
 
+    }
+
+    //Gamepoints updater
+    @Override
+    public void update() {
+        gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
     }
 
 }

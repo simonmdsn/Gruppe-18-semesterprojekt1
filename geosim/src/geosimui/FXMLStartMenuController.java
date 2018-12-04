@@ -60,4 +60,5 @@ public class FXMLStartMenuController implements Initializable {
         System.exit(0);
     }
 
+    
 }
