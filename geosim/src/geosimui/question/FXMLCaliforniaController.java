@@ -42,6 +42,7 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        update();
         // TODO
     }
 
@@ -118,10 +119,13 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
         gridPaneThree.setVisible(false);
         //californiaFinishText.setVisible(true);
         update();
+      
         
-        Parent game = FXMLLoader.load(getClass().getResource("FXMLOregon.fxml"));
+        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLMap.fxml"));
+        
         Scene gameScene = new Scene(game);
-
+        
+      
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
