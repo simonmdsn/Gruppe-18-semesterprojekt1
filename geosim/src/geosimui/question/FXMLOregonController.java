@@ -67,7 +67,7 @@ public class FXMLOregonController implements Initializable, MethodInterface {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         update();
-    }    
+    }
 
     @FXML
     private void handleOregFirstA(ActionEvent event) {
@@ -97,22 +97,20 @@ public class FXMLOregonController implements Initializable, MethodInterface {
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
     }
-    
 
     @FXML
     private void handleOregSecondA(ActionEvent event) {
-         gridPaneTwo.setDisable(true);
+        gridPaneTwo.setDisable(true);
         gridPaneTwo.setVisible(false);
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
-        Questions.gamepoints++;
-        update();
+        
     }
 
     @FXML
     private void handleOregSecondB(ActionEvent event) {
-         gridPaneTwo.setDisable(true);
+        gridPaneTwo.setDisable(true);
         gridPaneTwo.setVisible(false);
 
         gridPaneThree.setDisable(false);
@@ -121,11 +119,14 @@ public class FXMLOregonController implements Initializable, MethodInterface {
 
     @FXML
     private void handleOregSecondC(ActionEvent event) {
-         gridPaneTwo.setDisable(true);
+        gridPaneTwo.setDisable(true);
         gridPaneTwo.setVisible(false);
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        Questions.gamepoints++;
+        update();
+
     }
 
     @FXML
@@ -146,7 +147,5 @@ public class FXMLOregonController implements Initializable, MethodInterface {
     public void update() {
         gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
     }
-    
-    
-    
+
 }

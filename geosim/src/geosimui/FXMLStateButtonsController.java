@@ -65,7 +65,7 @@ public class FXMLStateButtonsController implements Initializable {
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("California");
+        window.setTitle("Oregon");
         window.setScene(gameScene);
         window.show();
 
