@@ -69,29 +69,29 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
     }    
     @FXML
     private void handleOregSecondB(ActionEvent event) {
-        gridPaneOne.setDisable(true);
-        gridPaneOne.setVisible(false);
+        gridPaneTwo.setDisable(true);
+        gridPaneTwo.setVisible(false);
 
-        gridPaneTwo.setDisable(false);
-        gridPaneTwo.setVisible(true);
+        gridPaneThree.setDisable(false);
+        gridPaneThree.setVisible(true);
     }
 
     @FXML
     private void handleWashSecondA(ActionEvent event) {
-        gridPaneOne.setDisable(true);
-        gridPaneOne.setVisible(false);
+        gridPaneTwo.setDisable(true);
+        gridPaneTwo.setVisible(false);
 
-        gridPaneTwo.setDisable(false);
-        gridPaneTwo.setVisible(true);
+        gridPaneThree.setDisable(false);
+        gridPaneThree.setVisible(true);
     }
 
     @FXML
     private void handleWashSecondC(ActionEvent event) {
-        gridPaneOne.setDisable(true);
-        gridPaneOne.setVisible(false);
+        gridPaneTwo.setDisable(true);
+        gridPaneTwo.setVisible(false);
 
-        gridPaneTwo.setDisable(false);
-        gridPaneTwo.setVisible(true);
+        gridPaneThree.setDisable(false);
+        gridPaneThree.setVisible(true);
         Questions.gamepoints++;
         update();
     }

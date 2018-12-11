@@ -3,13 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/benja/Dropbox/Semesterprojekt/Gruppe-18---1.-semesterprojekt/geosim/src/geosimui/mapStylesheet.css</file>
-            <file>file:/C:/Users/benja/Dropbox/Semesterprojekt/Gruppe-18---1.-semesterprojekt/geosim/src/geosimui/FXMLStateButtonsController.java</file>
-            <file>file:/C:/Users/benja/Dropbox/Semesterprojekt/Gruppe-18---1.-semesterprojekt/geosim/src/geosimui/FXMLStartMenuController.java</file>
-            <file>file:/C:/Users/benja/Dropbox/Semesterprojekt/Gruppe-18---1.-semesterprojekt/geosim/src/geosimui/FXMLMapController.java</file>
-            <file>file:/C:/Users/benja/Dropbox/Semesterprojekt/Gruppe-18---1.-semesterprojekt/geosim/src/geosimui/FXMLCaliforniaController.java</file>
-            <file>file:/C:/Users/benja/Dropbox/Semesterprojekt/Gruppe-18---1.-semesterprojekt/geosim/src/geosimui/FXMLCaliforniaMap.fxml</file>
-            <file>file:/C:/Users/benja/Dropbox/Semesterprojekt/Gruppe-18---1.-semesterprojekt/geosim/src/geosimui/FXMLCaliforniaMapController.java</file>
+            <file>file:/C:/Users/simon/Documents/NetBeansProjects/Gruppe-18-semesterprojekt1/geosim/src/geosimExtensions/Questions.java</file>
+            <file>file:/C:/Users/simon/Documents/NetBeansProjects/Gruppe-18-semesterprojekt1/geosim/src/geosimui/FXMLStateButtonsController.java</file>
+            <file>file:/C:/Users/simon/Documents/NetBeansProjects/Gruppe-18-semesterprojekt1/geosim/src/geosimui/question/FXMLOregonController.java</file>
+            <file>file:/C:/Users/simon/Documents/NetBeansProjects/Gruppe-18-semesterprojekt1/geosim/src/geosimui/question/FXMLWashington.fxml</file>
+            <file>file:/C:/Users/simon/Documents/NetBeansProjects/Gruppe-18-semesterprojekt1/geosim/src/geosimui/question/FXMLWashingtonController.java</file>
         </group>
     </open-files>
 </project-private>

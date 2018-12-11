@@ -27,9 +27,10 @@ public class FXMLStateButtonsController implements Initializable {
 
     @FXML
     public Button californiaButton;
-    
     @FXML
     public Button oregonButton;
+    @FXML
+    public Button washingtonButton;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -69,6 +70,20 @@ public class FXMLStateButtonsController implements Initializable {
         window.setScene(gameScene);
         window.show();
 
+    }
+
+    @FXML
+    private void handleWashingtonButton(ActionEvent event) throws IOException {
+        Parent game = FXMLLoader.load(getClass().getResource("question/FXMLWashington.fxml"));
+        Scene gameScene = new Scene(game);
+        gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
+        System.out.println(gameScene.getStylesheets());
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("Washington");
+        window.setScene(gameScene);
+        window.show();
     }
 
 }
