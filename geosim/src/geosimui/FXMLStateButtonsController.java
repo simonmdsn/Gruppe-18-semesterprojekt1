@@ -31,6 +31,14 @@ public class FXMLStateButtonsController implements Initializable {
     public Button oregonButton;
     @FXML
     public Button washingtonButton;
+    @FXML
+    public Button idahoButton;
+    @FXML
+    public Button nevadaButton;
+    @FXML
+    public Button arizonaButton;
+    @FXML
+    public Button utahButton;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -82,6 +90,62 @@ public class FXMLStateButtonsController implements Initializable {
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
         window.setTitle("Washington");
+        window.setScene(gameScene);
+        window.show();
+    }
+
+    @FXML
+    private void handleIdahoButton(ActionEvent event) throws IOException {
+        Parent game = FXMLLoader.load(getClass().getResource("question/FXMLIdaho.fxml"));
+        Scene gameScene = new Scene(game);
+        gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
+        System.out.println(gameScene.getStylesheets());
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("Idaho");
+        window.setScene(gameScene);
+        window.show();
+    }
+
+    @FXML
+    private void handleNevadaButton(ActionEvent event) throws IOException {
+        Parent game = FXMLLoader.load(getClass().getResource("question/FXMLNevada.fxml"));
+        Scene gameScene = new Scene(game);
+        gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
+        System.out.println(gameScene.getStylesheets());
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("Nevada");
+        window.setScene(gameScene);
+        window.show();
+    }
+
+    @FXML
+    private void handleArizonaButton(ActionEvent event) throws IOException {
+        Parent game = FXMLLoader.load(getClass().getResource("question/FXMLArizona.fxml"));
+        Scene gameScene = new Scene(game);
+        gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
+        System.out.println(gameScene.getStylesheets());
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("Arizona");
+        window.setScene(gameScene);
+        window.show();
+    }
+
+    @FXML
+    private void handleUtahButton(ActionEvent event) throws IOException {
+        Parent game = FXMLLoader.load(getClass().getResource("question/FXMLArizona.fxml"));
+        Scene gameScene = new Scene(game);
+        gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
+        System.out.println(gameScene.getStylesheets());
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("Utah");
         window.setScene(gameScene);
         window.show();
     }
