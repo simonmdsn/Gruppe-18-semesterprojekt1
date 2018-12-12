@@ -38,7 +38,7 @@
          </rowConstraints>
          <children>
             <Button fx:id="washSecondA" mnemonicParsing="false" onAction="#handleWashSecondA" prefWidth="100.0" text="A state" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="washSecondB" mnemonicParsing="false" onAction="#handleOregSecondB" prefWidth="100.0" text="An animal" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="washSecondB" mnemonicParsing="false" onAction="#handleWashSecondB" prefWidth="100.0" text="An animal" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
             <Button fx:id="washSecondC" mnemonicParsing="false" onAction="#handleWashSecondC" prefWidth="100.0" text="A US president" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
             <Label fx:id="washSecondQuestionLabel" text="Question 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
@@ -126,5 +126,10 @@
             </Label>
          </children>
       </GridPane>
+      <Label fx:id="incorrectLabel" StackPane.alignment="BOTTOM_CENTER">
+         <StackPane.margin>
+            <Insets bottom="40.0" />
+         </StackPane.margin>
+      </Label>
    </children>
 </StackPane>

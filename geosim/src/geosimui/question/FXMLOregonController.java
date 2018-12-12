@@ -66,6 +66,8 @@ public class FXMLOregonController implements Initializable, MethodInterface {
     private Label oregThirdQuestionLabel;
     @FXML
     private Label oregThirdQuestion;
+    @FXML
+    private Label incorrectLabel;
 
     /**
      * Initializes the controller class.
@@ -82,6 +84,8 @@ public class FXMLOregonController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Unfortunately, the capital of Oregon is Salem..");
     }
 
     @FXML
@@ -93,6 +97,8 @@ public class FXMLOregonController implements Initializable, MethodInterface {
         gridPaneTwo.setVisible(true);
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -102,6 +108,8 @@ public class FXMLOregonController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Unfortunately, the capital of Oregon is Salem..");
     }
 
     @FXML
@@ -111,6 +119,11 @@ public class FXMLOregonController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
+        Questions.gamepoints++;
+        update();
+        
+        incorrectLabel.setText("");
 
     }
 
@@ -121,6 +134,8 @@ public class FXMLOregonController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
+        incorrectLabel.setText("Incorrcet, Oregon can be divided into 6 areas!");
     }
 
     @FXML
@@ -130,55 +145,30 @@ public class FXMLOregonController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
+        incorrectLabel.setText("Incorrcet, Oregon can be divided into 6 areas!");
+
+    }
+
+    @FXML
+    private void handleOregThirdA(ActionEvent event) {
         Questions.gamepoints++;
         update();
 
+        incorrectLabel.setText("");
     }
 
     @FXML
-    private void handleOregThirdA(ActionEvent event) throws IOException {
-        Questions.gamepoints++;
-        update();
-
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLOregonMap.fxml"));
-
-        Scene gameScene = new Scene(game);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("Map");
-        window.setScene(gameScene);
-        window.show();
+    private void handleOregThirdB(ActionEvent event) {
+        incorrectLabel.setText("Wrong, Snake River is one of the major rivers in Oregon.");
     }
 
     @FXML
-    private void handleOregThirdB(ActionEvent event) throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLOregonMap.fxml"));
-
-        Scene gameScene = new Scene(game);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("Map");
-        window.setScene(gameScene);
-        window.show();
+    private void handleOregThirdC(ActionEvent event) {
+        incorrectLabel.setText("Wrong, Snake River is one of the major rivers in Oregon.");
     }
 
-    @FXML
-    private void handleOregThirdC(ActionEvent event) throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLOregonMap.fxml"));
 
-        Scene gameScene = new Scene(game);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("Map");
-        window.setScene(gameScene);
-        window.show();
-    }
 
     @Override
     public void update() {

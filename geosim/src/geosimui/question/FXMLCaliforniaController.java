@@ -38,14 +38,17 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
     private Text californiaFinishText;
     @FXML
     private Label gamePointsLabel;
+    @FXML
+    private Label incorrectLabel;
+
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         update();
-        // TODO
+        
     }
 
-    //First question handles
+    
     @FXML
     private void handleCaliFirstA(ActionEvent event) {
         gridPaneOne.setDisable(true);
@@ -66,6 +69,8 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, the answer is California is ranked first.");
 
     }
 
@@ -76,6 +81,8 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, the answer is California is ranked first.");
 
     }
 
@@ -87,6 +94,8 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, the correct answer is Salt Lake City");
     }
 
     @FXML
@@ -98,6 +107,8 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
         gridPaneThree.setVisible(true);
         geosimExtensions.Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -108,60 +119,30 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
 
+        incorrectLabel.setText("Incorrect, the correct answer is Salt Lake City");
     }
 
     //Third question handles
     @FXML
-    private void handleCaliThirdA(ActionEvent event) throws IOException {
-        geosimExtensions.Questions.gamepoints++;
-        update();
+    private void handleCaliThirdA(ActionEvent event) {
         gridPaneThree.setVisible(false);
-        //californiaFinishText.setVisible(true);
+      
+        geosimExtensions.Questions.gamepoints++
         update();
 
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLCaliforniaMap.fxml"));
-
-        Scene gameScene = new Scene(game);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("Map");
-        window.setScene(gameScene);
-        window.show();
-    }
 
     @FXML
-    private void handleCaliThirdB(ActionEvent event) throws IOException {
+    private void handleCaliThirdB(ActionEvent event) {
         gridPaneThree.setVisible(false);
 
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLCaliforniaMap.fxml"));
-
-        Scene gameScene = new Scene(game);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("Map");
-        window.setScene(gameScene);
-        window.show();
+        incorrectLabel.setText("Incorrect, Silicon Valley is located in San Fransisco");
     }
 
     @FXML
     private void handleCaliThirdC(ActionEvent event) throws IOException {
         gridPaneThree.setVisible(false);
 
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLCaliforniaMap.fxml"));
-
-        Scene gameScene = new Scene(game);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("Map");
-        window.setScene(gameScene);
-        window.show();
-
+        incorrectLabel.setText("Incorrect, Silicon Valley is located in San Fransisco");
     }
 
     //Map handler button

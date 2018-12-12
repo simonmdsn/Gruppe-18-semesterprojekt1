@@ -66,6 +66,8 @@ public class FXMLUtahController implements Initializable, MethodInterface {
     private Label utahFirstQuestionLabel;
     @FXML
     private Label utahFirstQuestion;
+    @FXML
+    private Label incorrectLabel;
 
     /**
      * Initializes the controller class.
@@ -82,6 +84,8 @@ public class FXMLUtahController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, Utah is 13th largest state in the US");
     }
 
     @FXML
@@ -91,6 +95,7 @@ public class FXMLUtahController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        incorrectLabel.setText("Incorrect, Utah is 13th largest state in the US");
     }
 
     @FXML
@@ -102,51 +107,25 @@ public class FXMLUtahController implements Initializable, MethodInterface {
         gridPaneThree.setVisible(true);
         Questions.gamepoints++;
         update();
+        incorrectLabel.setText("");
     }
 
     @FXML
-    private void handleUtahThirdA(ActionEvent event) throws IOException {
+    private void handleUtahThirdA(ActionEvent event) {
         Questions.gamepoints++;
         update();
-
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLUtahMap.fxml"));
-
-        Scene gameScene = new Scene(game);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("Map");
-        window.setScene(gameScene);
-        window.show();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
-    private void handleUtahThirdB(ActionEvent event) throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLUtahMap.fxml"));
-
-        Scene gameScene = new Scene(game);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("Map");
-        window.setScene(gameScene);
-        window.show();
+    private void handleUtahThirdB(ActionEvent event) {
+        incorrectLabel.setText("Incorrect, the correct answer is Lake Powell");
     }
 
     @FXML
-    private void handleUtahThirdC(ActionEvent event) throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLUtahMap.fxml"));
-
-        Scene gameScene = new Scene(game);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("Map");
-        window.setScene(gameScene);
-        window.show();
+    private void handleUtahThirdC(ActionEvent event) {
+        incorrectLabel.setText("Incorrect, the correct answer is Lake Powell")
     }
 
     @FXML
@@ -158,6 +137,8 @@ public class FXMLUtahController implements Initializable, MethodInterface {
         gridPaneTwo.setVisible(true);
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -167,6 +148,8 @@ public class FXMLUtahController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Wrooong, the answer is Salt Lake City!");
     }
 
     @FXML
@@ -176,6 +159,7 @@ public class FXMLUtahController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        incorrectLabel.setText("Wrooong, the answer is Salt Lake City!");
     }
 
     @Override

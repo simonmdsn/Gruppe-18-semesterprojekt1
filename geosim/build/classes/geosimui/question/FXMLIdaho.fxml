@@ -126,5 +126,10 @@
             </Label>
          </children>
       </GridPane>
+      <Label fx:id="incorrectLabel" StackPane.alignment="BOTTOM_CENTER">
+         <StackPane.margin>
+            <Insets bottom="40.0" />
+         </StackPane.margin>
+      </Label>
    </children>
 </StackPane>

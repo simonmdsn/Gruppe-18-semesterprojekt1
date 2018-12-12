@@ -66,6 +66,8 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
     private Label washFirstQuestionLabel;
     @FXML
     private Label washFirstQuestion;
+    @FXML
+    private Label incorrectLabel;
 
     /**
      * Initializes the controller class.
@@ -76,12 +78,14 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
     }
 
     @FXML
-    private void handleOregSecondB(ActionEvent event) {
+    private void handleWashSecondB(ActionEvent event) {
         gridPaneTwo.setDisable(true);
         gridPaneTwo.setVisible(false);
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, Washington is named after former president George Washington!");
     }
 
     @FXML
@@ -91,6 +95,8 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, Washington is named after former president George Washington!");
     }
 
     @FXML
@@ -102,51 +108,24 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
         gridPaneThree.setVisible(true);
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
-    private void handleWashThirdA(ActionEvent event) throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLWashingtonMap.fxml"));
-
-        Scene gameScene = new Scene(game);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("Map");
-        window.setScene(gameScene);
-        window.show();
+    private void handleWashThirdA(ActionEvent event) {
+        incorrectLabel.setText("Incorrect, the correct answer is Seattle");
     }
 
     @FXML
-    private void handleWashThirdB(ActionEvent event) throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLWashingtonMap.fxml"));
-
-        Scene gameScene = new Scene(game);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("Map");
-        window.setScene(gameScene);
-        window.show();
+    private void handleWashThirdB(ActionEvent event) {
+        incorrectLabel.setText("Incorrect, the correct answer is Seattle");
     }
-
+  
     @FXML
-    private void handleWashThirdC(ActionEvent event) throws IOException {
+    private void handleWashThirdC(ActionEvent event) {
         Questions.gamepoints++;
         update();
-
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLWashingtonMap.fxml"));
-
-        Scene gameScene = new Scene(game);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("Map");
-        window.setScene(gameScene);
-        window.show();
     }
 
     @FXML
@@ -158,6 +137,8 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
         gridPaneTwo.setVisible(true);
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -167,6 +148,7 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        incorrectLabel.setText("Wrong, there is about 7.4 million people in Washington");
     }
 
     @FXML
@@ -176,6 +158,8 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Wrong, there is about 7.4 million people in Washington");
     }
 
     @Override

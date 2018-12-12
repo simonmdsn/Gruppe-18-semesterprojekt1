@@ -66,6 +66,8 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
     private Label arizFirstQuestionLabel;
     @FXML
     private Label arizFirstQuestion;
+    @FXML
+    private Label incorrectLabel;
 
     /**
      * Initializes the controller class.
@@ -82,6 +84,7 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        incorrectLabel.setText("Incorrect, the answer is Colorado River.");
     }
 
     @FXML
@@ -91,6 +94,7 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        incorrectLabel.setText("Incorrect, the answer is Colorado River.");
     }
 
     @FXML
@@ -102,48 +106,25 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
         gridPaneThree.setVisible(true);
         Questions.gamepoints++;
         update();
+        incorrectLabel.setText("");
     }
 
     @FXML
-    private void handleArizThirdA(ActionEvent event) throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLArizonaMap.fxml"));
-        Scene gameScene = new Scene(game);
 
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("Map");
-        window.setScene(gameScene);
-        window.show();
+    private void handleArizThirdA(ActionEvent event) {
+        incorrectLabel.setText("Incorrect, Phoenix is the capital of Arizona.");
     }
 
     @FXML
-    private void handleArizThirdB(ActionEvent event) throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLArizonaMap.fxml"));
-        Scene gameScene = new Scene(game);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("Map");
-        window.setScene(gameScene);
-        window.show();
-    }
+    private void handleArizThirdB(ActionEvent event) {
+        incorrectLabel.setText("Incorrect, Phoenix is the capital of Arizona.");
 
     @FXML
-    private void handleArizThirdC(ActionEvent event) throws IOException {
+    private void handleArizThirdC(ActionEvent event) {
         Questions.gamepoints++;
         update();
 
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLArizonaMap.fxml"));
-        Scene gameScene = new Scene(game);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setTitle("Map");
-        window.setScene(gameScene);
-        window.show();
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -153,6 +134,8 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+
+        incorrectLabel.setText("Incorrect, Utah is north of Arizona.");
 
     }
 
@@ -165,6 +148,8 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
         gridPaneTwo.setVisible(true);
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -174,6 +159,7 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        incorrectLabel.setText("Incorrect, Utah is north of Arizona.");
     }
 
     @Override
