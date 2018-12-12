@@ -125,7 +125,7 @@ public class FXMLUtahController implements Initializable, MethodInterface {
 
     @FXML
     private void handleUtahThirdC(ActionEvent event) {
-        incorrectLabel.setText("Incorrect, the correct answer is Lake Powell")
+        incorrectLabel.setText("Incorrect, the correct answer is Lake Powell");
     }
 
     @FXML

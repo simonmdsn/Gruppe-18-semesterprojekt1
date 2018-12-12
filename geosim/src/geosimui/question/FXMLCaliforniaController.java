@@ -127,9 +127,9 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
     private void handleCaliThirdA(ActionEvent event) {
         gridPaneThree.setVisible(false);
       
-        geosimExtensions.Questions.gamepoints++
+        geosimExtensions.Questions.gamepoints++;
         update();
-
+    }
 
     @FXML
     private void handleCaliThirdB(ActionEvent event) {
