@@ -104,6 +104,7 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
         Questions.gamepoints++;
         update();
         incorrectLabel.setText("");
@@ -118,6 +119,7 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
     @FXML
     private void handleArizThirdB(ActionEvent event) {
         incorrectLabel.setText("Incorrect, Phoenix is the capital of Arizona.");
+    }
 
     @FXML
     private void handleArizThirdC(ActionEvent event) {
