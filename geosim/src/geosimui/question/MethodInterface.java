@@ -12,5 +12,7 @@ package geosimui.question;
 interface MethodInterface {
     
         public abstract void update();
+        
+        
     
 }
