@@ -73,7 +73,7 @@
          <children>
             <Button fx:id="utahThirdA" mnemonicParsing="false" onAction="#handleUtahThirdA" prefWidth="130.0" text="Lake Powell" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
             <Button fx:id="utahThirdB" mnemonicParsing="false" onAction="#handleUtahThirdB" prefWidth="130.0" text="Lake Erie" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button fx:id="utahThirdC" mnemonicParsing="false" onAction="#handleUtahThirdC" prefWidth="130.0" text="Lake Pleasent" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Button fx:id="utahThirdC" mnemonicParsing="false" onAction="#handleUtahThirdC" prefWidth="130.0" text="Lake Pleasant" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
             <Label fx:id="utahThirdQuestionLabel" text="Question 3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="15.0" />
@@ -126,5 +126,10 @@
             </Label>
          </children>
       </GridPane>
+      <Label fx:id="incorrectLabel" StackPane.alignment="BOTTOM_CENTER">
+         <StackPane.margin>
+            <Insets bottom="40.0" />
+         </StackPane.margin>
+      </Label>
    </children>
 </StackPane>

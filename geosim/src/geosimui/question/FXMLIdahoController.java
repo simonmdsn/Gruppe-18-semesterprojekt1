@@ -59,6 +59,8 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
     private Button idahThirdA;
     @FXML
     private Button idahThirdB;
+    @FXML
+    private Label incorrectLabel;
 
     /**
      * Initializes the controller class.
@@ -75,6 +77,8 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, Idaho borders 6 states!");
     }
 
     @FXML
@@ -84,6 +88,8 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, Idaho borders 6 states!");
     }
 
     @FXML
@@ -95,20 +101,26 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
         gridPaneThree.setVisible(true);
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
     private void handleIdahThirdA(ActionEvent event) {
+       incorrectLabel.setText("Wrooong! The largest city in Idaho is Boise!");
     }
 
     @FXML
     private void handleIdahThirdB(ActionEvent event) {
+        incorrectLabel.setText("Wrooong! The largest city in Idaho is Boise!");
     }
     
     @FXML
     private void handleIdahThirdC(ActionEvent event) {
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -118,6 +130,8 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, Idaho is the 14th largest state in the US!");
     }
 
     @FXML
@@ -129,6 +143,8 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
         gridPaneTwo.setVisible(true);
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -138,6 +154,8 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, Idaho is the 14th largest state in the US!");
     }
 
     @Override

@@ -59,6 +59,8 @@ public class FXMLUtahController implements Initializable, MethodInterface {
     private Label utahFirstQuestionLabel;
     @FXML
     private Label utahFirstQuestion;
+    @FXML
+    private Label incorrectLabel;
 
     /**
      * Initializes the controller class.
@@ -75,6 +77,8 @@ public class FXMLUtahController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, Utah is 13th largest state in the US");
     }
 
     @FXML
@@ -84,6 +88,7 @@ public class FXMLUtahController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        incorrectLabel.setText("Incorrect, Utah is 13th largest state in the US");
     }
 
     @FXML
@@ -95,20 +100,25 @@ public class FXMLUtahController implements Initializable, MethodInterface {
         gridPaneThree.setVisible(true);
         Questions.gamepoints++;
         update();
+        incorrectLabel.setText("");
     }
 
     @FXML
     private void handleUtahThirdA(ActionEvent event) {
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
     private void handleUtahThirdB(ActionEvent event) {
+        incorrectLabel.setText("Incorrect, the correct answer is Lake Powell");
     }
 
     @FXML
     private void handleUtahThirdC(ActionEvent event) {
+        incorrectLabel.setText("Incorrect, the correct answer is Lake Powell");
     }
 
     @FXML
@@ -120,6 +130,8 @@ public class FXMLUtahController implements Initializable, MethodInterface {
         gridPaneTwo.setVisible(true);
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -129,6 +141,8 @@ public class FXMLUtahController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Wrooong, the answer is Salt Lake City!");
     }
 
     @FXML
@@ -138,6 +152,7 @@ public class FXMLUtahController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        incorrectLabel.setText("Wrooong, the answer is Salt Lake City!");
     }
 
     @Override

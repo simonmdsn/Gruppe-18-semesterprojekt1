@@ -38,15 +38,17 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
     private Text californiaFinishText;
     @FXML
     private Label gamePointsLabel;
+    @FXML
+    private Label incorrectLabel;
    
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         update();
-        // TODO
+        
     }
 
-    //First question handles
+    
     @FXML
     private void handleCaliFirstA(ActionEvent event) {
         gridPaneOne.setDisable(true);
@@ -67,6 +69,8 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, the answer is California is ranked first.");
 
     }
 
@@ -77,6 +81,8 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, the answer is California is ranked first.");
 
     }
 
@@ -88,6 +94,8 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, the correct answer is Salt Lake City");
     }
 
     @FXML
@@ -99,6 +107,8 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
         gridPaneThree.setVisible(true);
         geosimExtensions.Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -109,6 +119,7 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
 
+        incorrectLabel.setText("Incorrect, the correct answer is Salt Lake City");
     }
 
     //Third question handles
@@ -116,9 +127,7 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
     private void handleCaliThirdA(ActionEvent event) throws IOException {
         geosimExtensions.Questions.gamepoints++;
         update();
-        gridPaneThree.setVisible(false);
-        //californiaFinishText.setVisible(true);
-        update();
+ 
       
         
         Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLMap.fxml"));
@@ -137,15 +146,15 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
     @FXML
     private void handleCaliThirdB(ActionEvent event) {
         gridPaneThree.setVisible(false);
-        californiaFinishText.setVisible(true);
-
+        
+        incorrectLabel.setText("Incorrect, Silicon Valley is located in San Fransisco");
     }
 
     @FXML
     private void handleCaliThirdC(ActionEvent event) {
         gridPaneThree.setVisible(false);
-        californiaFinishText.setVisible(true);
-
+        
+        incorrectLabel.setText("Incorrect, Silicon Valley is located in San Fransisco");
     }
 
     

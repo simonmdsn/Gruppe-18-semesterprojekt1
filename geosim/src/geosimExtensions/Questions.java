@@ -11,7 +11,7 @@ public class Questions {
     public int arizona;
     public int idaho;
     public int nevada;
-    public int oregon;
+    public int washon;
     public int utah;
     public int washington;
     
@@ -208,33 +208,33 @@ public class Questions {
         answerIsC(correctThird, incorrectThird);
         nevada++;
     }
-    public void oregonQuestions() {
+    public void washonQuestions() {
         // Korrekte og inkorrekt svar tekst 
-        String correctFirst = ("Correct, Salem is the capital of Oregon!");
-        String incorrectFirst = ("Unfortunately, the capital of Oregon is Salem..");
-        String correctSecond =("Correct, Oregon can be divided into 6 areas.");
-        String incorrectSecond = ("Incorrcet, Oregon can be divided into 6 areas!");
-        String correctThird = ("Correct, Snake River is a major river found in Oregon.");
-        String incorrectThird = ("Wrong, Snake River is one of the major rivers in Oregon.");
+        String correctFirst = ("Correct, Salem is the capital of Washon!");
+        String incorrectFirst = ("Unfortunately, the capital of Washon is Salem..");
+        String correctSecond =("Correct, Washon can be divided into 6 areas.");
+        String incorrectSecond = ("Incorrcet, Washon can be divided into 6 areas!");
+        String correctThird = ("Correct, Snake River is a major river found in Washon.");
+        String incorrectThird = ("Wrong, Snake River is one of the major rivers in Washon.");
         
         // Spørgsmål 1
         System.out.println("\nFirst Question:\n---------------");
-        System.out.println("What is the capital of Oregon?");
-        System.out.println("A: Oregon City  B: Salem    C: Las Vegas ");
+        System.out.println("What is the capital of Washon?");
+        System.out.println("A: Washon City  B: Salem    C: Las Vegas ");
         answerIsB(correctFirst,incorrectFirst);
         
         // Spørgsmål 2
         System.out.println("\n\nSecond Question\n----------------");
-        System.out.println("Oregons geography can be divided into how many areas?");
+        System.out.println("Washons geography can be divided into how many areas?");
         System.out.println("A: 6    B: 15   C: 304");
         answerIsA(correctSecond, incorrectSecond);
         
         // Spørgsmål 3
         System.out.println("\n\nThird Question\n---------------");
-        System.out.println("What major river can be found in Oregon?");
+        System.out.println("What major river can be found in Washon?");
         System.out.println("A: Snake River  B: The Great Fall   C: Upwood River ");
         answerIsA(correctThird, incorrectThird);
-        oregon++;
+        washon++;
     }
     
     public void utahQuestions(){
@@ -299,6 +299,6 @@ public class Questions {
     
     public int getStateStatus() {
         int statestatus;
-        return statestatus = california + arizona + idaho + nevada + oregon + utah + washington;
+        return statestatus = california + arizona + idaho + nevada + washon + utah + washington;
     }
 }

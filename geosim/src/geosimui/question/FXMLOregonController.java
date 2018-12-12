@@ -60,6 +60,8 @@ public class FXMLOregonController implements Initializable, MethodInterface {
     private Label oregThirdQuestionLabel;
     @FXML
     private Label oregThirdQuestion;
+    @FXML
+    private Label incorrectLabel;
 
     /**
      * Initializes the controller class.
@@ -76,6 +78,8 @@ public class FXMLOregonController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Unfortunately, the capital of Oregon is Salem..");
     }
 
     @FXML
@@ -87,6 +91,8 @@ public class FXMLOregonController implements Initializable, MethodInterface {
         gridPaneTwo.setVisible(true);
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -96,6 +102,8 @@ public class FXMLOregonController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Unfortunately, the capital of Oregon is Salem..");
     }
 
     @FXML
@@ -106,6 +114,11 @@ public class FXMLOregonController implements Initializable, MethodInterface {
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
         
+        Questions.gamepoints++;
+        update();
+        
+        incorrectLabel.setText("");
+        
     }
 
     @FXML
@@ -115,6 +128,8 @@ public class FXMLOregonController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
+        incorrectLabel.setText("Incorrcet, Oregon can be divided into 6 areas!");
     }
 
     @FXML
@@ -124,8 +139,9 @@ public class FXMLOregonController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
-        Questions.gamepoints++;
-        update();
+        
+        
+        incorrectLabel.setText("Incorrcet, Oregon can be divided into 6 areas!");
 
     }
 
@@ -133,14 +149,18 @@ public class FXMLOregonController implements Initializable, MethodInterface {
     private void handleOregThirdA(ActionEvent event) {
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
     private void handleOregThirdB(ActionEvent event) {
+        incorrectLabel.setText("Wrong, Snake River is one of the major rivers in Oregon.");
     }
 
     @FXML
     private void handleOregThirdC(ActionEvent event) {
+        incorrectLabel.setText("Wrong, Snake River is one of the major rivers in Oregon.");
     }
 
     @Override

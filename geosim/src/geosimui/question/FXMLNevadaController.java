@@ -59,6 +59,8 @@ public class FXMLNevadaController implements Initializable, MethodInterface {
     private Label nevaFirstQuestion;
     @FXML
     private Button nevaSecondA;
+    @FXML
+    private Label incorrectLabel;
 
     /**
      * Initializes the controller class.
@@ -75,6 +77,8 @@ public class FXMLNevadaController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
+        incorrectLabel.setText("Nope, the correct answer is - All for our country!");
     }
 
     @FXML
@@ -84,6 +88,7 @@ public class FXMLNevadaController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        incorrectLabel.setText("Nope, the correct answer is - All for our country!");
     }
 
     @FXML
@@ -95,20 +100,26 @@ public class FXMLNevadaController implements Initializable, MethodInterface {
         gridPaneThree.setVisible(true);
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
     private void handleNevaThirdA(ActionEvent event) {
+        incorrectLabel.setText("Incorrect, the answer is Carson City!");
     }
 
     @FXML
     private void handleNevaThirdB(ActionEvent event) {
+        incorrectLabel.setText("Incorrect, the answer is Carson City!");
     }
 
     @FXML
     private void handleNevaThirdC(ActionEvent event) {
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -118,6 +129,8 @@ public class FXMLNevadaController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, it's called The Battle Born State");
     }
 
     @FXML
@@ -129,6 +142,8 @@ public class FXMLNevadaController implements Initializable, MethodInterface {
         gridPaneTwo.setVisible(true);
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -138,6 +153,8 @@ public class FXMLNevadaController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, it's called The Battle Born State");
     }
 
     @Override

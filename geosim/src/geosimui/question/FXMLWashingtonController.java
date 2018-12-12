@@ -59,6 +59,8 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
     private Label washFirstQuestionLabel;
     @FXML
     private Label washFirstQuestion;
+    @FXML
+    private Label incorrectLabel;
 
     /**
      * Initializes the controller class.
@@ -68,12 +70,14 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
         update();
     }    
     @FXML
-    private void handleOregSecondB(ActionEvent event) {
+    private void handleWashSecondB(ActionEvent event) {
         gridPaneTwo.setDisable(true);
         gridPaneTwo.setVisible(false);
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, Washington is named after former president George Washington!");
     }
 
     @FXML
@@ -83,6 +87,8 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
+        
+        incorrectLabel.setText("Incorrect, Washington is named after former president George Washington!");
     }
 
     @FXML
@@ -94,20 +100,26 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
         gridPaneThree.setVisible(true);
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
     private void handleWashThirdA(ActionEvent event) {
+        incorrectLabel.setText("Incorrect, the correct answer is Seattle");
     }
 
     @FXML
     private void handleWashThirdB(ActionEvent event) {
+        incorrectLabel.setText("Incorrect, the correct answer is Seattle");
+
     }
 
     @FXML
     private void handleWashThirdC(ActionEvent event) {
         Questions.gamepoints++;
         update();
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -119,6 +131,8 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
         gridPaneTwo.setVisible(true);
         Questions.gamepoints++;
         update();
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -128,6 +142,7 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        incorrectLabel.setText("Wrong, there is about 7.4 million people in Washington");
     }
 
     @FXML
@@ -137,6 +152,8 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+        
+        incorrectLabel.setText("Wrong, there is about 7.4 million people in Washington");
     }
 
     @Override
