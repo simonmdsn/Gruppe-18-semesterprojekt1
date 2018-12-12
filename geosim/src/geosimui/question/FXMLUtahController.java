@@ -6,14 +6,20 @@
 package geosimui.question;
 
 import geosimExtensions.Questions;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -21,6 +27,7 @@ import javafx.scene.layout.GridPane;
  * @author simon
  */
 public class FXMLUtahController implements Initializable, MethodInterface {
+
     @FXML
     private Label gamePointsLabel;
     @FXML
@@ -66,7 +73,7 @@ public class FXMLUtahController implements Initializable, MethodInterface {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
 
     @FXML
     private void handleUtahSecondA(ActionEvent event) {
@@ -98,17 +105,48 @@ public class FXMLUtahController implements Initializable, MethodInterface {
     }
 
     @FXML
-    private void handleUtahThirdA(ActionEvent event) {
+    private void handleUtahThirdA(ActionEvent event) throws IOException {
         Questions.gamepoints++;
         update();
+
+        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLUtahMap.fxml"));
+
+        Scene gameScene = new Scene(game);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("Map");
+        window.setScene(gameScene);
+        window.show();
     }
 
     @FXML
-    private void handleUtahThirdB(ActionEvent event) {
+    private void handleUtahThirdB(ActionEvent event) throws IOException {
+        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLUtahMap.fxml"));
+
+        Scene gameScene = new Scene(game);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("Map");
+        window.setScene(gameScene);
+        window.show();
     }
 
     @FXML
-    private void handleUtahThirdC(ActionEvent event) {
+    private void handleUtahThirdC(ActionEvent event) throws IOException {
+        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLUtahMap.fxml"));
+
+        Scene gameScene = new Scene(game);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("Map");
+        window.setScene(gameScene);
+        window.show();
     }
 
     @FXML
@@ -144,5 +182,5 @@ public class FXMLUtahController implements Initializable, MethodInterface {
     public void update() {
         gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
     }
-    
+
 }

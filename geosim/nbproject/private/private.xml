@@ -3,11 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/simon/Documents/NetBeansProjects/Gruppe-18-semesterprojekt1/geosim/src/geosimExtensions/Questions.java</file>
-            <file>file:/C:/Users/simon/Documents/NetBeansProjects/Gruppe-18-semesterprojekt1/geosim/src/geosimui/FXMLStateButtonsController.java</file>
-            <file>file:/C:/Users/simon/Documents/NetBeansProjects/Gruppe-18-semesterprojekt1/geosim/src/geosimui/question/FXMLOregonController.java</file>
-            <file>file:/C:/Users/simon/Documents/NetBeansProjects/Gruppe-18-semesterprojekt1/geosim/src/geosimui/question/FXMLWashington.fxml</file>
-            <file>file:/C:/Users/simon/Documents/NetBeansProjects/Gruppe-18-semesterprojekt1/geosim/src/geosimui/question/FXMLWashingtonController.java</file>
+            <file>file:/C:/Users/Lukas/Documents/GitHub/Gruppe-18-semesterprojekt1/geosim/src/geosimui/question/FXMLCaliforniaController.java</file>
+            <file>file:/C:/Users/Lukas/Documents/GitHub/Gruppe-18-semesterprojekt1/geosim/src/geosimui/map/FXMLCaliforniaMapController.java</file>
         </group>
     </open-files>
 </project-private>
