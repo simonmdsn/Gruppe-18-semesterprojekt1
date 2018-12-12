@@ -38,7 +38,6 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
     private Text californiaFinishText;
     @FXML
     private Label gamePointsLabel;
-   
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -119,38 +118,51 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
         gridPaneThree.setVisible(false);
         //californiaFinishText.setVisible(true);
         update();
-      
-        
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLMap.fxml"));
-        
+
+        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLCaliforniaMap.fxml"));
+
         Scene gameScene = new Scene(game);
-        
-      
+
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("California");
+        window.setTitle("Map");
         window.setScene(gameScene);
         window.show();
     }
 
     @FXML
-    private void handleCaliThirdB(ActionEvent event) {
+    private void handleCaliThirdB(ActionEvent event) throws IOException {
         gridPaneThree.setVisible(false);
-        californiaFinishText.setVisible(true);
 
+        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLCaliforniaMap.fxml"));
+
+        Scene gameScene = new Scene(game);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("Map");
+        window.setScene(gameScene);
+        window.show();
     }
 
     @FXML
-    private void handleCaliThirdC(ActionEvent event) {
+    private void handleCaliThirdC(ActionEvent event) throws IOException {
         gridPaneThree.setVisible(false);
-        californiaFinishText.setVisible(true);
+
+        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLCaliforniaMap.fxml"));
+
+        Scene gameScene = new Scene(game);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("Map");
+        window.setScene(gameScene);
+        window.show();
 
     }
-
-    
-    
-    
 
     //Map handler button
     private void handleMapButton(ActionEvent event) throws IOException {
