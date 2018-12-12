@@ -6,14 +6,20 @@
 package geosimui.question;
 
 import geosimExtensions.Questions;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -21,6 +27,7 @@ import javafx.scene.layout.GridPane;
  * @author simon
  */
 public class FXMLIdahoController implements Initializable, MethodInterface {
+
     @FXML
     private Label gamePointsLabel;
     @FXML
@@ -68,7 +75,7 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         update();
-    }    
+    }
 
     @FXML
     private void handleIdahSecondA(ActionEvent event) {
@@ -109,12 +116,13 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
     private void handleIdahThirdA(ActionEvent event) {
        incorrectLabel.setText("Wrooong! The largest city in Idaho is Boise!");
     }
-
+  
     @FXML
     private void handleIdahThirdB(ActionEvent event) {
         incorrectLabel.setText("Wrooong! The largest city in Idaho is Boise!");
     }
-    
+   
+
     @FXML
     private void handleIdahThirdC(ActionEvent event) {
         Questions.gamepoints++;
@@ -122,6 +130,7 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
         
         incorrectLabel.setText("");
     }
+
 
     @FXML
     private void handleIdahFirstA(ActionEvent event) {
@@ -162,13 +171,5 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
     public void update() {
         gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
     }
-
-    
-
-    
-
-    
-
-   
 
 }

@@ -6,14 +6,20 @@
 package geosimui.question;
 
 import geosimExtensions.Questions;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -113,6 +119,7 @@ public class FXMLNevadaController implements Initializable, MethodInterface {
     private void handleNevaThirdB(ActionEvent event) {
         incorrectLabel.setText("Incorrect, the answer is Carson City!");
     }
+
 
     @FXML
     private void handleNevaThirdC(ActionEvent event) {

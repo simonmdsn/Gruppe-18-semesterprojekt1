@@ -6,14 +6,20 @@
 package geosimui.question;
 
 import geosimExtensions.Questions;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -21,6 +27,7 @@ import javafx.scene.layout.GridPane;
  * @author simon
  */
 public class FXMLWashingtonController implements Initializable, MethodInterface {
+
     @FXML
     private Label gamePointsLabel;
     @FXML
@@ -68,7 +75,8 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         update();
-    }    
+    }
+
     @FXML
     private void handleWashSecondB(ActionEvent event) {
         gridPaneTwo.setDisable(true);
@@ -112,14 +120,12 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
     @FXML
     private void handleWashThirdB(ActionEvent event) {
         incorrectLabel.setText("Incorrect, the correct answer is Seattle");
-
     }
-
+  
     @FXML
     private void handleWashThirdC(ActionEvent event) {
         Questions.gamepoints++;
         update();
-        incorrectLabel.setText("");
     }
 
     @FXML
@@ -158,7 +164,7 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
 
     @Override
     public void update() {
-       gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
+        gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
     }
-    
+
 }

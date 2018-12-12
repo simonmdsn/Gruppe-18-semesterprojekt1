@@ -40,7 +40,7 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
     private Label gamePointsLabel;
     @FXML
     private Label incorrectLabel;
-   
+
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -124,42 +124,26 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
 
     //Third question handles
     @FXML
-    private void handleCaliThirdA(ActionEvent event) throws IOException {
-        geosimExtensions.Questions.gamepoints++;
+    private void handleCaliThirdA(ActionEvent event) {
+        gridPaneThree.setVisible(false);
+      
+        geosimExtensions.Questions.gamepoints++
         update();
- 
-      
-        
-        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLMap.fxml"));
-        
-        Scene gameScene = new Scene(game);
-        
-      
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("California");
-        window.setScene(gameScene);
-        window.show();
-    }
 
     @FXML
     private void handleCaliThirdB(ActionEvent event) {
         gridPaneThree.setVisible(false);
-        
+
         incorrectLabel.setText("Incorrect, Silicon Valley is located in San Fransisco");
     }
 
     @FXML
-    private void handleCaliThirdC(ActionEvent event) {
+    private void handleCaliThirdC(ActionEvent event) throws IOException {
         gridPaneThree.setVisible(false);
-        
+
         incorrectLabel.setText("Incorrect, Silicon Valley is located in San Fransisco");
     }
-
-    
-    
-    
 
     //Map handler button
     private void handleMapButton(ActionEvent event) throws IOException {

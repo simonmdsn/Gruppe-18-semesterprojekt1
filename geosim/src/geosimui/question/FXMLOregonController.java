@@ -6,14 +6,20 @@
 package geosimui.question;
 
 import geosimExtensions.Questions;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -118,7 +124,7 @@ public class FXMLOregonController implements Initializable, MethodInterface {
         update();
         
         incorrectLabel.setText("");
-        
+
     }
 
     @FXML
@@ -140,7 +146,6 @@ public class FXMLOregonController implements Initializable, MethodInterface {
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
         
-        
         incorrectLabel.setText("Incorrcet, Oregon can be divided into 6 areas!");
 
     }
@@ -149,7 +154,7 @@ public class FXMLOregonController implements Initializable, MethodInterface {
     private void handleOregThirdA(ActionEvent event) {
         Questions.gamepoints++;
         update();
-        
+
         incorrectLabel.setText("");
     }
 
@@ -162,6 +167,8 @@ public class FXMLOregonController implements Initializable, MethodInterface {
     private void handleOregThirdC(ActionEvent event) {
         incorrectLabel.setText("Wrong, Snake River is one of the major rivers in Oregon.");
     }
+
+
 
     @Override
     public void update() {

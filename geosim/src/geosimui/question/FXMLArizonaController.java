@@ -6,14 +6,20 @@
 package geosimui.question;
 
 import geosimExtensions.Questions;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -21,6 +27,7 @@ import javafx.scene.layout.GridPane;
  * @author simon
  */
 public class FXMLArizonaController implements Initializable, MethodInterface {
+
     @FXML
     private Label gamePointsLabel;
     @FXML
@@ -67,8 +74,8 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-       update();
-    }    
+        update();
+    }
 
     @FXML
     private void handleArizSecondA(ActionEvent event) {
@@ -103,6 +110,7 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
     }
 
     @FXML
+
     private void handleArizThirdA(ActionEvent event) {
         incorrectLabel.setText("Incorrect, Phoenix is the capital of Arizona.");
     }
@@ -110,12 +118,12 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
     @FXML
     private void handleArizThirdB(ActionEvent event) {
         incorrectLabel.setText("Incorrect, Phoenix is the capital of Arizona.");
-    }
 
     @FXML
     private void handleArizThirdC(ActionEvent event) {
         Questions.gamepoints++;
         update();
+
         incorrectLabel.setText("");
     }
 
@@ -126,7 +134,9 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
+
         incorrectLabel.setText("Incorrect, Utah is north of Arizona.");
+
     }
 
     @FXML
@@ -156,5 +166,5 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
     public void update() {
         gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
     }
-    
+
 }

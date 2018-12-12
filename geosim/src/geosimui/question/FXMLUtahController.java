@@ -6,14 +6,20 @@
 package geosimui.question;
 
 import geosimExtensions.Questions;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -21,6 +27,7 @@ import javafx.scene.layout.GridPane;
  * @author simon
  */
 public class FXMLUtahController implements Initializable, MethodInterface {
+
     @FXML
     private Label gamePointsLabel;
     @FXML
@@ -68,7 +75,7 @@ public class FXMLUtahController implements Initializable, MethodInterface {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
 
     @FXML
     private void handleUtahSecondA(ActionEvent event) {
@@ -118,7 +125,7 @@ public class FXMLUtahController implements Initializable, MethodInterface {
 
     @FXML
     private void handleUtahThirdC(ActionEvent event) {
-        incorrectLabel.setText("Incorrect, the correct answer is Lake Powell");
+        incorrectLabel.setText("Incorrect, the correct answer is Lake Powell")
     }
 
     @FXML
@@ -159,5 +166,5 @@ public class FXMLUtahController implements Initializable, MethodInterface {
     public void update() {
         gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
     }
-    
+
 }

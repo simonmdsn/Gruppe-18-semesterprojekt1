@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.map.FXMLArizonaMapController">
+   <children>
+      <ImageView fitHeight="300.0" fitWidth="473.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+         <image>
+            <Image url="@../images/Arizona.png" />
+         </image>
+      </ImageView>
+   </children>
+</StackPane>
