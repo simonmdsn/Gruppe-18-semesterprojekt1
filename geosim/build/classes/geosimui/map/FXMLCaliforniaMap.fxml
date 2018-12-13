@@ -5,7 +5,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.FXMLCaliforniaMapController">
+<StackPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.map.FXMLCaliforniaMapController">
    <children>
       <ImageView id="titleImage" fx:id="california" fitHeight="300.0" fitWidth="473.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
          <image>

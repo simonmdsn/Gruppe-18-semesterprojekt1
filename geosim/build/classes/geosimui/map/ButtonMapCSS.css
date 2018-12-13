@@ -1,0 +1,17 @@
+.button{
+     -fx-padding: 6 6 6 6;
+     -fx-border-radius: 10 10 10 10;
+     -fx-background-radius: 10 10 10 10;
+     -fx-background-color: #81b71a; 
+     -fx-text-fill: white;
+     -fx-font-weight: bolder;
+     -fx-font-size: 10pt ;
+     -fx-font-family: "Times New Roman";
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#81b71a, #026410);
+}
+
+.button:pressed {
+    -fx-background-color: #026410;
+}

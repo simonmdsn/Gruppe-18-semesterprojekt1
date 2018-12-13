@@ -54,7 +54,7 @@ public class FXMLStateButtonsController implements Initializable {
     @FXML
     private void handleCaliforniaButton(ActionEvent event) throws IOException {
 
-        Parent game = FXMLLoader.load(getClass().getResource("question/FXMLCalifornia.fxml"));
+        Parent game = FXMLLoader.load(getClass().getResource("map/FXMLCaliforniaMap.fxml"));
         Scene gameScene = new Scene(game);
         gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
         System.out.println(gameScene.getStylesheets());
