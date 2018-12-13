@@ -27,7 +27,7 @@
             <Button fx:id="utahButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleUtahButton" text="Utah" GridPane.rowIndex="3" />
             <Button fx:id="idahoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleIdahoButton" text="Idaho" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Button fx:id="arizonaButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleArizonaButton" text="Arizona" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="BACK" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="backButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBackButtonAction" text="BACK" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
    </items>
