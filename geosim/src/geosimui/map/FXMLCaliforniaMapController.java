@@ -68,28 +68,16 @@ public class FXMLCaliforniaMapController implements Initializable {
     @FXML
     private void handleCaliNorthButton(ActionEvent event)throws IOException {
         Parent game = FXMLLoader.load(getClass().getResource("FXMLOregonMap.fxml"));
-    private void handleCaliSouthButton(ActionEvent event)throws IOException {
-    }
-
-    @FXML
-    private void handleCaliNorthButton(ActionEvent event)throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("question/FXMLOregonMap.fxml"));
-
         Scene gameScene = new Scene(game);
         gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
         System.out.println(gameScene.getStylesheets());
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        window.setTitle("Utah");
+        //("Utah");
         window.setScene(gameScene);
         window.show();
     }
-
-
-        window.setTitle("California");
-        window.setScene(gameScene);
-        window.show();
-    }
+       
 
     @FXML
     private void handleCaliEastButton(ActionEvent event)throws IOException {
@@ -100,7 +88,7 @@ public class FXMLCaliforniaMapController implements Initializable {
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("California");
+        //("California");
         window.setScene(gameScene);
         window.show();
     }
@@ -112,6 +100,7 @@ public class FXMLCaliforniaMapController implements Initializable {
 
     @FXML
     private void handleCaliPlayButton(ActionEvent event)throws IOException {
+        if(geosimExtensions.Questions.california == 0) {
         Parent game = FXMLLoader.load(getClass().getResource("../question/FXMLCalifornia.fxml"));
         Scene gameScene = new Scene(game);
         gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
@@ -119,8 +108,12 @@ public class FXMLCaliforniaMapController implements Initializable {
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("California");
+        //("California");
         window.setScene(gameScene);
         window.show();
+        } 
+        else{
+            mapLabel.setText("You have already answered the questions in this state.");
+        }
     }
 }

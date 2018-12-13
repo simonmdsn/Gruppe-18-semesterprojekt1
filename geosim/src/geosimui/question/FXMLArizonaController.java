@@ -124,6 +124,8 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
         gridPaneFour.setVisible(true);
         
         incorrectLabel.setText("Incorrect, Phoenix is the capital of Arizona.");
+        
+        geosimExtensions.Questions.arizona++;
     }
 
     @FXML
@@ -135,6 +137,8 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
         gridPaneFour.setVisible(true);
         
         incorrectLabel.setText("Incorrect, Phoenix is the capital of Arizona.");
+        
+        geosimExtensions.Questions.arizona++;
     }
 
     @FXML
@@ -149,6 +153,8 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
         gridPaneFour.setVisible(true);
 
         incorrectLabel.setText("");
+        
+        geosimExtensions.Questions.arizona++;
     }
 
     @FXML
@@ -199,7 +205,7 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("Map");
+
         window.setScene(gameScene);
         window.show();
     }

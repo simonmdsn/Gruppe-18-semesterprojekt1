@@ -45,9 +45,5 @@
             <Insets bottom="20.0" />
          </StackPane.margin>
       </Label>
-            <Button fx:id="washNorthButton" layoutX="23.0" layoutY="287.0" mnemonicParsing="false" onAction="#handleWashNorthButton" prefHeight="49.0" prefWidth="84.0" stylesheets="@ButtonMapCSS.css" text="Play" />
-            <Label fx:id="gamePointsLabel" layoutX="13.0" layoutY="21.0" />
-         </children>
-      </AnchorPane>
-   </children>
+    </children>
 </StackPane>

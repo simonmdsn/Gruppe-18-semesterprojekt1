@@ -7,13 +7,13 @@ public class Questions {
     //Attributes
     private String answer;
     public static int gamepoints;
-    public int california;
-    public int arizona;
-    public int idaho;
-    public int nevada;
-    public int oregon;
-    public int utah;
-    public int washington;
+    public static int california;
+    public static int arizona;
+    public static int idaho;
+    public static int nevada;
+    public static int oregon;
+    public static int utah;
+    public static int washington;
     
     
     

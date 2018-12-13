@@ -57,6 +57,7 @@ public class FXMLArizonaMapController implements Initializable{
  
     @FXML
     private void handleArizPlayButton(ActionEvent event) throws IOException {
+        if(geosimExtensions.Questions.arizona == 0) {
         Parent game = FXMLLoader.load(getClass().getResource("../question/FXMLArizona.fxml"));
         Scene gameScene = new Scene(game);
         gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
@@ -64,10 +65,15 @@ public class FXMLArizonaMapController implements Initializable{
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         
-        window.setTitle("Arizona");
+        //("Arizona");
         window.setScene(gameScene);
         window.show();
+        }
+        else{
+            mapLabel.setText("You have already answered the questions in this state.");
+        }
     }
+    
 
 
     @FXML
@@ -95,7 +101,7 @@ public class FXMLArizonaMapController implements Initializable{
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         
-        window.setTitle("Arizona");
+        //("Arizona");
         window.setScene(gameScene);
         window.show();
     }

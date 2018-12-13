@@ -123,6 +123,8 @@ public class FXMLNevadaController implements Initializable, MethodInterface {
 
         gridPaneFour.setDisable(false);
         gridPaneFour.setVisible(true);
+        
+        geosimExtensions.Questions.nevada++;
     }
 
     @FXML
@@ -134,6 +136,8 @@ public class FXMLNevadaController implements Initializable, MethodInterface {
 
         gridPaneFour.setDisable(false);
         gridPaneFour.setVisible(true);
+        
+        geosimExtensions.Questions.nevada++;
     }
 
 
@@ -149,6 +153,8 @@ public class FXMLNevadaController implements Initializable, MethodInterface {
 
         gridPaneFour.setDisable(false);
         gridPaneFour.setVisible(true);
+        
+        geosimExtensions.Questions.nevada++;
     }
 
     @FXML
@@ -173,6 +179,7 @@ public class FXMLNevadaController implements Initializable, MethodInterface {
         update();
         
         incorrectLabel.setText("");
+        
     }
 
     @FXML
@@ -184,6 +191,7 @@ public class FXMLNevadaController implements Initializable, MethodInterface {
         gridPaneTwo.setVisible(true);
         
         incorrectLabel.setText("Incorrect, it's called The Battle Born State");
+    
     }
 
     @Override
@@ -199,7 +207,6 @@ public class FXMLNevadaController implements Initializable, MethodInterface {
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("Map");
         window.setScene(gameScene);
         window.show();
     }

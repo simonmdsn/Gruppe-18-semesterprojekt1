@@ -12,7 +12,6 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 
-
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.map.FXMLWashingtonMapController">
    <children>
       <GridPane prefHeight="400.0" prefWidth="782.0">
@@ -46,9 +45,5 @@
             <Insets bottom="20.0" />
          </StackPane.margin>
       </Label>
-            <Button fx:id="washNorthButton" layoutX="23.0" layoutY="287.0" mnemonicParsing="false" onAction="#handleWashNorthButton" prefHeight="49.0" prefWidth="84.0" stylesheets="@ButtonMapCSS.css" text="Play" />
-            <Label fx:id="gamePointsLabel" layoutX="13.0" layoutY="21.0" />
-         </children>
-      </AnchorPane>
-   </children>
+    </children>
 </StackPane>

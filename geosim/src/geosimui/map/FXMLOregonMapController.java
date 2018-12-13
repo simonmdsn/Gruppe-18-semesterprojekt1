@@ -58,7 +58,7 @@ public class FXMLOregonMapController implements Initializable {
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("Arizona");
+
         window.setScene(gameScene);
         window.show();
     }
@@ -72,7 +72,7 @@ public class FXMLOregonMapController implements Initializable {
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("Arizona");
+
         window.setScene(gameScene);
         window.show();
     }
@@ -86,7 +86,7 @@ public class FXMLOregonMapController implements Initializable {
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("Arizona");
+
         window.setScene(gameScene);
         window.show();
     }
@@ -98,6 +98,7 @@ public class FXMLOregonMapController implements Initializable {
 
     @FXML
     private void handleOregPlayButton(ActionEvent event) throws IOException {
+        if(geosimExtensions.Questions.oregon == 0) {
         Parent game = FXMLLoader.load(getClass().getResource("../question/FXMLOregon.fxml"));
         Scene gameScene = new Scene(game);
         gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
@@ -105,9 +106,12 @@ public class FXMLOregonMapController implements Initializable {
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("Arizona");
+
         window.setScene(gameScene);
         window.show();
+    } else{
+            mapLabel.setText("You have already answered the questions in this state.");
+        }
     }
     
 }

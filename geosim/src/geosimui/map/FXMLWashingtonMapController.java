@@ -58,7 +58,7 @@ public class FXMLWashingtonMapController implements Initializable {
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("Arizona");
+        //("Arizona");
         window.setScene(gameScene);
         window.show();
     }
@@ -80,6 +80,7 @@ public class FXMLWashingtonMapController implements Initializable {
 
     @FXML
     private void handleWashPlayButton(ActionEvent event) throws IOException {
+        if(geosimExtensions.Questions.washington == 0) {
         Parent game = FXMLLoader.load(getClass().getResource("../question/FXMLWashington.fxml"));
         Scene gameScene = new Scene(game);
         gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
@@ -87,9 +88,11 @@ public class FXMLWashingtonMapController implements Initializable {
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("Arizona");
         window.setScene(gameScene);
         window.show();
+    } else{
+            mapLabel.setText("You have already answered the questions in this state.");
+        }
     }
     
 }

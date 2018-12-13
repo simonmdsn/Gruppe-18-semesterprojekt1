@@ -78,7 +78,7 @@ public class FXMLUtahController implements Initializable, MethodInterface {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        update();
     }
 
     @FXML
@@ -126,6 +126,8 @@ public class FXMLUtahController implements Initializable, MethodInterface {
 
         gridPaneFour.setDisable(false);
         gridPaneFour.setVisible(true);
+        
+        geosimExtensions.Questions.utah++;
     }
 
     @FXML
@@ -137,6 +139,8 @@ public class FXMLUtahController implements Initializable, MethodInterface {
 
         gridPaneFour.setDisable(false);
         gridPaneFour.setVisible(true);
+        
+        geosimExtensions.Questions.utah++;
     }
 
     @FXML
@@ -148,8 +152,10 @@ public class FXMLUtahController implements Initializable, MethodInterface {
 
         gridPaneFour.setDisable(false);
         gridPaneFour.setVisible(true);
+        
+        geosimExtensions.Questions.utah++;
     }
-
+    
     @FXML
     private void handleUtahFirstA(ActionEvent event) {
         gridPaneOne.setDisable(true);
@@ -197,7 +203,7 @@ public class FXMLUtahController implements Initializable, MethodInterface {
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("Map");
+
         window.setScene(gameScene);
         window.show();
     }

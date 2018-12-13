@@ -125,6 +125,8 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
 
         gridPaneFour.setDisable(false);
         gridPaneFour.setVisible(true);
+        
+        geosimExtensions.Questions.washington++;
     }
 
     @FXML
@@ -136,6 +138,8 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
 
         gridPaneFour.setDisable(false);
         gridPaneFour.setVisible(true);
+        
+        geosimExtensions.Questions.washington++;
     }
   
     @FXML
@@ -150,6 +154,8 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
         gridPaneFour.setVisible(true);
         
         incorrectLabel.setText("");
+        
+        geosimExtensions.Questions.washington++;
     }
 
     @FXML
@@ -199,7 +205,6 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setTitle("Map");
         window.setScene(gameScene);
         window.show();
     }
