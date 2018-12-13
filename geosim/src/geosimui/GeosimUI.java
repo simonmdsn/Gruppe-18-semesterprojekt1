@@ -12,6 +12,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import geosimExtensions.Questions;
+import javafx.scene.image.Image;
 
 
 public class GeosimUI extends Application {
@@ -23,6 +24,8 @@ public class GeosimUI extends Application {
         
         Scene scene = new Scene(root);
         
+        
+        stage.getIcons().add(new Image(GeosimUI.class.getResourceAsStream("images/AmericaMapreal.png")));
         stage.setTitle("Start Menu"); 
         stage.setScene(scene);
         stage.show();
