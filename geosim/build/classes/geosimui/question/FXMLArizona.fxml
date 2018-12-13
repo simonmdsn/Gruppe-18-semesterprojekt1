@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.question.FXMLArizonaController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.question.FXMLArizonaController">
    <children>
       <Label fx:id="incorrectLabel" StackPane.alignment="BOTTOM_CENTER">
          <StackPane.margin>
@@ -110,9 +110,9 @@
             <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="arizFirstA" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleArizFirstA" prefWidth="120.0" text="Idaho" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="arizFirstB" mnemonicParsing="false" onAction="#handleArizFirstB" prefWidth="120.0" text="Utah" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button fx:id="arizFirstC" mnemonicParsing="false" onAction="#handleArizFirstC" prefWidth="120.0" text="Florida" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Button fx:id="arizFirstA" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleArizFirstA" prefWidth="120.0" stylesheets="@buttonCSS.css" text="Idaho" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Button fx:id="arizFirstB" mnemonicParsing="false" onAction="#handleArizFirstB" prefWidth="120.0" stylesheets="@buttonCSS.css" text="Utah" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="arizFirstC" mnemonicParsing="false" onAction="#handleArizFirstC" prefWidth="120.0" stylesheets="@buttonCSS.css" text="Florida" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
             <Label fx:id="arizFirstQuestionLabel" text="Question 1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="15.0" />

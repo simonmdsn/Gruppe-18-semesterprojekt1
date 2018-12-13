@@ -9,19 +9,19 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.question.FXMLArizonaController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@backgroundCSS.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.question.FXMLArizonaController">
    <children>
-      <Label fx:id="incorrectLabel" StackPane.alignment="BOTTOM_CENTER">
+      <Label fx:id="incorrectLabel" stylesheets="@labelCSS.css" StackPane.alignment="BOTTOM_CENTER">
          <StackPane.margin>
             <Insets bottom="40.0" />
          </StackPane.margin>
       </Label>
-      <Label fx:id="gamePointsLabel" text="0" StackPane.alignment="TOP_LEFT">
+      <Label fx:id="gamePointsLabel" stylesheets="@labelCSS.css" text="0" StackPane.alignment="TOP_LEFT">
          <StackPane.margin>
             <Insets left="30.0" top="30.0" />
          </StackPane.margin>
       </Label>
-      <Label text="Arizona" StackPane.alignment="TOP_CENTER">
+      <Label stylesheets="@labelCSS.css" text="Arizona" StackPane.alignment="TOP_CENTER">
          <font>
             <Font size="30.0" />
          </font>
@@ -110,10 +110,13 @@
             <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="arizFirstA" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleArizFirstA" prefWidth="120.0" text="Idaho" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="arizFirstB" mnemonicParsing="false" onAction="#handleArizFirstB" prefWidth="120.0" text="Utah" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button fx:id="arizFirstC" mnemonicParsing="false" onAction="#handleArizFirstC" prefWidth="120.0" text="Florida" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-            <Label fx:id="arizFirstQuestionLabel" text="Question 1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Button fx:id="arizFirstA" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleArizFirstA" prefWidth="120.0" stylesheets="@buttonCSS.css" text="Idaho" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Book Antiqua" size="35.0" />
+               </font></Button>
+            <Button fx:id="arizFirstB" mnemonicParsing="false" onAction="#handleArizFirstB" prefWidth="120.0" stylesheets="@buttonCSS.css" text="Utah" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="arizFirstC" mnemonicParsing="false" onAction="#handleArizFirstC" prefWidth="120.0" stylesheets="@buttonCSS.css" text="Florida" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label fx:id="arizFirstQuestionLabel" stylesheets="@labelCSS.css" text="Question 1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="15.0" />
                </GridPane.margin>
@@ -121,7 +124,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="arizFirstQuestion" text="Which state is north of Arizona?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label fx:id="arizFirstQuestion" stylesheets="@labelCSS.css" text="Which state is north of Arizona?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="20.0" />
                </GridPane.margin>
