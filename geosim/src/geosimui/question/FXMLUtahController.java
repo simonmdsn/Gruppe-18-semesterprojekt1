@@ -68,6 +68,10 @@ public class FXMLUtahController implements Initializable, MethodInterface {
     private Label utahFirstQuestion;
     @FXML
     private Label incorrectLabel;
+    @FXML
+    private GridPane gridPaneFour;
+    @FXML
+    private Button utahMapButton;
 
     /**
      * Initializes the controller class.
@@ -116,16 +120,34 @@ public class FXMLUtahController implements Initializable, MethodInterface {
         update();
         
         incorrectLabel.setText("");
+        
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
     }
 
     @FXML
     private void handleUtahThirdB(ActionEvent event) {
         incorrectLabel.setText("Incorrect, the correct answer is Lake Powell");
+        
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
     }
 
     @FXML
     private void handleUtahThirdC(ActionEvent event) {
         incorrectLabel.setText("Incorrect, the correct answer is Lake Powell");
+        
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
     }
 
     @FXML
@@ -165,6 +187,19 @@ public class FXMLUtahController implements Initializable, MethodInterface {
     @Override
     public void update() {
         gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
+    }
+
+    @FXML
+    private void handleUtahMapButton(ActionEvent event) throws IOException {
+        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLUtahMap.fxml"));
+        Scene gameScene = new Scene(game);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("Map");
+        window.setScene(gameScene);
+        window.show();
     }
 
 }

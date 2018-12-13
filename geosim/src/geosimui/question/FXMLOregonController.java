@@ -68,6 +68,10 @@ public class FXMLOregonController implements Initializable, MethodInterface {
     private Label oregThirdQuestion;
     @FXML
     private Label incorrectLabel;
+    @FXML
+    private GridPane gridPaneFour;
+    @FXML
+    private Button oregMapButton;
 
     /**
      * Initializes the controller class.
@@ -156,16 +160,34 @@ public class FXMLOregonController implements Initializable, MethodInterface {
         update();
 
         incorrectLabel.setText("");
+        
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
     }
 
     @FXML
     private void handleOregThirdB(ActionEvent event) {
         incorrectLabel.setText("Wrong, Snake River is one of the major rivers in Oregon.");
+        
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
     }
 
     @FXML
     private void handleOregThirdC(ActionEvent event) {
         incorrectLabel.setText("Wrong, Snake River is one of the major rivers in Oregon.");
+        
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
     }
 
 
@@ -173,6 +195,19 @@ public class FXMLOregonController implements Initializable, MethodInterface {
     @Override
     public void update() {
         gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
+    }
+
+    @FXML
+    private void handleOregMapButton(ActionEvent event) throws IOException {
+        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLOregonMap.fxml"));
+        Scene gameScene = new Scene(game);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("Map");
+        window.setScene(gameScene);
+        window.show();
     }
 
 }
