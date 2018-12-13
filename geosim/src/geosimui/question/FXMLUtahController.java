@@ -192,7 +192,7 @@ public class FXMLUtahController implements Initializable, MethodInterface {
 
     @Override
     public void update() {
-        gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
+        gamePointsLabel.setText("Points: "+Integer.toString(geosimExtensions.Questions.gamepoints));
     }
 
     @FXML

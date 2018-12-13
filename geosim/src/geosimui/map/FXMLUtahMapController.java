@@ -46,7 +46,7 @@ public class FXMLUtahMapController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
+        gamePointsLabel.setText("Points: "+Integer.toString(geosimExtensions.Questions.gamepoints));
     }    
 
     @FXML

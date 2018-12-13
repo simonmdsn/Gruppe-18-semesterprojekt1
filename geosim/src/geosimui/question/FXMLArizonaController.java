@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -194,7 +195,7 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
 
     @Override
     public void update() {
-        gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
+        gamePointsLabel.setText("Points: "+Integer.toString(geosimExtensions.Questions.gamepoints));
     }
 
     @FXML
@@ -210,4 +211,8 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
         window.show();
     }
 
+    
 }
+
+
+

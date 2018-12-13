@@ -26,7 +26,7 @@ public class GeosimUI extends Application {
         
         
         stage.getIcons().add(new Image(GeosimUI.class.getResourceAsStream("images/AmericaMapreal.png")));
-        stage.setTitle("geosimUI"); 
+        stage.setTitle("geosim"); 
         stage.setScene(scene);
         stage.show();
     }

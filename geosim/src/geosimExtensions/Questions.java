@@ -297,7 +297,7 @@ public class Questions {
         return gamepoints;
     }
     
-    public int getStateStatus() {
+    public static int getStateStatus() {
         int statestatus;
         return statestatus = california + arizona + idaho + nevada + oregon + utah + washington;
     }

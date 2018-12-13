@@ -52,7 +52,6 @@ public class FXMLStartMenuController implements Initializable {
         //("California");
         window.setScene(gameScene);
         window.show();
-
     }
 
     @FXML

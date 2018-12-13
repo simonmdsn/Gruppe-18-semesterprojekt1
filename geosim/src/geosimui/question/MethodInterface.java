@@ -5,14 +5,14 @@
  */
 package geosimui.question;
 
+import java.io.IOException;
+import javafx.event.Event;
+
 /**
  *
  * @author simon
  */
 interface MethodInterface {
     
-        public abstract void update();
-        
-        
-    
+        public abstract void update();  
 }

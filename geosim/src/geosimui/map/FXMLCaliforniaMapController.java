@@ -57,7 +57,7 @@ public class FXMLCaliforniaMapController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
+        gamePointsLabel.setText("Points: "+Integer.toString(geosimExtensions.Questions.gamepoints));
     }
 
     @FXML

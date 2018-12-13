@@ -170,7 +170,7 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
     //Gamepoints updater
     @Override
     public void update() {
-        gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
+        gamePointsLabel.setText("Points: "+Integer.toString(geosimExtensions.Questions.gamepoints));
     }
 
     @FXML
