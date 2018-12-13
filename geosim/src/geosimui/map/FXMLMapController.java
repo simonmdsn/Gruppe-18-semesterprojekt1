@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
  * @author Bruger
  */
 public class FXMLMapController implements Initializable {
+    
 
     /**
      * Initializes the controller class.

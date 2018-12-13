@@ -69,7 +69,7 @@ public class FXMLStateButtonsController implements Initializable {
     
     @FXML
     private void handleOregonButton(ActionEvent event) throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("question/FXMLOregon.fxml"));
+        Parent game = FXMLLoader.load(getClass().getResource("map/FXMLOregonMap.fxml"));
         Scene gameScene = new Scene(game);
         gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
         System.out.println(gameScene.getStylesheets());
@@ -84,7 +84,7 @@ public class FXMLStateButtonsController implements Initializable {
 
     @FXML
     private void handleWashingtonButton(ActionEvent event) throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("question/FXMLWashington.fxml"));
+        Parent game = FXMLLoader.load(getClass().getResource("map/FXMLWashingtonMap.fxml"));
         Scene gameScene = new Scene(game);
         gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
         System.out.println(gameScene.getStylesheets());
@@ -98,7 +98,7 @@ public class FXMLStateButtonsController implements Initializable {
 
     @FXML
     private void handleIdahoButton(ActionEvent event) throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("question/FXMLIdaho.fxml"));
+        Parent game = FXMLLoader.load(getClass().getResource("map/FXMLIdahoMap.fxml"));
         Scene gameScene = new Scene(game);
         gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
         System.out.println(gameScene.getStylesheets());
@@ -112,7 +112,7 @@ public class FXMLStateButtonsController implements Initializable {
 
     @FXML
     private void handleNevadaButton(ActionEvent event) throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("question/FXMLNevada.fxml"));
+        Parent game = FXMLLoader.load(getClass().getResource("map/FXMLNevadaMap.fxml"));
         Scene gameScene = new Scene(game);
         gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
         System.out.println(gameScene.getStylesheets());
@@ -126,7 +126,7 @@ public class FXMLStateButtonsController implements Initializable {
 
     @FXML
     private void handleArizonaButton(ActionEvent event) throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("question/FXMLArizona.fxml"));
+        Parent game = FXMLLoader.load(getClass().getResource("map/FXMLArizonaMap.fxml"));
         Scene gameScene = new Scene(game);
         gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
         System.out.println(gameScene.getStylesheets());
@@ -140,7 +140,7 @@ public class FXMLStateButtonsController implements Initializable {
 
     @FXML
     private void handleUtahButton(ActionEvent event) throws IOException {
-        Parent game = FXMLLoader.load(getClass().getResource("question/FXMLUtah.fxml"));
+        Parent game = FXMLLoader.load(getClass().getResource("map/FXMLUtahMap.fxml"));
         Scene gameScene = new Scene(game);
         gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
         System.out.println(gameScene.getStylesheets());
@@ -154,7 +154,7 @@ public class FXMLStateButtonsController implements Initializable {
 
     @FXML
     private void handleBackButtonAction(ActionEvent event)throws IOException {
-                Parent game = FXMLLoader.load(getClass().getResource("FXMLStartMenu.fxml"));
+        Parent game = FXMLLoader.load(getClass().getResource("FXMLStartMenu.fxml"));
         Scene gameScene = new Scene(game);
         gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
         System.out.println(gameScene.getStylesheets());
