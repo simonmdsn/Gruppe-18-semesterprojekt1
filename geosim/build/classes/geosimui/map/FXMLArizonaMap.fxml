@@ -1,15 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.map.FXMLArizonaMapController">
    <children>
-      <ImageView fitHeight="300.0" fitWidth="473.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
-         <image>
-            <Image url="@../images/Arizona.png" />
-         </image>
-      </ImageView>
+      <GridPane prefHeight="400.0" prefWidth="782.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="377.0" minWidth="10.0" prefWidth="127.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="541.0" minWidth="10.0" prefWidth="473.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="473.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../images/Arizona.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="arizSouthButton" layoutX="41.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleArizSouthButton" stylesheets="@ButtonMapCSS.css" text="South" />
+            <Button fx:id="arizNorthButton" layoutX="41.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleCaliNorthButton" stylesheets="@ButtonMapCSS.css" text="North" />
+            <Button fx:id="arizEastButton" layoutX="87.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleArizEastButton" stylesheets="@ButtonMapCSS.css" text="East" />
+            <Button fx:id="arizWestButton" layoutY="188.0" mnemonicParsing="false" onAction="#handleArizWestButton" stylesheets="@ButtonMapCSS.css" text="West" />
+            <Button fx:id="arizPlayButton" layoutX="23.0" layoutY="287.0" mnemonicParsing="false" onAction="#handleArizPlayButton" prefHeight="49.0" prefWidth="84.0" stylesheets="@ButtonMapCSS.css" text="Play" />
+            <Label fx:id="gamePointsLabel" layoutX="13.0" layoutY="21.0" />
+         </children>
+      </AnchorPane>
    </children>
 </StackPane>
