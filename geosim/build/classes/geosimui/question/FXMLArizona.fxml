@@ -42,10 +42,10 @@
             <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button fx:id="arizSecondA" mnemonicParsing="false" onAction="#handleArizSecondA" prefWidth="100.0" text="Salt River" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="arizSecondB" mnemonicParsing="false" onAction="#handleArizSecondB" prefWidth="100.0" text="Rio Grande" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button fx:id="arizSecondC" mnemonicParsing="false" onAction="#handleArizSecondC" prefWidth="100.0" text="Colorado River" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-            <Label fx:id="arizSecondQuestionLabel" text="Question 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Button fx:id="arizSecondA" mnemonicParsing="false" onAction="#handleArizSecondA" prefWidth="150.0" stylesheets="@buttonCSS.css" text="Salt River" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Button fx:id="arizSecondB" mnemonicParsing="false" onAction="#handleArizSecondB" prefWidth="150.0" stylesheets="@buttonCSS.css" text="Rio Grande" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="arizSecondC" mnemonicParsing="false" onAction="#handleArizSecondC" prefWidth="150.0" stylesheets="@buttonCSS.css" text="Colorado River" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label fx:id="arizSecondQuestionLabel" stylesheets="@labelCSS.css" text="Question 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="15.0" />
                </GridPane.margin>
@@ -53,7 +53,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="arizSecondQuestion" text="Which river seperates Arizona from California and Arizda?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label fx:id="arizSecondQuestion" stylesheets="@labelCSS.css" text="Which river seperates Arizona from California and Arizda?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="20.0" />
                </GridPane.margin>
@@ -76,10 +76,10 @@
             <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button fx:id="arizThirdA" mnemonicParsing="false" onAction="#handleArizThirdA" prefWidth="130.0" text="Flagstaff" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="arizThirdB" mnemonicParsing="false" onAction="#handleArizThirdB" prefWidth="130.0" text="Tucson" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button fx:id="arizThirdC" mnemonicParsing="false" onAction="#handleArizThirdC" prefWidth="130.0" text="Phoenix" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-            <Label fx:id="arizThirdQuestionLabel" text="Question 3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Button fx:id="arizThirdA" mnemonicParsing="false" onAction="#handleArizThirdA" prefWidth="130.0" stylesheets="@buttonCSS.css" text="Flagstaff" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Button fx:id="arizThirdB" mnemonicParsing="false" onAction="#handleArizThirdB" prefWidth="130.0" stylesheets="@buttonCSS.css" text="Tucson" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="arizThirdC" mnemonicParsing="false" onAction="#handleArizThirdC" prefWidth="130.0" stylesheets="@buttonCSS.css" text="Phoenix" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label fx:id="arizThirdQuestionLabel" stylesheets="@labelCSS.css" text="Question 3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="15.0" />
                </GridPane.margin>
@@ -87,7 +87,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="arizThirdQuestion" text="What is the capital of Arizona?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label fx:id="arizThirdQuestion" stylesheets="@labelCSS.css" text="What is the capital of Arizona?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="20.0" />
                </GridPane.margin>
@@ -132,6 +132,22 @@
                   <Font size="14.0" />
                </font>
             </Label>
+         </children>
+      </GridPane>
+      <GridPane fx:id="gridPaneFour" disable="true" prefHeight="0.0" prefWidth="300.0" visible="false">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="415.1999877929687" minWidth="10.0" prefWidth="400.8000244140625" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="75.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="arizMapButton" mnemonicParsing="false" onAction="#handleArizMapButton" stylesheets="@buttonCSS.css" text="Back to map" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
          </children>
       </GridPane>
    </children>
