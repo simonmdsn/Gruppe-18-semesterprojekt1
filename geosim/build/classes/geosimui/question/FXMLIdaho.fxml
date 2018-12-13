@@ -9,14 +9,14 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.question.FXMLIdahoController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@backgroundCSS.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.question.FXMLIdahoController">
    <children>
-      <Label fx:id="gamePointsLabel" text="0" StackPane.alignment="TOP_LEFT">
+      <Label fx:id="gamePointsLabel" stylesheets="@labelCSS.css" text="0" StackPane.alignment="TOP_LEFT">
          <StackPane.margin>
             <Insets left="30.0" top="30.0" />
          </StackPane.margin>
       </Label>
-      <Label text="Idaho" StackPane.alignment="TOP_CENTER">
+      <Label stylesheets="@labelCSS.css" text="Idaho" StackPane.alignment="TOP_CENTER">
          <font>
             <Font size="30.0" />
          </font>
@@ -37,10 +37,10 @@
             <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button fx:id="idahSecondA" mnemonicParsing="false" onAction="#handleIdahSecondA" prefWidth="100.0" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="idahSecondB" mnemonicParsing="false" onAction="#handleIdahSecondB" prefWidth="100.0" text="4" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button fx:id="idahSecondC" mnemonicParsing="false" onAction="#handleIdahSecondC" prefWidth="100.0" text="6" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-            <Label fx:id="idahSecondQuestionLabel" text="Question 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Button fx:id="idahSecondA" mnemonicParsing="false" onAction="#handleIdahSecondA" prefWidth="100.0" stylesheets="@buttonCSS.css" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Button fx:id="idahSecondB" mnemonicParsing="false" onAction="#handleIdahSecondB" prefWidth="100.0" stylesheets="@buttonCSS.css" text="4" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="idahSecondC" mnemonicParsing="false" onAction="#handleIdahSecondC" prefWidth="100.0" stylesheets="@buttonCSS.css" text="6" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label fx:id="idahSecondQuestionLabel" stylesheets="@labelCSS.css" text="Question 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="15.0" />
                </GridPane.margin>
@@ -48,7 +48,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="idahSecondQuestion" text="How many state borders does Idaho have?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label fx:id="idahSecondQuestion" stylesheets="@labelCSS.css" text="How many state borders does Idaho have?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="20.0" />
                </GridPane.margin>
@@ -71,10 +71,10 @@
             <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button fx:id="idahThirdA" mnemonicParsing="false" onAction="#handleIdahThirdA" prefWidth="130.0" text="Salt Lake City" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="idahThirdB" mnemonicParsing="false" onAction="#handleIdahThirdB" prefWidth="130.0" text="Caldwell" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button fx:id="idahThirdC" mnemonicParsing="false" onAction="#handleIdahThirdC" prefWidth="130.0" text="Boise" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-            <Label fx:id="idahThirdQuestionLabel" text="Question 3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Button fx:id="idahThirdA" mnemonicParsing="false" onAction="#handleIdahThirdA" prefWidth="145.0" stylesheets="@buttonCSS.css" text="Salt Lake City" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Button fx:id="idahThirdB" mnemonicParsing="false" onAction="#handleIdahThirdB" prefWidth="145.0" stylesheets="@buttonCSS.css" text="Caldwell" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="idahThirdC" mnemonicParsing="false" onAction="#handleIdahThirdC" prefWidth="145.0" stylesheets="@buttonCSS.css" text="Boise" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label fx:id="idahThirdQuestionLabel" stylesheets="@labelCSS.css" text="Question 3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="15.0" />
                </GridPane.margin>
@@ -82,7 +82,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="idahThirdQuestion" text="What is the largest city in Idaho?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label fx:id="idahThirdQuestion" stylesheets="@labelCSS.css" text="What is the largest city in Idaho?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="20.0" />
                </GridPane.margin>
@@ -105,10 +105,10 @@
             <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="idahFirstA" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleIdahFirstA" prefWidth="120.0" text="46th" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="idahFirstB" mnemonicParsing="false" onAction="#handleIdahFirstB" prefWidth="120.0" text="14th" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button fx:id="idahFirstC" mnemonicParsing="false" onAction="#handleIdahFirstC" prefWidth="120.0" text="4th" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-            <Label fx:id="idahFirstQuestionLabel" text="Question 1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Button fx:id="idahFirstA" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleIdahFirstA" prefWidth="120.0" stylesheets="@buttonCSS.css" text="46th" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Button fx:id="idahFirstB" mnemonicParsing="false" onAction="#handleIdahFirstB" prefWidth="120.0" stylesheets="@buttonCSS.css" text="14th" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="idahFirstC" mnemonicParsing="false" onAction="#handleIdahFirstC" prefWidth="120.0" stylesheets="@buttonCSS.css" text="4th" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label fx:id="idahFirstQuestionLabel" stylesheets="@labelCSS.css" text="Question 1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="15.0" />
                </GridPane.margin>
@@ -116,7 +116,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="idahFirstQuestion" text="Idaho is the ____ largest state in the country?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label fx:id="idahFirstQuestion" stylesheets="@labelCSS.css" text="Idaho is the ____ largest state in the country?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="20.0" />
                </GridPane.margin>
@@ -126,10 +126,26 @@
             </Label>
          </children>
       </GridPane>
-      <Label fx:id="incorrectLabel" StackPane.alignment="BOTTOM_CENTER">
+      <Label fx:id="incorrectLabel" stylesheets="@labelCSS.css" StackPane.alignment="BOTTOM_CENTER">
          <StackPane.margin>
             <Insets bottom="40.0" />
          </StackPane.margin>
       </Label>
+      <GridPane fx:id="gridPaneFour" disable="true" prefHeight="0.0" prefWidth="300.0" visible="false">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="415.1999877929687" minWidth="10.0" prefWidth="400.8000244140625" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="75.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="idahMapButton" mnemonicParsing="false" onAction="#handleIdahMapButton" stylesheets="@buttonCSS.css" text="Back to map" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+         </children>
+      </GridPane>
    </children>
 </StackPane>

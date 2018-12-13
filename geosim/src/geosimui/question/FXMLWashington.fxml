@@ -9,14 +9,14 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.question.FXMLWashingtonController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@backgroundCSS.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.question.FXMLWashingtonController">
    <children>
-      <Label fx:id="gamePointsLabel" text="0" StackPane.alignment="TOP_LEFT">
+      <Label fx:id="gamePointsLabel" stylesheets="@labelCSS.css" text="0" StackPane.alignment="TOP_LEFT">
          <StackPane.margin>
             <Insets left="30.0" top="30.0" />
          </StackPane.margin>
       </Label>
-      <Label text="Washington" StackPane.alignment="TOP_CENTER">
+      <Label stylesheets="@labelCSS.css" text="Washington" StackPane.alignment="TOP_CENTER">
          <font>
             <Font size="30.0" />
          </font>
@@ -37,10 +37,10 @@
             <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button fx:id="washSecondA" mnemonicParsing="false" onAction="#handleWashSecondA" prefWidth="100.0" text="A state" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="washSecondB" mnemonicParsing="false" onAction="#handleWashSecondB" prefWidth="100.0" text="An animal" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button fx:id="washSecondC" mnemonicParsing="false" onAction="#handleWashSecondC" prefWidth="100.0" text="A US president" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-            <Label fx:id="washSecondQuestionLabel" text="Question 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Button fx:id="washSecondA" mnemonicParsing="false" onAction="#handleWashSecondA" prefWidth="145.0" stylesheets="@buttonCSS.css" text="A state" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Button fx:id="washSecondB" mnemonicParsing="false" onAction="#handleWashSecondB" prefWidth="145.0" stylesheets="@buttonCSS.css" text="An animal" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="washSecondC" mnemonicParsing="false" onAction="#handleWashSecondC" prefWidth="145.0" stylesheets="@buttonCSS.css" text="A US president" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label fx:id="washSecondQuestionLabel" stylesheets="@labelCSS.css" text="Question 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="15.0" />
                </GridPane.margin>
@@ -48,7 +48,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="washSecondQuestion" text="The state of Washington is the only state to be named afer _______" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label fx:id="washSecondQuestion" stylesheets="@labelCSS.css" text="The state of Washington is the only state to be named afer _______" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="20.0" />
                </GridPane.margin>
@@ -71,10 +71,10 @@
             <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button fx:id="washThirdA" mnemonicParsing="false" onAction="#handleWashThirdA" prefWidth="130.0" text="Olympia" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="washThirdB" mnemonicParsing="false" onAction="#handleWashThirdB" prefWidth="130.0" text="Tacoma" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button fx:id="washThirdC" mnemonicParsing="false" onAction="#handleWashThirdC" prefWidth="130.0" text="Seattle" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-            <Label fx:id="washThirdQuestionLabel" text="Question 3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Button fx:id="washThirdA" mnemonicParsing="false" onAction="#handleWashThirdA" prefWidth="130.0" stylesheets="@buttonCSS.css" text="Olympia" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Button fx:id="washThirdB" mnemonicParsing="false" onAction="#handleWashThirdB" prefWidth="130.0" stylesheets="@buttonCSS.css" text="Tacoma" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="washThirdC" mnemonicParsing="false" onAction="#handleWashThirdC" prefWidth="130.0" stylesheets="@buttonCSS.css" text="Seattle" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label fx:id="washThirdQuestionLabel" stylesheets="@labelCSS.css" text="Question 3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="15.0" />
                </GridPane.margin>
@@ -82,7 +82,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="washThirdQuestion" text="What is the largest city of Washington" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label fx:id="washThirdQuestion" stylesheets="@labelCSS.css" text="What is the largest city of Washington" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="20.0" />
                </GridPane.margin>
@@ -105,10 +105,10 @@
             <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="washFirstA" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleWashFirstA" prefWidth="120.0" text="~7.4 Million" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="washFirstB" mnemonicParsing="false" onAction="#handleWashFirstB" prefWidth="120.0" text="~15 Million" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button fx:id="washFirstC" mnemonicParsing="false" onAction="#handleWashFirstC" prefWidth="120.0" text="~17 Million" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-            <Label fx:id="washFirstQuestionLabel" text="Question 1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Button fx:id="washFirstA" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleWashFirstA" prefWidth="130.0" stylesheets="@buttonCSS.css" text="~7.4 Million" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Button fx:id="washFirstB" mnemonicParsing="false" onAction="#handleWashFirstB" prefWidth="130.0" stylesheets="@buttonCSS.css" text="~15 Million" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="washFirstC" mnemonicParsing="false" onAction="#handleWashFirstC" prefWidth="130.0" stylesheets="@buttonCSS.css" text="~17 Million" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label fx:id="washFirstQuestionLabel" stylesheets="@labelCSS.css" text="Question 1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="15.0" />
                </GridPane.margin>
@@ -116,7 +116,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="washFirstQuestion" text="What is the population of Washington?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label fx:id="washFirstQuestion" stylesheets="@labelCSS.css" text="What is the population of Washington?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="20.0" />
                </GridPane.margin>
@@ -126,10 +126,26 @@
             </Label>
          </children>
       </GridPane>
-      <Label fx:id="incorrectLabel" StackPane.alignment="BOTTOM_CENTER">
+      <Label fx:id="incorrectLabel" stylesheets="@labelCSS.css" StackPane.alignment="BOTTOM_CENTER">
          <StackPane.margin>
             <Insets bottom="40.0" />
          </StackPane.margin>
       </Label>
+      <GridPane fx:id="gridPaneFour" disable="true" prefHeight="0.0" prefWidth="300.0" visible="false">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="415.1999877929687" minWidth="10.0" prefWidth="400.8000244140625" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="75.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="washMapButton" mnemonicParsing="false" onAction="#handleWashMapButton" stylesheets="@buttonCSS.css" text="Back to map" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+         </children>
+      </GridPane>
    </children>
 </StackPane>
