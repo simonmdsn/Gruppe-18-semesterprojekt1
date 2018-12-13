@@ -68,11 +68,23 @@ public class FXMLCaliforniaMapController implements Initializable {
     @FXML
     private void handleCaliNorthButton(ActionEvent event)throws IOException {
         Parent game = FXMLLoader.load(getClass().getResource("FXMLOregonMap.fxml"));
+    private void handleCaliSouthButton(ActionEvent event)throws IOException {
+    }
+
+    @FXML
+    private void handleCaliNorthButton(ActionEvent event)throws IOException {
+        Parent game = FXMLLoader.load(getClass().getResource("question/FXMLOregonMap.fxml"));
+
         Scene gameScene = new Scene(game);
         gameScene.getStylesheets().add(FXMLStateButtonsController.class.getResource("mapStylesheet.css").toExternalForm());
         System.out.println(gameScene.getStylesheets());
         //This line gets the Stage information
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setTitle("Utah");
+        window.setScene(gameScene);
+        window.show();
+    }
+
 
         window.setTitle("California");
         window.setScene(gameScene);

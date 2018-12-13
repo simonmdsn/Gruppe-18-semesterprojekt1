@@ -68,6 +68,10 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
     private Label arizFirstQuestion;
     @FXML
     private Label incorrectLabel;
+    @FXML
+    private GridPane gridPaneFour;
+    @FXML
+    private Button arizMapButton;
 
     /**
      * Initializes the controller class.
@@ -113,11 +117,23 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
     @FXML
 
     private void handleArizThirdA(ActionEvent event) {
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
+        
         incorrectLabel.setText("Incorrect, Phoenix is the capital of Arizona.");
     }
 
     @FXML
     private void handleArizThirdB(ActionEvent event) {
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
+        
         incorrectLabel.setText("Incorrect, Phoenix is the capital of Arizona.");
     }
 
@@ -125,6 +141,12 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
     private void handleArizThirdC(ActionEvent event) {
         Questions.gamepoints++;
         update();
+        
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
 
         incorrectLabel.setText("");
     }
@@ -167,6 +189,19 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
     @Override
     public void update() {
         gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
+    }
+
+    @FXML
+    private void handleArizMapButton(ActionEvent event) throws IOException {
+        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLArizonaMap.fxml"));
+        Scene gameScene = new Scene(game);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("Map");
+        window.setScene(gameScene);
+        window.show();
     }
 
 }

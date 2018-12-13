@@ -40,6 +40,10 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
     private Label gamePointsLabel;
     @FXML
     private Label incorrectLabel;
+    @FXML
+    private GridPane gridPaneFour;
+    @FXML
+    private Button caliMapButton;
 
 
     @Override
@@ -125,30 +129,48 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
     //Third question handles
     @FXML
     private void handleCaliThirdA(ActionEvent event) {
-        gridPaneThree.setVisible(false);
       
         geosimExtensions.Questions.gamepoints++;
         update();
+        
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
     }
 
     @FXML
     private void handleCaliThirdB(ActionEvent event) {
+        gridPaneThree.setDisable(true);
         gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
 
         incorrectLabel.setText("Incorrect, Silicon Valley is located in San Fransisco");
     }
 
     @FXML
     private void handleCaliThirdC(ActionEvent event) throws IOException {
+        gridPaneThree.setDisable(true);
         gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
 
         incorrectLabel.setText("Incorrect, Silicon Valley is located in San Fransisco");
     }
 
-    //Map handler button
-    private void handleMapButton(ActionEvent event) throws IOException {
+    //Gamepoints updater
+    @Override
+    public void update() {
+        gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
+    }
 
-        Parent game = FXMLLoader.load(getClass().getResource("FXMLMap.fxml"));
+    @FXML
+    private void handleCaliMapButton(ActionEvent event) throws IOException {
+        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLCaliforniaMap.fxml"));
         Scene gameScene = new Scene(game);
 
         //This line gets the Stage information
@@ -157,13 +179,6 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
         window.setTitle("Map");
         window.setScene(gameScene);
         window.show();
-
-    }
-
-    //Gamepoints updater
-    @Override
-    public void update() {
-        gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
     }
 
 }

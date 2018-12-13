@@ -9,14 +9,14 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.question.FXMLOregonController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@backgroundCSS.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geosimui.question.FXMLOregonController">
    <children>
-      <Label fx:id="gamePointsLabel" text="0" StackPane.alignment="TOP_LEFT">
+      <Label fx:id="gamePointsLabel" stylesheets="@labelCSS.css" text="0" StackPane.alignment="TOP_LEFT">
          <StackPane.margin>
             <Insets left="30.0" top="30.0" />
          </StackPane.margin>
       </Label>
-      <Label text="Oregon" StackPane.alignment="TOP_CENTER">
+      <Label stylesheets="@labelCSS.css" text="Oregon" StackPane.alignment="TOP_CENTER">
          <font>
             <Font size="30.0" />
          </font>
@@ -37,10 +37,10 @@
             <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="orgFirstA" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleOregFirstA" prefWidth="120.0" text="Oregon City" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="oregFirstB" mnemonicParsing="false" onAction="#handleOregFirstB" prefWidth="120.0" text="Salem" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button fx:id="oregiFirstC" mnemonicParsing="false" onAction="#handleOregFirstC" prefWidth="120.0" text="Las Vegas" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-            <Label fx:id="oregFirstQuestionLabel" text="Question 1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Button fx:id="orgFirstA" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleOregFirstA" prefWidth="130.0" stylesheets="@buttonCSS.css" text="Oregon City" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Button fx:id="oregFirstB" mnemonicParsing="false" onAction="#handleOregFirstB" prefWidth="130.0" stylesheets="@buttonCSS.css" text="Salem" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="oregiFirstC" mnemonicParsing="false" onAction="#handleOregFirstC" prefWidth="130.0" stylesheets="@buttonCSS.css" text="Las Vegas" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label fx:id="oregFirstQuestionLabel" stylesheets="@labelCSS.css" text="Question 1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="15.0" />
                </GridPane.margin>
@@ -48,7 +48,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="oregFirstQuestion" text="What is the capital of Oregon?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label fx:id="oregFirstQuestion" stylesheets="@labelCSS.css" text="What is the capital of Oregon?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="20.0" />
                </GridPane.margin>
@@ -71,10 +71,10 @@
             <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button fx:id="oregSecondA" mnemonicParsing="false" onAction="#handleOregSecondA" prefWidth="100.0" text="6" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="oregSecondB" mnemonicParsing="false" onAction="#handleOregSecondB" prefWidth="100.0" text="15" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button fx:id="oregSecondC" mnemonicParsing="false" onAction="#handleOregSecondC" prefWidth="100.0" text="304" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-            <Label fx:id="oregSecondQuestionLabel" text="Question 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Button fx:id="oregSecondA" mnemonicParsing="false" onAction="#handleOregSecondA" prefWidth="100.0" stylesheets="@buttonCSS.css" text="6" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Button fx:id="oregSecondB" mnemonicParsing="false" onAction="#handleOregSecondB" prefWidth="100.0" stylesheets="@buttonCSS.css" text="15" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="oregSecondC" mnemonicParsing="false" onAction="#handleOregSecondC" prefWidth="100.0" stylesheets="@buttonCSS.css" text="304" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label fx:id="oregSecondQuestionLabel" stylesheets="@labelCSS.css" text="Question 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="15.0" />
                </GridPane.margin>
@@ -82,7 +82,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="oregSecondQuestion" text="Oregon's geography can be divided into how many areas?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label fx:id="oregSecondQuestion" stylesheets="@labelCSS.css" text="Oregon's geography can be divided into how many areas?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="20.0" />
                </GridPane.margin>
@@ -105,10 +105,10 @@
             <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button fx:id="oregThirdA" mnemonicParsing="false" onAction="#handleOregThirdA" prefWidth="130.0" text="Snake River" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="oregThirdB" mnemonicParsing="false" onAction="#handleOregThirdB" prefWidth="130.0" text="The Great Fall" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button fx:id="oregThirdC" mnemonicParsing="false" onAction="#handleOregThirdC" prefWidth="130.0" text="Upwood River" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-            <Label fx:id="oregThirdQuestionLabel" text="Question 3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Button fx:id="oregThirdA" mnemonicParsing="false" onAction="#handleOregThirdA" prefWidth="155.0" stylesheets="@buttonCSS.css" text="Snake River" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Button fx:id="oregThirdB" mnemonicParsing="false" onAction="#handleOregThirdB" prefWidth="155.0" stylesheets="@buttonCSS.css" text="The Great Fall" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="oregThirdC" mnemonicParsing="false" onAction="#handleOregThirdC" prefWidth="155.0" stylesheets="@buttonCSS.css" text="Upwood River" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label fx:id="oregThirdQuestionLabel" stylesheets="@labelCSS.css" text="Question 3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="15.0" />
                </GridPane.margin>
@@ -116,7 +116,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="oregThirdQuestion" text="What major river can be found in Oregon" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label fx:id="oregThirdQuestion" stylesheets="@labelCSS.css" text="What major river can be found in Oregon" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="20.0" />
                </GridPane.margin>
@@ -126,10 +126,26 @@
             </Label>
          </children>
       </GridPane>
-      <Label fx:id="incorrectLabel" StackPane.alignment="BOTTOM_CENTER">
+      <Label fx:id="incorrectLabel" stylesheets="@labelCSS.css" StackPane.alignment="BOTTOM_CENTER">
          <StackPane.margin>
             <Insets bottom="40.0" />
          </StackPane.margin>
       </Label>
+      <GridPane fx:id="gridPaneFour" disable="true" prefHeight="0.0" prefWidth="300.0" visible="false">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="415.1999877929687" minWidth="10.0" prefWidth="400.8000244140625" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="75.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="oregMapButton" mnemonicParsing="false" onAction="#handleOregMapButton" stylesheets="@buttonCSS.css" text="Back to map" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+         </children>
+      </GridPane>
    </children>
 </StackPane>

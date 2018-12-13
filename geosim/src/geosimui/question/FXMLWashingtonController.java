@@ -68,6 +68,10 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
     private Label washFirstQuestion;
     @FXML
     private Label incorrectLabel;
+    @FXML
+    private GridPane gridPaneFour;
+    @FXML
+    private Button washMapButton;
 
     /**
      * Initializes the controller class.
@@ -115,17 +119,37 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
     @FXML
     private void handleWashThirdA(ActionEvent event) {
         incorrectLabel.setText("Incorrect, the correct answer is Seattle");
+        
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
     }
 
     @FXML
     private void handleWashThirdB(ActionEvent event) {
         incorrectLabel.setText("Incorrect, the correct answer is Seattle");
+        
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
     }
   
     @FXML
     private void handleWashThirdC(ActionEvent event) {
         Questions.gamepoints++;
         update();
+        
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
+        
+        incorrectLabel.setText("");
     }
 
     @FXML
@@ -165,6 +189,19 @@ public class FXMLWashingtonController implements Initializable, MethodInterface 
     @Override
     public void update() {
         gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
+    }
+
+    @FXML
+    private void handleWashMapButton(ActionEvent event) throws IOException {
+        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLWashingtonMap.fxml"));
+        Scene gameScene = new Scene(game);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("Map");
+        window.setScene(gameScene);
+        window.show();
     }
 
 }

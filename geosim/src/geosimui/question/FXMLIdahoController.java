@@ -68,6 +68,10 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
     private Button idahThirdB;
     @FXML
     private Label incorrectLabel;
+    @FXML
+    private GridPane gridPaneFour;
+    @FXML
+    private Button idahMapButton;
 
     /**
      * Initializes the controller class.
@@ -84,7 +88,7 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
-        
+
         incorrectLabel.setText("Incorrect, Idaho borders 6 states!");
     }
 
@@ -95,7 +99,7 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
 
         gridPaneThree.setDisable(false);
         gridPaneThree.setVisible(true);
-        
+
         incorrectLabel.setText("Incorrect, Idaho borders 6 states!");
     }
 
@@ -108,29 +112,45 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
         gridPaneThree.setVisible(true);
         Questions.gamepoints++;
         update();
-        
+
         incorrectLabel.setText("");
     }
 
     @FXML
     private void handleIdahThirdA(ActionEvent event) {
-       incorrectLabel.setText("Wrooong! The largest city in Idaho is Boise!");
+        incorrectLabel.setText("Wrooong! The largest city in Idaho is Boise!");
+
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
     }
-  
+
     @FXML
     private void handleIdahThirdB(ActionEvent event) {
         incorrectLabel.setText("Wrooong! The largest city in Idaho is Boise!");
+        
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
     }
-   
 
     @FXML
     private void handleIdahThirdC(ActionEvent event) {
         Questions.gamepoints++;
         update();
-        
-        incorrectLabel.setText("");
-    }
 
+        incorrectLabel.setText("");
+        
+        gridPaneThree.setDisable(true);
+        gridPaneThree.setVisible(false);
+
+        gridPaneFour.setDisable(false);
+        gridPaneFour.setVisible(true);
+    }
 
     @FXML
     private void handleIdahFirstA(ActionEvent event) {
@@ -139,7 +159,7 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
-        
+
         incorrectLabel.setText("Incorrect, Idaho is the 14th largest state in the US!");
     }
 
@@ -152,7 +172,7 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
         gridPaneTwo.setVisible(true);
         Questions.gamepoints++;
         update();
-        
+
         incorrectLabel.setText("");
     }
 
@@ -163,13 +183,26 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
-        
+
         incorrectLabel.setText("Incorrect, Idaho is the 14th largest state in the US!");
     }
 
     @Override
     public void update() {
         gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
+    }
+
+    @FXML
+    private void handleIdahMapButton(ActionEvent event) throws IOException {
+        Parent game = FXMLLoader.load(getClass().getResource("/geosimui/map/FXMLIdahoMap.fxml"));
+        Scene gameScene = new Scene(game);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setTitle("Map");
+        window.setScene(gameScene);
+        window.show();
     }
 
 }

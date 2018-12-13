@@ -5,6 +5,7 @@
  */
 package geosimui.map;
 
+
 import geosimui.FXMLStateButtonsController;
 import java.io.IOException;
 import java.net.URL;
@@ -12,19 +13,21 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import javafx.fxml.Initializable;
+
 
 /**
  * FXML Controller class
  *
  * @author Lukas
  */
+
 public class FXMLArizonaMapController implements Initializable{
     @FXML
     private Label gamePointsLabel;
@@ -41,6 +44,7 @@ public class FXMLArizonaMapController implements Initializable{
     @FXML
     private Label mapLabel;
 
+
     /**
      * Initializes the controller class.
      */
@@ -48,6 +52,7 @@ public class FXMLArizonaMapController implements Initializable{
     public void initialize(URL url, ResourceBundle rb) {
         gamePointsLabel.setText(Integer.toString(geosimExtensions.Questions.gamepoints));
     }    
+
 
  
     @FXML
@@ -94,9 +99,6 @@ public class FXMLArizonaMapController implements Initializable{
         window.setScene(gameScene);
         window.show();
     }
-
+}
 
  
-
-    
-}
