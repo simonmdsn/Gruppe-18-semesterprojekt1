@@ -76,8 +76,8 @@
             <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button fx:id="caliSecondA" mnemonicParsing="false" onAction="#handleCaliSecondA" prefWidth="87.33333" stylesheets="@buttonCSS.css" text="San Diego " GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="caliSecondB" mnemonicParsing="false" onAction="#handleCaliSecondB" prefWidth="87.333333" stylesheets="@buttonCSS.css" text="Salt Lake City" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="caliSecondA" mnemonicParsing="false" onAction="#handleCaliSecondA" prefWidth="130.0" stylesheets="@buttonCSS.css" text="San Diego " GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Button fx:id="caliSecondB" mnemonicParsing="false" onAction="#handleCaliSecondB" prefWidth="130.0" stylesheets="@buttonCSS.css" text="Salt Lake City" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
             <Button fx:id="caliSecondC" mnemonicParsing="false" onAction="#handleCaliSecondC" stylesheets="@buttonCSS.css" text="San Fransisco" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
             <Label fx:id="caliSecondQuestionLabel" stylesheets="@labelCSS.css" text="Question 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
@@ -111,8 +111,8 @@
          </rowConstraints>
          <children>
             <Button fx:id="caliThirdA" mnemonicParsing="false" onAction="#handleCaliThirdA" stylesheets="@buttonCSS.css" text="San Fransisco " GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-            <Button fx:id="caliThirdB" mnemonicParsing="false" onAction="#handleCaliThirdB" prefWidth="90.66666667" stylesheets="@buttonCSS.css" text="Santa Cruz" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button fx:id="caliThirdC" mnemonicParsing="false" onAction="#handleCaliThirdC" prefWidth="90.66666667" stylesheets="@buttonCSS.css" text="Pasadena" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Button fx:id="caliThirdB" mnemonicParsing="false" onAction="#handleCaliThirdB" prefWidth="133.0" stylesheets="@buttonCSS.css" text="Santa Cruz" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="caliThirdC" mnemonicParsing="false" onAction="#handleCaliThirdC" prefWidth="133.0" stylesheets="@buttonCSS.css" text="Pasadena" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
             <Label fx:id="caliThirdQuestionLabel" stylesheets="@labelCSS.css" text="Question 3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="15.0" />

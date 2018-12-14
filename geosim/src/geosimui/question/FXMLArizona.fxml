@@ -53,7 +53,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="arizSecondQuestion" stylesheets="@labelCSS.css" text="Which river seperates Arizona from California and Arizda?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label fx:id="arizSecondQuestion" stylesheets="@labelCSS.css" text="Which river seperates Arizona from California and Nevada?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="20.0" />
                </GridPane.margin>
