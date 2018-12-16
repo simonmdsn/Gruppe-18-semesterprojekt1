@@ -53,7 +53,25 @@ public class FXMLCaliforniaMapController implements Initializable {
     @FXML
     private Button caliPlayButton;
     
-    
+        public void gameEndCheck() throws IOException{
+        if(geosimExtensions.Questions.california == 1 &&
+        geosimExtensions.Questions.arizona == 1 &&
+        geosimExtensions.Questions.idaho == 1 &&
+        geosimExtensions.Questions.nevada == 1 &&
+        geosimExtensions.Questions.oregon == 1 &&
+        geosimExtensions.Questions.utah == 1 &&
+        geosimExtensions.Questions.washington == 1){
+            Parent game = FXMLLoader.load(getClass().getResource("/geosimui/FXMLStartMenu.fxml"));
+            Scene gameScene = new Scene(game);
+
+            //This line gets the Stage information
+            Stage window = (Stage) gamePointsLabel.getScene().getWindow();
+
+            window.setScene(gameScene);
+            window.show();
+        
+    }
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

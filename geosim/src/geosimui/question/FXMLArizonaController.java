@@ -82,6 +82,8 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
         update();
     }
 
+    
+
     @FXML
     private void handleArizSecondA(ActionEvent event) {
         gridPaneTwo.setDisable(true);
@@ -184,13 +186,14 @@ public class FXMLArizonaController implements Initializable, MethodInterface {
     }
 
     @FXML
-    private void handleArizFirstC(ActionEvent event) {
+    private void handleArizFirstC(ActionEvent event) throws IOException {
         gridPaneOne.setDisable(true);
         gridPaneOne.setVisible(false);
 
         gridPaneTwo.setDisable(false);
         gridPaneTwo.setVisible(true);
         incorrectLabel.setText("Incorrect, Utah is north of Arizona.");
+        
     }
 
     @Override
