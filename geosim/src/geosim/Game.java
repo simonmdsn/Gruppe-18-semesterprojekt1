@@ -3,7 +3,12 @@ package geosim;
 
 import geosimExtensions.America;
 import geosimExtensions.Questions;
+import java.io.IOException;
 import java.util.Scanner; 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 
 public class Game 
@@ -282,6 +287,7 @@ public class Game
         }
        
 }
+
 
     private boolean quit(Command command) 
     {

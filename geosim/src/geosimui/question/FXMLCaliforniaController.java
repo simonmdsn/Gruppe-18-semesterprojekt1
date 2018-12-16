@@ -172,6 +172,8 @@ public class FXMLCaliforniaController implements Initializable, MethodInterface 
     public void update() {
         gamePointsLabel.setText("Points: "+Integer.toString(geosimExtensions.Questions.gamepoints));
     }
+    
+    
 
     @FXML
     private void handleCaliMapButton(ActionEvent event) throws IOException {

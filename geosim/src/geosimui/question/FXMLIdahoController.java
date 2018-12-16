@@ -196,6 +196,8 @@ public class FXMLIdahoController implements Initializable, MethodInterface {
     @Override
     public void update() {
         gamePointsLabel.setText("Points: "+Integer.toString(geosimExtensions.Questions.gamepoints));
+        
+        
     }
 
     @FXML
